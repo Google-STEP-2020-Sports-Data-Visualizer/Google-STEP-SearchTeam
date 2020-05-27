@@ -26,6 +26,7 @@
         matchID: matchID
       },
       success: function(chartsData){
+        chartsData = JSON.parse(chartsData);
         console.log(chartsData);
       },
       error: function(error){
