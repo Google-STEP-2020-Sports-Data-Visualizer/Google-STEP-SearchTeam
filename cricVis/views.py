@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.http import Http404, HttpResponse
+import json
 
 # Create your views here.
 def index(request):
@@ -14,4 +16,8 @@ def fetchGraphData(request):
         matchStats = getMatchStats(matchID)
         playersDismissed =  playerDismissed(match_ID)
         teams = teamNames(matchID)
-        
+        wormChartData = getChartData(matchID,matchStats,playersDismissed,teams,"cumulativeRuns")
+        manhattanChartData = getChartData(matchID,matchStats,playersDismissed,teams,"runs")
+        runRateChartData = getChartData(matchID,matchStats,playersDismissed,teams,"runRate")
+        chartData={"wormChartData": wormChartData, "manhattanChartData": manhattanChartData, "runRateChartData": runRateChartData}
+        return HttpResponse(json.dumps(chartData))
