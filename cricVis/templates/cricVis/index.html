@@ -19,6 +19,18 @@
 <script>
   $('#create-charts').click(()=>{
     let matchID = $('#match-select').val();
-    
+    $.ajax({
+      type: 'GET',
+      url: '/cricVis/fetchGraphData',
+      data: {
+        matchID: matchID
+      },
+      success: function(chartsData){
+        console.log(chartsData);
+      },
+      error: function(error){
+        console.log(error);
+      }
+    })
   });
 </script>
