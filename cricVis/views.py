@@ -2,4 +2,8 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return render(request,'cricVis/index.html')
+    # sent a GET request to get match_ID, team1, team2, match date
+    # assemble this data like [{match_ID: , team1: , team2: ,date: }, {....}]
+    allMatches=[{"match_ID":1,"team1":"Sunrisers Hyderbad", "team2": "Mumbai Indians","date":"18/04/2017"},{"match_ID":2,"team1":"Rajasthan Royals", "team2": "Mumbai Indians","date":"20/04/2017"}]
+    context = { "allMatches": allMatches}
+    return render(request,'cricVis/index.html',context)
