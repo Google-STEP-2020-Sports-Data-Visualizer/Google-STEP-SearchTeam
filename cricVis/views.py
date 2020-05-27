@@ -10,6 +10,22 @@ def index(request):
     context = { "allMatches": allMatches}
     return render(request,'cricVis/index.html',context)
 
+def getInnningsDetails(matchStats,playersDismissed,teamName,chartParameter):
+    inningsDetails = {}
+    inningsDetails["teamName"] = teamName
+    overs=[]
+    for record in matchStats:
+        over={}
+        over["overNumber"]=record["over"]
+        over[chartParameter]=record[chartParameter]
+        over["players_dismissed"]=[]
+        for wicket in playersDismissed:
+            if wicket["over"]==record["over"] and wicket["player_dismissed"]!="":
+                over["player_dismissed"].append(wicket["player_dismissed"])
+        overs.append(over)
+    inningsDetails["overs"]=overs
+    return inningsDetails
+
 def getChartData(matchID,matchStats,playersDismissed,teams,chartParameter):
     chartData={}
     chartData["matchID"]=matchID
