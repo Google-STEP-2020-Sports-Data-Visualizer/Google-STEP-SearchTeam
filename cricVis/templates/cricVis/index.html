@@ -6,6 +6,12 @@
     <link rel="icon" href="../static/cricVis/favicon.png" type="image/png" sizes="16x16">
   </head>
   <body>
-    <h2> Hey Everyone! </h2>
+    <h2> CricVis: A Cricket Data Visualization App </h2>
+    <select name="match" id="match-select">
+      {% for match in allMatches %}
+        <option value={{ match.match_ID }} > {{ match.team1 }} v/s {{ match.team2 }} {{ match.date }} </option>
+      {% endfor %}
+    </select>
+    <button id="create-charts">View Results</button>
   </body>
 </html>
