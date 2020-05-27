@@ -3,4 +3,5 @@ from . import views
 app_name = 'cricVis'
 urlpatterns = [
     url(r'^$', views.index, name='index'),
+    url(r'^fetchGraphData/$', views.fetchGraphData, name='fetchGraphData'),
 ]

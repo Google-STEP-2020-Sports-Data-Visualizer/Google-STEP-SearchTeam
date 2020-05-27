@@ -29,8 +29,8 @@ def getInnningsDetails(matchStats,playersDismissed,teamName,chartParameter):
 def getChartData(matchID,matchStats,playersDismissed,teams,chartParameter):
     chartData={}
     chartData["matchID"]=matchID
-    inningsDetails1=getInnningsDetails(matchStats["team1"],playersDismissed["team1"],teams["team1"])
-    inningsDetails2=getInnningsDetails(matchStats["team2"],playersDismissed["team2"],teams["team2"])
+    inningsDetails1=getInnningsDetails(matchStats["team1"],playersDismissed["team1"],teams["team1"],chartParameter)
+    inningsDetails2=getInnningsDetails(matchStats["team2"],playersDismissed["team2"],teams["team2"],chartParameter)
     chartData["team1"]=inningsDetails1
     chartData["team2"]=inningsDetails2
     return chartData
@@ -41,6 +41,12 @@ def fetchGraphData(request):
         matchStats = getMatchStats(matchID)
         playersDismissed =  playerDismissed(match_ID)
         teams = teamNames(matchID)
+
+        # dummy data for testing
+        # matchStats = {"team1":[{"over":1,"runs":5,"cumulativeRuns":15,"runRate":3.4},{"over":2,"runs":5,"cumulativeRuns":25,"runRate":5.4}],"team2":[{"over":2,"runs":5,"cumulativeRuns":17,"runRate":3.6},{"over":4,"runs":15,"cumulativeRuns":35,"runRate":5.8}]}
+        # playersDismissed = {"team1":[{"player_dismissed":"xyz","over":5},{"player_dismissed":"xyzw","over":6}],"team2":[{"player_dismissed":"abcd","over":7},{"player_dismissed":"efg","over":8}]}
+        #teams = {"team1":"abc","team2":"bcd"}
+        
         wormChartData = getChartData(matchID,matchStats,playersDismissed,teams,"cumulativeRuns")
         manhattanChartData = getChartData(matchID,matchStats,playersDismissed,teams,"runs")
         runRateChartData = getChartData(matchID,matchStats,playersDismissed,teams,"runRate")
