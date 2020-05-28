@@ -29,10 +29,8 @@ def getInnningsDetails(matchStats,playersDismissed,teamName,chartParameter):
 def getChartData(matchID,matchStats,playersDismissed,teams,chartParameter):
     chartData={}
     chartData["matchID"]=matchID
-    inningsDetails1=getInnningsDetails(matchStats["team1"],playersDismissed["team1"],teams["team1"],chartParameter)
-    inningsDetails2=getInnningsDetails(matchStats["team2"],playersDismissed["team2"],teams["team2"],chartParameter)
-    chartData["team1"]=inningsDetails1
-    chartData["team2"]=inningsDetails2
+    chartData["team1"]=getInnningsDetails(matchStats["team1"],playersDismissed["team1"],teams["team1"],chartParameter)
+    chartData["team2"]=getInnningsDetails(matchStats["team2"],playersDismissed["team2"],teams["team2"],chartParameter)
     return chartData
 
 def fetchGraphData(request):
