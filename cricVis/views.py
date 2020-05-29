@@ -10,6 +10,7 @@ def index(request):
     context = { "allMatches": allMatches}
     return render(request,'cricVis/index.html',context)
 
+# creates the inningsDetails JSON in the required format
 def getInnningsDetails(matchStats,playersDismissed,teamName,chartParameter):
     inningsDetails = {}
     inningsDetails["teamName"] = teamName
@@ -26,6 +27,7 @@ def getInnningsDetails(matchStats,playersDismissed,teamName,chartParameter):
     inningsDetails["overs"]=overs
     return inningsDetails
 
+# creates the chartData JSON for the entire match ie both the innnings in the required chart format
 def getChartData(matchID,matchStats,playersDismissed,teams,chartParameter):
     chartData={}
     chartData["matchID"]=matchID
@@ -33,6 +35,7 @@ def getChartData(matchID,matchStats,playersDismissed,teams,chartParameter):
     chartData["team2"]=getInnningsDetails(matchStats["team2"],playersDismissed["team2"],teams["team2"],chartParameter)
     return chartData
 
+# returns the chart response for all three kinds of charts in their described JSON format
 def fetchGraphData(request):
     if request.method == "GET":
         matchID = request.GET['matchID']
