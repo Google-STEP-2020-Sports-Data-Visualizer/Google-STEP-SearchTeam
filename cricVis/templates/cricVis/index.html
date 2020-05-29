@@ -8,6 +8,7 @@
   </head>
   <body>
     <h2> CricVis: A Cricket Data Visualization App </h2>
+    <!-- Populate the match dropdown with matches and their dates, with match IDs as the option "value" -->
     <select name="match" id="match-select">
       {% for match in allMatches %}
         <option value={{ match.match_ID }} > {{ match.team1 }} v/s {{ match.team2 }} {{ match.date }} </option>
@@ -17,6 +18,8 @@
   </body>
 </html>
 <script>
+
+  // on clicking the "View Results" button, send a GET request to fetchGraphData function in views.py and log the chartsData response.
   $('#create-charts').click(()=>{
     let matchID = $('#match-select').val();
     $.ajax({
