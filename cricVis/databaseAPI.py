@@ -10,10 +10,3 @@ firebase_admin.initialize_app(cred, {
 })
 
 ref = db.reference('/')
-match_ref = ref.push({
-	'ID': '211',
-	'CumulativeRuns': '213',
-	'Over' : '22'
-})
-
-print(match_ref.key)
