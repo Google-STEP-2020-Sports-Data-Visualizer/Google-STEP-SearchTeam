@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import Http404, HttpResponse
 import json
-
+from cricVis.databaseAPI import *
 # Create your views here.
 def index(request):
     # sent a GET request to get match_ID, team1, team2, match date
