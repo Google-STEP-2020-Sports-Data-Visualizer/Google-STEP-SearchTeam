@@ -77,4 +77,9 @@ def getMatchStats(match_ID,numOvers=20):
 	matchStats[team2] = addStatsToInnings(matchStats[team2])
 	return matchStats
 
-
+# gets teamNames of the given match in a JSON format (a helper function needed in views.py)
+def teamNames(match_ID):
+	teamNames = {}
+	teamNames["team1"] = getTeamName(match_ID,"team1")
+	teamNames["team2"] = getTeamName(match_ID,"team2")
+	return teamNames
