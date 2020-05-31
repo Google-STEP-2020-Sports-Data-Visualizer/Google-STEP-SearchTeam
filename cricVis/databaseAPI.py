@@ -86,3 +86,14 @@ def getTeamNames(match_ID):
 	teamNames["team1"] = getTeamName(match_ID,"team1")
 	teamNames["team2"] = getTeamName(match_ID,"team2")
 	return teamNames
+
+def getPlayersPlaying(match_ID):
+	teamNames = getTeamNames(match_ID)
+	team1 = teamNames["team1"]
+	team2 = teamNames["team2"]
+	playersPlaying = {team1: [], team2: []}
+	playersOfMatch = db.reference('/PlayerMatch').child(match_ID).get()
+	for player in playersOfMatch:
+		team = getPlayerTeam(player)
+		playersPlaying[team].append(player)
+	return playersOfMatch
