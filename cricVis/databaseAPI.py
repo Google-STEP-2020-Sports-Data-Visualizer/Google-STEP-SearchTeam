@@ -18,6 +18,13 @@ def getTeamName(matchID,team):
 	allMatches = ref.child("MatchDescription").get()
 	return allMatches[matchID][team]
 
+def getOverStatsOfTeam(overDetails,team,over):
+	overStats = {}
+	overStats["over"] = over
+	overStats["runs"] = overDetails[team]["runs"]
+	overStats["breakDownRuns"] = overDetails[team]["breakDownRuns"]
+	return overStats
+
 # Fetches the data for populating the frontend dropdown with matches, which will be list of {matchID:, matchDate:, team1:,team2:}
 def getAllData():
 	allData = []
