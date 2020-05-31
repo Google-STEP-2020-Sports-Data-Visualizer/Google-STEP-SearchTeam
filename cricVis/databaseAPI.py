@@ -97,3 +97,11 @@ def getPlayersPlaying(match_ID):
 		team = getPlayerTeam(player)
 		playersPlaying[team].append(player)
 	return playersOfMatch
+
+def getMatchDetails(match_ID):
+	match = db.reference('/MatchDescription').child(match_ID).get()
+	matchDetails = {}
+	matchDetails["matchID"] = match_ID
+	for detail in match:
+		matchDetails[detail] = match[detail]
+	return matchDetails
