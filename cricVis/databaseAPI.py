@@ -14,6 +14,10 @@ ref = db.reference('/')
 x = ref.child("-M8J1KnUyAQY4s7UxoJl").get()
 print(x)
 
+def getTeamName(matchID,team):
+	allMatches = ref.child("MatchDescription").get()
+	return allMatches[matchID][team]
+
 # Fetches the data for populating the frontend dropdown with matches, which will be list of {matchID:, matchDate:, team1:,team2:}
 def getAllData():
 	allData = []
@@ -22,8 +26,8 @@ def getAllData():
 		matchData = {}
 		match = allMatches[matchID]
 		matchData["matchID"] = matchID
-		matchData["team1"] = match["team1"]
-		matchData["team2"] = match["team2"]
+		matchData["team1"] = getTeamName(matchID,"team1")
+		matchData["team2"] = getTeamName(matchID,"team2")
 		matchData["matchDate"] = match["matchDate"]
 		allData.append(matchData)
 	return allData
