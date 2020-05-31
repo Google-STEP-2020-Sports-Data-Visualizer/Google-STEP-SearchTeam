@@ -25,6 +25,9 @@ def getOverStatsOfTeam(overDetails,team,over):
 	overStats["breakDownRuns"] = overDetails[team]["breakDownRuns"]
 	return overStats
 
+def getPlayerTeam(playerName):
+	return db.reference('/PlayerDescription').child(playerName).child("team").get()
+
 # get the previous over's cummulative runs, used to calculate current over's cumulative runs
 def getPrevOverCumulativeRuns(innings,overNumber):
 	for over in innings:
@@ -78,7 +81,7 @@ def getMatchStats(match_ID,numOvers=20):
 	return matchStats
 
 # gets teamNames of the given match in a JSON format (a helper function needed in views.py)
-def teamNames(match_ID):
+def getTeamNames(match_ID):
 	teamNames = {}
 	teamNames["team1"] = getTeamName(match_ID,"team1")
 	teamNames["team2"] = getTeamName(match_ID,"team2")
