@@ -14,6 +14,7 @@ ref = db.reference('/')
 x = ref.child("-M8J1KnUyAQY4s7UxoJl").get()
 print(x)
 
+# Fetches the data for populating the frontend dropdown with matches, which will be list of {matchID:, matchDate:, team1:,team2:}
 def getAllData():
 	allData = []
 	allMatches = ref.child("MatchDescription").get()
