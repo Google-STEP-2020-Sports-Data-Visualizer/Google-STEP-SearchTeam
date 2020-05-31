@@ -60,4 +60,21 @@ def getAllData():
 		allData.append(matchData)
 	return allData
 
+def getMatchStats(match_ID,numOvers=20):
+	matchStats = {}
+	team1 = getTeamName(match_ID,"team1")
+	team2 = getTeamName(match_ID,"team2")
+	matchStats[team1] = []
+	matchStats[team2] = []
+	match = db.reference('/MatchStats').child(match_ID).get()
+	for over in range(1,numOvers+1):
+		overDetails = match[over]
+		team1OverStats = getOverStatsOfTeam(overDetails,team1,over)
+		team2OverStats = getOverStatsOfTeam(overDetails,team2,over)
+		matchStats[team1].append(team1OverStats)
+		matchStats[team2].append(team2OverStats)
+	matchStats[team1] = addStatsToInnings(matchStats[team1])
+	matchStats[team2] = addStatsToInnings(matchStats[team2])
+	return matchStats
+
 
