@@ -25,6 +25,16 @@ def getOverStatsOfTeam(overDetails,team,over):
 	overStats["breakDownRuns"] = overDetails[team]["breakDownRuns"]
 	return overStats
 
+def getWicketDetailsOfTeam(wicketDetails,over,ball):
+	wicket = {}
+	wicket["playerDismissed"] = wicketDetails["playerDismissed"]
+	wicket["nonStriker"] = wicketDetails["nonStriker"]
+	wicket["type"] = wicketDetails["type"]
+	wicket["bowler"] = wicketDetails["bowler"]
+	wicket["over"] = over
+	wicket["ball"] = ball
+	return wicket
+
 def getPlayerTeam(playerName):
 	return db.reference('/PlayerDescription').child(playerName).child("team").get()
 
