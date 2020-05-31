@@ -90,6 +90,27 @@ def getMatchStats(match_ID,numOvers=20):
 	matchStats[team2] = addStatsToInnings(matchStats[team2])
 	return matchStats
 
+def getPlayersDismissed(match_ID,numOvers=20):
+	playersDismissed = {}
+	team1, team2 = getTeamName(match_ID,"team1"), getTeamName(match_ID,"team2")
+	playersDismissed[team1], playersDismissed[team2] = [], []
+	match = db.reference('/MatchDismissal').child(match_ID).get()
+	for over in range(1,numOvers+1):
+		try:
+			overDetails = match[over]
+			for ball in range(1,7):
+				try:
+					wicketDetails = overDetails[ball]
+					try:
+						playersDismissed[team1].append(getWicketDetailsOfTeam(wicketDetails[team1],over,ball))
+					except:
+						playersDismissed[team2].append(getWicketDetailsOfTeam(wicketDetails[team2],over,ball))
+				except:
+					pass
+		except:
+			pass
+	return playersDismissed
+
 # gets teamNames of the given match in a JSON format (a helper function needed in views.py)
 def getTeamNames(match_ID):
 	teamNames = {}
