@@ -35,6 +35,13 @@ def getChartData(matchID,matchStats,playersDismissed,teams,chartParameter):
     chartData["team2"]=getInnningsDetails(matchStats["team2"],playersDismissed["team2"],teams["team2"],chartParameter)
     return chartData
 
+def getChartResponse(matchID,matchStats,playersDismissed,teams):
+    wormChartData = getChartData(matchID,matchStats,playersDismissed,teams,"cumulativeRuns")
+    manhattanChartData = getChartData(matchID,matchStats,playersDismissed,teams,"runs")
+    runRateChartData = getChartData(matchID,matchStats,playersDismissed,teams,"runRate")
+    chartData={"wormChartData": wormChartData, "manhattanChartData": manhattanChartData, "runRateChartData": runRateChartData}
+    return chartData
+
 # returns the chart response for all three kinds of charts in their described JSON format
 def fetchGraphData(request):
     if request.method == "GET":
@@ -47,9 +54,5 @@ def fetchGraphData(request):
         # matchStats = {"team1":[{"over":1,"runs":5,"cumulativeRuns":15,"runRate":3.4},{"over":2,"runs":5,"cumulativeRuns":25,"runRate":5.4}],"team2":[{"over":2,"runs":5,"cumulativeRuns":17,"runRate":3.6},{"over":4,"runs":15,"cumulativeRuns":35,"runRate":5.8}]}
         # playersDismissed = {"team1":[{"player_dismissed":"xyz","over":5},{"player_dismissed":"xyzw","over":6}],"team2":[{"player_dismissed":"abcd","over":7},{"player_dismissed":"efg","over":8}]}
         #teams = {"team1":"abc","team2":"bcd"}
-        
-        wormChartData = getChartData(matchID,matchStats,playersDismissed,teams,"cumulativeRuns")
-        manhattanChartData = getChartData(matchID,matchStats,playersDismissed,teams,"runs")
-        runRateChartData = getChartData(matchID,matchStats,playersDismissed,teams,"runRate")
-        chartData={"wormChartData": wormChartData, "manhattanChartData": manhattanChartData, "runRateChartData": runRateChartData}
-        return HttpResponse(json.dumps(chartData))
+
+        return HttpResponse(json.dumps(getChartResponse(matchID,matchStats,playersDismissed,teams)))
