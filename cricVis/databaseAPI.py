@@ -25,6 +25,27 @@ def getOverStatsOfTeam(overDetails,team,over):
 	overStats["breakDownRuns"] = overDetails[team]["breakDownRuns"]
 	return overStats
 
+# get the previous over's cummulative runs, used to calculate current over's cumulative runs
+def getPrevOverCumulativeRuns(innings,overNumber):
+	for over in innings:
+		if over["over"]==overNumber:
+			return over["cumulativeRuns"]
+
+# add run rate and cummulative runs statistics to a given innings' stats
+def addStatsToInnings(innings):
+	for over in innings:
+		if over["over"]==1:
+			over["cumulativeRuns"] = over["runs"]
+			over["runRate"] = over["runs"]
+			break
+	for over in innings:
+		overNumber = over["over"]
+		if overNumber==1:
+			continue
+		over["cumulativeRuns"] = over["runs"] + getPrevOverCumulativeRuns(innings,overNumber-1)
+		over["runRate"] = over["cumulativeRuns"]/overNumber
+	return innings
+
 # Fetches the data for populating the frontend dropdown with matches, which will be list of {matchID:, matchDate:, team1:,team2:}
 def getAllData():
 	allData = []
