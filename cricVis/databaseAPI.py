@@ -15,8 +15,8 @@ x = ref.child("-M8J1KnUyAQY4s7UxoJl").get()
 print(x)
 
 def getTeamName(matchID,team):
-	allMatches = ref.child("MatchDescription").get()
-	return allMatches[matchID][team]
+	match = db.reference('/MatchDescription').child(matchID).get()
+	return match[team]
 
 def getOverStatsOfTeam(overDetails,team,over):
 	overStats = {}
