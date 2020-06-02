@@ -3,7 +3,7 @@ from firebase_admin import credentials
 from firebase_admin import db
 
 
-cred = credentials.Certificate('static/cricVis/cricvistesting-firebase-adminsdk-b4xg8-af8c48bb20.json')
+cred = credentials.Certificate('cricVis/static/cricVis/cricvistesting-firebase-adminsdk-b4xg8-af8c48bb20.json')
 
 firebase_admin.initialize_app(cred, {
 	'databaseURL' : 'https://cricvistesting.firebaseio.com/'
