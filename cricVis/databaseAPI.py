@@ -75,7 +75,7 @@ def getAllData():
 		allData.append(matchData)
 	return allData
 
-def getMatchStats(match_ID,numOvers=1):
+def getMatchStats(match_ID,numOvers=20):
 	matchStats = {}
 	team1 = getTeamName(match_ID,"team1")
 	team2 = getTeamName(match_ID,"team2")
