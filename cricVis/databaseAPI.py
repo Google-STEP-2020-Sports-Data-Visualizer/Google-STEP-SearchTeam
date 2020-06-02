@@ -161,5 +161,3 @@ def getMatchDetails(match_ID):
 	for detail in match:
 		matchDetails[detail] = match[detail]
 	return matchDetails
-
-print(getPlayersDismissed("matchID_1"))
