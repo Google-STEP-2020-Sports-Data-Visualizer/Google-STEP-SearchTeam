@@ -9,23 +9,30 @@ firebase_admin.initialize_app(cred, {
 	'databaseURL' : 'https://cricvistesting.firebaseio.com/'
 })
 
+ref = db.reference('/')
+
+def getColumnValue(column_value):
+	value = column_value.split("_")[1]
+	return int(value)
+
+def convertValueToColumn(value,columnName):
+	return columnName+"_"+str(value)
+
 def getTeamName(matchID,team):
 	match = db.reference('/MatchDescription').child(matchID).get()
-	return match[team]
+	return str(match[team])
 
 def getOverStatsOfTeam(overDetails,team,over):
 	overStats = {}
 	overStats["over"] = over
 	overStats["runs"] = overDetails[team]["runs"]
-	overStats["breakDownRuns"] = overDetails[team]["breakDownRuns"]
+	overStats["breakdownRuns"] = overDetails[team]["breakdownRuns"]
 	return overStats
 
 def getWicketDetailsOfTeam(wicketDetails,over,ball):
 	wicket = {}
-	wicket["playerDismissed"] = wicketDetails["playerDismissed"]
-	wicket["nonStriker"] = wicketDetails["nonStriker"]
-	wicket["type"] = wicketDetails["type"]
-	wicket["bowler"] = wicketDetails["bowler"]
+	for detail in wicketDetails:
+		wicket[detail] = wicketDetails[detail]
 	wicket["over"] = over
 	wicket["ball"] = ball
 	return wicket
@@ -68,7 +75,7 @@ def getAllData():
 		allData.append(matchData)
 	return allData
 
-def getMatchStats(match_ID,numOvers=20):
+def getMatchStats(match_ID,numOvers=1):
 	matchStats = {}
 	team1 = getTeamName(match_ID,"team1")
 	team2 = getTeamName(match_ID,"team2")
@@ -76,7 +83,7 @@ def getMatchStats(match_ID,numOvers=20):
 	matchStats[team2] = []
 	match = db.reference('/MatchStats').child(match_ID).get()
 	for over in range(1,numOvers+1):
-		overDetails = match[over]
+		overDetails = match[convertValueToColumn(over,"over")]
 		team1OverStats = getOverStatsOfTeam(overDetails,team1,over)
 		team2OverStats = getOverStatsOfTeam(overDetails,team2,over)
 		matchStats[team1].append(team1OverStats)
@@ -87,19 +94,27 @@ def getMatchStats(match_ID,numOvers=20):
 
 def getPlayersDismissed(match_ID,numOvers=20):
 	playersDismissed = {}
-	team1, team2 = getTeamName(match_ID,"team1"), getTeamName(match_ID,"team2")
+	teamNames = getTeamNames(match_ID)
+	team1, team2 = teamNames["team1"], teamNames["team2"]
 	playersDismissed[team1], playersDismissed[team2] = [], []
 	match = db.reference('/MatchDismissal').child(match_ID).get()
+	print(match,team1,team2)
 	for over in range(1,numOvers+1):
 		try:
-			overDetails = match[over]
+			overDetails = match[convertValueToColumn(over,"over")]
+			print(overDetails)
 			for ball in range(1,7):
 				try:
-					wicketDetails = overDetails[ball]
+					wicketDetails = overDetails[convertValueToColumn(ball,"ball")]
 					try:
 						playersDismissed[team1].append(getWicketDetailsOfTeam(wicketDetails[team1],over,ball))
 					except:
+						pass
+
+					try:
 						playersDismissed[team2].append(getWicketDetailsOfTeam(wicketDetails[team2],over,ball))
+					except:
+						pass
 				except:
 					pass
 		except:
@@ -122,12 +137,12 @@ def getPlayersPlaying(match_ID):
 	for player in playersOfMatch:
 		team = getPlayerTeam(player)
 		playersPlaying[team].append(player)
-	return playersOfMatch
+	return playersPlaying
 
 def getMatchDetails(match_ID):
 	match = db.reference('/MatchDescription').child(match_ID).get()
 	matchDetails = {}
-	matchDetails["matchID"] = match_ID
+	matchDetails["matchID"] = getColumnValue(match_ID)
 	for detail in match:
 		matchDetails[detail] = match[detail]
 	return matchDetails
