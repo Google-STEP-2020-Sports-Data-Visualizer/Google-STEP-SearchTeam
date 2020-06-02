@@ -11,6 +11,12 @@ firebase_admin.initialize_app(cred, {
 
 ref = db.reference('/')
 
+def getSetOfOvers(match):
+	overs={}
+	for over in match:
+		overs[over]=0
+	return overs
+
 def getColumnValue(column_value):
 	value = column_value.split("_")[1]
 	return int(value)
@@ -82,10 +88,12 @@ def getMatchStats(match_ID,numOvers=20):
 	matchStats[team1] = []
 	matchStats[team2] = []
 	match = db.reference('/MatchStats').child(match_ID).get()
-	for over in range(1,numOvers+1):
-		overDetails = match[convertValueToColumn(over,"over")]
-		team1OverStats = getOverStatsOfTeam(overDetails,team1,over)
-		team2OverStats = getOverStatsOfTeam(overDetails,team2,over)
+	overs = getSetOfOvers(match)
+	for over in overs:
+		overDetails = match[over]
+		overNumber = getColumnValue(over)
+		team1OverStats = getOverStatsOfTeam(overDetails,team1,overNumber)
+		team2OverStats = getOverStatsOfTeam(overDetails,team2,overNumber)
 		matchStats[team1].append(team1OverStats)
 		matchStats[team2].append(team2OverStats)
 	matchStats[team1] = addStatsToInnings(matchStats[team1])
@@ -146,3 +154,5 @@ def getMatchDetails(match_ID):
 	for detail in match:
 		matchDetails[detail] = match[detail]
 	return matchDetails
+
+print(getMatchStats("matchID_1"))
