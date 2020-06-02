@@ -3,16 +3,11 @@ from firebase_admin import credentials
 from firebase_admin import db
 
 
-cred = credentials.Certificate('static/cricVis/firebase-sdk.json')
+cred = credentials.Certificate('static/cricVis/cricvistesting-firebase-adminsdk-b4xg8-af8c48bb20.json')
 
 firebase_admin.initialize_app(cred, {
-	'databaseURL' : 'https://trial-1-9f3d9.firebaseio.com/'
+	'databaseURL' : 'https://cricvistesting.firebaseio.com/'
 })
-
-ref = db.reference('/')
-
-x = ref.child("-M8J1KnUyAQY4s7UxoJl").get()
-print(x)
 
 def getTeamName(matchID,team):
 	match = db.reference('/MatchDescription').child(matchID).get()
