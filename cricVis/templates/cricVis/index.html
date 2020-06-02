@@ -11,7 +11,7 @@
     <!-- Populate the match dropdown with matches and their dates, with match IDs as the option "value" -->
     <select name="match" id="match-select">
       {% for match in allMatches %}
-        <option value={{ match.match_ID }} > {{ match.team1 }} v/s {{ match.team2 }} {{ match.date }} </option>
+        <option value={{ match.matchID }} > {{ match.team1 }} v/s {{ match.team2 }} {{ match.date }} </option>
       {% endfor %}
     </select>
     <button id="create-charts">View Results</button>
