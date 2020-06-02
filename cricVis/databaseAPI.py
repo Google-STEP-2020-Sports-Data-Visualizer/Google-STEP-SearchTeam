@@ -11,6 +11,13 @@ firebase_admin.initialize_app(cred, {
 
 ref = db.reference('/')
 
+def checkIfKeyExists(dictionary,key):
+	try:
+		check = dictionary[key]
+		return True
+	except:
+		return False
+
 def getSetOfOvers(match):
 	overs={}
 	for over in match:
@@ -96,16 +103,12 @@ def getMatchStats(match_ID):
 	for over in overs:
 		overDetails = match[over]
 		overNumber = getColumnValue(over)
-		try:
+		if checkIfKeyExists(overDetails,team1):
 			team1OverStats = getOverStatsOfTeam(overDetails,team1,overNumber)
 			matchStats[team1].append(team1OverStats)
-		except:
-			pass
-		try:
+		if checkIfKeyExists(overDetails,team2):
 			team2OverStats = getOverStatsOfTeam(overDetails,team2,overNumber)
 			matchStats[team2].append(team2OverStats)
-		except:
-			pass
 	matchStats[team1] = addStatsToInnings(matchStats[team1])
 	matchStats[team2] = addStatsToInnings(matchStats[team2])
 	return matchStats
@@ -119,25 +122,16 @@ def getPlayersDismissed(match_ID):
 	# the set of overs in which any of teams played
 	overs = getSetOfOvers(match)
 	for over in overs:
-		try:
-			overDetails = match[over]
-			for ball in range(1,7):
-				try:
-					wicketDetails = overDetails[convertValueToColumn(ball,"ball")]
-					overNumber = getColumnValue(over)
-					try:
-						playersDismissed[team1].append(getWicketDetailsOfTeam(wicketDetails[team1],overNumber,ball))
-					except:
-						pass
-
-					try:
-						playersDismissed[team2].append(getWicketDetailsOfTeam(wicketDetails[team2],overNumber,ball))
-					except:
-						pass
-				except:
-					pass
-		except:
-			pass
+		overDetails = match[over]
+		for ball in range(1,7):
+			ballColumn = convertValueToColumn(ball,"ball")
+			if checkIfKeyExists(overDetails, ballColumn):
+				wicketDetails = overDetails[ballColumn]
+				overNumber = getColumnValue(over)
+				if checkIfKeyExists(wicketDetails,team1):
+					playersDismissed[team1].append(getWicketDetailsOfTeam(wicketDetails[team1],overNumber,ball))
+				if checkIfKeyExists(wicketDetails,team2):
+					playersDismissed[team2].append(getWicketDetailsOfTeam(wicketDetails[team2],overNumber,ball))
 	return playersDismissed
 
 # gets teamNames of the given match in a JSON format (a helper function needed in views.py)
