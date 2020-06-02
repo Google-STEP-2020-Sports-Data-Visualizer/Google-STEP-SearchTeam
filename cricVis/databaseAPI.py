@@ -81,7 +81,7 @@ def getAllData():
 		allData.append(matchData)
 	return allData
 
-def getMatchStats(match_ID,numOvers=20):
+def getMatchStats(match_ID):
 	matchStats = {}
 	team1 = getTeamName(match_ID,"team1")
 	team2 = getTeamName(match_ID,"team2")
@@ -92,35 +92,41 @@ def getMatchStats(match_ID,numOvers=20):
 	for over in overs:
 		overDetails = match[over]
 		overNumber = getColumnValue(over)
-		team1OverStats = getOverStatsOfTeam(overDetails,team1,overNumber)
-		team2OverStats = getOverStatsOfTeam(overDetails,team2,overNumber)
-		matchStats[team1].append(team1OverStats)
-		matchStats[team2].append(team2OverStats)
+		try:
+			team1OverStats = getOverStatsOfTeam(overDetails,team1,overNumber)
+			matchStats[team1].append(team1OverStats)
+		except:
+			pass
+		try:
+			team2OverStats = getOverStatsOfTeam(overDetails,team2,overNumber)
+			matchStats[team2].append(team2OverStats)
+		except:
+			pass
 	matchStats[team1] = addStatsToInnings(matchStats[team1])
 	matchStats[team2] = addStatsToInnings(matchStats[team2])
 	return matchStats
 
-def getPlayersDismissed(match_ID,numOvers=20):
+def getPlayersDismissed(match_ID):
 	playersDismissed = {}
 	teamNames = getTeamNames(match_ID)
 	team1, team2 = teamNames["team1"], teamNames["team2"]
 	playersDismissed[team1], playersDismissed[team2] = [], []
 	match = db.reference('/MatchDismissal').child(match_ID).get()
-	print(match,team1,team2)
-	for over in range(1,numOvers+1):
+	overs = getSetOfOvers(match)
+	for over in overs:
 		try:
-			overDetails = match[convertValueToColumn(over,"over")]
-			print(overDetails)
+			overDetails = match[over]
 			for ball in range(1,7):
 				try:
 					wicketDetails = overDetails[convertValueToColumn(ball,"ball")]
+					overNumber = getColumnValue(over)
 					try:
-						playersDismissed[team1].append(getWicketDetailsOfTeam(wicketDetails[team1],over,ball))
+						playersDismissed[team1].append(getWicketDetailsOfTeam(wicketDetails[team1],overNumber,ball))
 					except:
 						pass
 
 					try:
-						playersDismissed[team2].append(getWicketDetailsOfTeam(wicketDetails[team2],over,ball))
+						playersDismissed[team2].append(getWicketDetailsOfTeam(wicketDetails[team2],overNumber,ball))
 					except:
 						pass
 				except:
@@ -155,4 +161,4 @@ def getMatchDetails(match_ID):
 		matchDetails[detail] = match[detail]
 	return matchDetails
 
-print(getMatchStats("matchID_1"))
+print(getPlayersDismissed("matchID_1"))
