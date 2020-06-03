@@ -1,6 +1,7 @@
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
+from cricVis.models import *
 
 
 cred = credentials.Certificate('cricVis/static/cricVis/cricvistesting-firebase-adminsdk-b4xg8-af8c48bb20.json')
@@ -27,6 +28,9 @@ def getSetOfOvers(match):
 def getColumnValue(column_value):
 	value = column_value.split("_")[1]
 	return int(value)
+
+def getImageName(team):
+	return team_imageName[team]
 
 def convertValueToColumn(value,columnName):
 	return columnName+"_"+str(value)
@@ -86,6 +90,8 @@ def getAllData():
 		matchData["matchID"] = matchID
 		matchData["team1"] = getTeamName(matchID,"team1")
 		matchData["team2"] = getTeamName(matchID,"team2")
+		matchData["team1_image"] = getImageName([matchData["team1"]])
+		matchData["team2_image"] = getImageName([matchData["team2"]])
 		matchData["matchDate"] = match["matchDate"]
 		allData.append(matchData)
 	return allData
