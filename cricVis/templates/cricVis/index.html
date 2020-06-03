@@ -52,6 +52,11 @@
   </body>
 </html>
 <script>
+  function emptyChartDivs(){
+    $('#WormChartContainer').empty();
+    $('#RunRateChartContainer').empty();
+    $('#ManhattanChartContainer').empty();
+  }
   function enableChartsDiv(){
     $("#toggleChartsBar").css("visibility","visible");
     $("#chartsContainer").css("visibility","visible");
