@@ -27,8 +27,19 @@
         </a>
       {% endfor %}
     </div>
-    
-    <button id="create-charts">View Results</button>
+    <div id="toggleChartsBar">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#WormChartContainer">Worm Chart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#RunRateChartContainer">Run Rate Chart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#ManhattanChartContainer">Manhattan Chart</a>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
 <script>
