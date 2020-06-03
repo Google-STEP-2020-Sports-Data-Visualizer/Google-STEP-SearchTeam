@@ -9,6 +9,15 @@
   <body>
     <h2> CricVis: A Cricket Data Visualization App </h2>
     <!-- Populate the match dropdown with matches and their dates, with match IDs as the option "value" -->
+    <div class="jumbotron">
+      {% if user.is_authenticated %}
+        <p>Logged in</p>
+      {% else %}
+        <a class="btn btn-primary" href="{% url 'social:begin' 'google-oauth2' %}">
+          Login
+        </a>
+      {% endif %}
+    </div>
     <select name="match" id="match-select">
       {% for match in allMatches %}
         <option value={{ match.match_ID }} > {{ match.team1 }} v/s {{ match.team2 }} {{ match.date }} </option>
