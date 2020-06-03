@@ -1,0 +1,9 @@
+.match-active{
+    color: green;
+}
+#chartsContainer{
+    visibility: hidden;
+}
+#toggleChartsBar{
+    visibility: hidden;
+}
