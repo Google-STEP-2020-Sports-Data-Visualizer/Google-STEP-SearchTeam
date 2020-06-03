@@ -13,23 +13,20 @@
   <body>
     <h2> CricVis: A Cricket Data Visualization App </h2>
     <!-- Populate the match dropdown with matches and their dates, with match IDs as the option "value" -->
-    <select name="match" id="match-select">
+    <div class="list-group match-group">
       {% for match in allMatches %}
-        <option value={{ match.matchID }} > {{ match.team1 }} v/s {{ match.team2 }} {{ match.date }} </option>
-      {% endfor %}
-    </select>
-    <form>
-      <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-          <div class="d-flex w-100 justify-content-between">
-            <img src="../static/cricVis/favicon.png" alt="srh" width="50" height="30">
-            <h5 class="mb-1"> Sunrisers Hyderbad v/s Rajasthan Royals</h5>
-            <small class="text-muted">3 days ago</small>
+          <div class="d-flex w-100 justify-content-around match" data-value={{ match.match_ID }}>
+            <img src={{ match.team1_image }} alt="srh" width="30" height="30">
+            <h5 class="mb-1"> {{ match.team1 }} v/s {{ match.team2 }}</h5>
+            <img src={{ match.team2_image }} alt="srh" width="30" height="30">
           </div>
-          <small class="text-muted">18 April 2019</small>
+          <div class="d-flex w-100 justify-content-center">
+            <small class="text-muted">{{ match.date }}</small>
+          </div>
         </a>
-      </div>
-    </form>
+      {% endfor %}
+    </div>
     
     <button id="create-charts">View Results</button>
   </body>
