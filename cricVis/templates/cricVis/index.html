@@ -54,8 +54,11 @@
 <script>
 
   // on clicking the "View Results" button, send a GET request to fetchGraphData function in views.py and log the chartsData response.
-  $('#create-charts').click(()=>{
-    let matchID = $('#match-select').val();
+  $('.match-group .match').click(function(){
+    $(this).parent().parent().find('.match').removeClass('match-active');
+    $(this).addClass('match-active');
+    let matchID = $(this).attr('data-value');
+    console.log(matchID);
     $.ajax({
       type: 'GET',
       url: '/cricVis/fetchGraphData',
@@ -65,6 +68,8 @@
       success: function(chartsData){
         chartsData = JSON.parse(chartsData);
         console.log(chartsData);
+        enableChartsDiv();
+        plotCharts(chartsData);
       },
       error: function(error){
         console.log(error);
