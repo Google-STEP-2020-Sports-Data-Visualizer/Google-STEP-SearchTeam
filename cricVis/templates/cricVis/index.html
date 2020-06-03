@@ -12,41 +12,47 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h2> CricVis: A Cricket Data Visualization App </h2>
     <!-- Populate the match dropdown with matches and their dates, with match IDs as the option "value" -->
-    <div class="list-group match-group">
-      {% for match in allMatches %}
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-          <div class="d-flex w-100 justify-content-around match" data-value={{ match.match_ID }}>
-            <img src={{ match.team1_image }} alt="srh" width="30" height="30">
-            <h5 class="mb-1"> {{ match.team1 }} v/s {{ match.team2 }}</h5>
-            <img src={{ match.team2_image }} alt="srh" width="30" height="30">
+    <div class="content">
+      <div class="main_container">
+        <div class="heading_container">
+          <h2> CricVis: A Cricket Data Visualization App </h2>
+        </div>
+        <div class="list-group match-group">
+          {% for match in allMatches %}
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-around match" data-value={{ match.match_ID }}>
+                <img src={{ match.team1_image }} alt="srh" width="30" height="30">
+                <h5 class="mb-1"> {{ match.team1 }} v/s {{ match.team2 }}</h5>
+                <img src={{ match.team2_image }} alt="srh" width="30" height="30">
+              </div>
+              <div class="d-flex w-100 justify-content-center">
+                <small class="text-muted">{{ match.date }}</small>
+              </div>
+            </a>
+          {% endfor %}
+        </div>
+        <div id="toggleChartsBar" class="container-div">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#WormChartContainer">Worm Chart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#RunRateChartContainer">Run Rate Chart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#ManhattanChartContainer">Manhattan Chart</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content container-div" id="chartsContainer">
+          <div id="WormChartContainer" class="container tab-pane active"><br>
           </div>
-          <div class="d-flex w-100 justify-content-center">
-            <small class="text-muted">{{ match.date }}</small>
+          <div id="RunRateChartContainer" class="container tab-pane"><br>
           </div>
-        </a>
-      {% endfor %}
-    </div>
-    <div id="toggleChartsBar">
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#WormChartContainer">Worm Chart</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#RunRateChartContainer">Run Rate Chart</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#ManhattanChartContainer">Manhattan Chart</a>
-        </li>
-      </ul>
-    </div>
-    <div class="tab-content" id="chartsContainer">
-      <div id="WormChartContainer" class="container tab-pane active"><br>
-      </div>
-      <div id="RunRateChartContainer" class="container tab-pane"><br>
-      </div>
-      <div id="ManhattanChartContainer" class="container tab-pane"><br>
+          <div id="ManhattanChartContainer" class="container tab-pane"><br>
+          </div>
+        </div>
       </div>
     </div>
   </body>
@@ -67,8 +73,12 @@
   }
   // on clicking the "View Results" button, send a GET request to fetchGraphData function in views.py and log the chartsData response.
   $('.match-group .match').click(function(){
-    $(this).parent().parent().find('.match').removeClass('match-active');
-    $(this).addClass('match-active');
+    $(this).parent().parent().find('.match').removeClass('badge');
+    $(this).parent().parent().find('.match').removeClass('badge-pill');
+    $(this).parent().parent().find('.match').removeClass('badge-primary');
+    $(this).addClass('badge');
+    $(this).addClass('badge-pill');
+    $(this).addClass('badge-primary');
     let matchID = $(this).attr('data-value');
     console.log(matchID);
     $.ajax({
