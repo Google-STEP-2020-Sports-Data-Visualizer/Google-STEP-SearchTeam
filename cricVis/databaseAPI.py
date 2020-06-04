@@ -6,6 +6,12 @@ def getSetOfOvers(match):
 		overs[over]=0
 	return overs
 
+def getSetOfBalls(over):
+	balls={}
+	for ball in over:
+		balls[ball]=0
+	return balls
+
 def getColumnValue(column_value):
 	value = column_value.split("_")[1]
 	return int(value)
@@ -107,15 +113,14 @@ def getPlayersDismissed(match_ID):
 	overs = getSetOfOvers(match)
 	for over in overs:
 		overDetails = match[over]
-		for ball in range(1,7):
-			ballColumn = convertValueToColumn(ball,"ball")
-			if ballColumn in overDetails:
-				wicketDetails = overDetails[ballColumn]
-				overNumber = getColumnValue(over)
-				if team1 in wicketDetails:
-					playersDismissed[team1].append(getWicketDetailsOfTeam(wicketDetails[team1],overNumber,ball))
-				if team2 in wicketDetails:
-					playersDismissed[team2].append(getWicketDetailsOfTeam(wicketDetails[team2],overNumber,ball))
+		balls = getSetOfBalls(overDetails)
+		for ball in balls:
+			wicketDetails = overDetails[ball]
+			overNumber = getColumnValue(over)
+			if team1 in wicketDetails:
+				playersDismissed[team1].append(getWicketDetailsOfTeam(wicketDetails[team1],overNumber,ball))
+			if team2 in wicketDetails:
+				playersDismissed[team2].append(getWicketDetailsOfTeam(wicketDetails[team2],overNumber,ball))
 	return playersDismissed
 
 # gets teamNames of the given match in a JSON format (a helper function needed in views.py)
