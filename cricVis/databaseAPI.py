@@ -24,7 +24,8 @@ def getTeamName(matchID, team):
 	match = db.reference('/MatchDescription').child(matchID).get()
 	return str(match[team])
 
-# gets the runs, breakdown of runs, and over number for a team in a given over
+""" gets the runs, breakdown of runs, and over number for a team in a given over """
+
 def getOverStatsOfTeam(overDetails, team, over):
 	overStats = {}
 	overStats["over"] = over
@@ -32,7 +33,9 @@ def getOverStatsOfTeam(overDetails, team, over):
 	overStats["breakdownRuns"] = overDetails[team]["breakdownRuns"]
 	return overStats
 
-# gets the player dismissed, bowler, type of dismissal, non-striker player, over number and ball for a team at a given over and ball
+""" gets the player dismissed, bowler, type of dismissal, non-striker player,
+over number and ball for a team at a given over and ball """
+
 def getWicketDetailsOfTeam(wicketDetails, over, ball):
 	wicket = {}
 	for detail in wicketDetails:
@@ -44,13 +47,16 @@ def getWicketDetailsOfTeam(wicketDetails, over, ball):
 def getPlayerTeam(playerName):
 	return db.reference('/PlayerDescription').child(playerName).child("team").get()
 
-# get the previous over's cummulative runs, used to calculate current over's cumulative runs
+""" get the previous over's cumulative runs, used to calculate current over's 
+cumulative runs"""
+
 def getPrevOverCumulativeRuns(innings, overNumber):
 	for over in innings:
 		if over["over"] == overNumber:
 			return over["cumulativeRuns"]
 
-# add run rate and cummulative runs statistics to a given innings' stats
+""" add run rate and cumulative runs statistics to a given innings' stats """
+
 def addStatsToInnings(innings):
 	for over in innings:
 		overNumber = over["over"]
@@ -62,7 +68,9 @@ def addStatsToInnings(innings):
 		over["runRate"] = over["cumulativeRuns"]/overNumber
 	return innings
 
-# Fetches the data for populating the frontend dropdown with matches, which will be list of {matchID:, matchDate:, team1:,team2:}
+""" Fetches the data for populating the frontend dropdown with matches, 
+which will be list of {matchID:, matchDate:, team1:,team2:} """
+
 def getAllData():
 	allData = []
 	allMatches = ref.child("MatchDescription").get()
@@ -78,7 +86,9 @@ def getAllData():
 		allData.append(matchData)
 	return allData
 
-# gets the match statistics for batting: for an over, the runs scored and breakdown of runs for each team
+""" gets the match statistics for batting: for an over, the runs scored 
+and breakdown of runs for each team """
+
 def getMatchStats(match_ID):
 	matchStats = {}
 	team1 = getTeamName(match_ID, "team1")
@@ -86,7 +96,6 @@ def getMatchStats(match_ID):
 	matchStats[team1] = []
 	matchStats[team2] = []
 	match = db.reference('/MatchStats').child(match_ID).get()
-	# the set of overs in which any of teams played
 	overs = getSetOfOvers(match)
 	for over in overs:
 		overDetails = match[over]
@@ -100,14 +109,16 @@ def getMatchStats(match_ID):
 	matchStats[team1] = addStatsToInnings(matchStats[team1])
 	matchStats[team2] = addStatsToInnings(matchStats[team2])
 	return matchStats
-# gets the match statistics for bowling: for an over and ball, the player dismissed, the bowler, type of dismissal and non striker for each team
+
+""" gets the match statistics for bowling: for an over and ball, 
+the player dismissed, the bowler, type of dismissal and non striker for each team """
+
 def getPlayersDismissed(match_ID):
 	playersDismissed = {}
 	teamNames = getTeamNames(match_ID)
 	team1, team2 = teamNames["team1"], teamNames["team2"]
 	playersDismissed[team1], playersDismissed[team2] = [], []
 	match = db.reference('/MatchDismissal').child(match_ID).get()
-	# the set of overs in which any of teams played
 	overs = getSetOfOvers(match)
 	for over in overs:
 		overDetails = match[over]
@@ -121,14 +132,17 @@ def getPlayersDismissed(match_ID):
 				playersDismissed[team2].append(getWicketDetailsOfTeam(wicketDetails[team2], overNumber, ball))
 	return playersDismissed
 
-# gets teamNames of the given match in a JSON format (a helper function needed in views.py)
+""" gets teamNames of the given match in a JSON format 
+(a helper function needed in views.py) """
+
 def getTeamNames(match_ID):
 	teamNames = {}
 	teamNames["team1"] = getTeamName(match_ID, "team1")
 	teamNames["team2"] = getTeamName(match_ID, "team2")
 	return teamNames
 
-# gets the players playing in a particular match and group them by their team
+""" gets the players playing in a particular match and group them by their team """
+
 def getPlayersPlaying(match_ID):
 	teamNames = getTeamNames(match_ID)
 	team1 = teamNames["team1"]
@@ -140,7 +154,9 @@ def getPlayersPlaying(match_ID):
 		playersPlaying[team].append(player)
 	return playersPlaying
 
-# gets the details: innings, match date, player of match, result of match, season, first team, second team, venue, win by runs, win by wickets for a given match
+""" gets the details: innings, match date, player of match, result of match, 
+season, first team, second team, venue, win by runs, win by wickets for a given match """
+
 def getMatchDetails(match_ID):
 	match = db.reference('/MatchDescription').child(match_ID).get()
 	matchDetails = {}

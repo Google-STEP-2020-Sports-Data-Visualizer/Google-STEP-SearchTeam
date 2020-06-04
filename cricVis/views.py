@@ -3,14 +3,16 @@ from django.http import Http404, HttpResponse
 import json
 from cricVis.databaseAPI import *
 # Create your views here.
+
+""" sent a GET request to get match_ID, team1, team2, match date """
+
 def index(request):
-    # sent a GET request to get match_ID, team1, team2, match date
-    # assemble this data like [{match_ID: , team1: , team2: ,date: }, {....}]
     allMatches = getAllData()
     context = { "allMatches": allMatches}
     return render(request,'cricVis/index.html',context)
 
-# creates the inningsDetails JSON in the required format
+""" creates the inningsDetails JSON in the required format """
+
 def getInningsDetails(matchStats,playersDismissed,teamName,chartParameter):
     inningsDetails = {}
     inningsDetails["teamName"] = teamName
@@ -27,7 +29,8 @@ def getInningsDetails(matchStats,playersDismissed,teamName,chartParameter):
     inningsDetails["overs"]=overs
     return inningsDetails
 
-# creates the chartData JSON for the entire match ie both the innings in the required chart format
+""" creates the chartData JSON for the entire match ie both the innings in the required chart format """
+
 def getChartData(matchID,matchStats,playersDismissed,teams,chartParameter):
     chartData={}
     chartData["matchID"]=matchID
@@ -44,7 +47,8 @@ def getChartResponse(matchID,matchStats,playersDismissed,teams):
     chartData={"wormChartData": wormChartData, "manhattanChartData": manhattanChartData, "runRateChartData": runRateChartData}
     return chartData
 
-# returns the chart response for all three kinds of charts in their described JSON format
+""" returns the chart response for all three kinds of charts in their described JSON format """
+
 def fetchGraphData(request):
     if request.method == "GET":
         matchID = request.GET['matchID']
