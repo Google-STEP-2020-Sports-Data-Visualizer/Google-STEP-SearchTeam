@@ -19,8 +19,6 @@ def getColumnValue(column_value):
 def getImageName(team):
 	return teamImageName[team]
 
-def convertValueToColumn(value,columnName):
-	return "%s_%s" % (columnName,str(value))
 
 def getTeamName(matchID,team):
 	match = db.reference('/MatchDescription').child(matchID).get()
