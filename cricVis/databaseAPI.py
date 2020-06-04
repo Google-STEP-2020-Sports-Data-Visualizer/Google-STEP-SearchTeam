@@ -1,12 +1,5 @@
 from cricVis.models import *
 
-def checkIfKeyExists(dictionary,key):
-	try:
-		check = dictionary[key]
-		return True
-	except:
-		return False
-
 def getSetOfOvers(match):
 	overs={}
 	for over in match:
@@ -94,10 +87,10 @@ def getMatchStats(match_ID):
 	for over in overs:
 		overDetails = match[over]
 		overNumber = getColumnValue(over)
-		if checkIfKeyExists(overDetails,team1):
+		if team1 in overDetails:
 			team1OverStats = getOverStatsOfTeam(overDetails,team1,overNumber)
 			matchStats[team1].append(team1OverStats)
-		if checkIfKeyExists(overDetails,team2):
+		if team2 in overDetails:
 			team2OverStats = getOverStatsOfTeam(overDetails,team2,overNumber)
 			matchStats[team2].append(team2OverStats)
 	matchStats[team1] = addStatsToInnings(matchStats[team1])
@@ -116,12 +109,12 @@ def getPlayersDismissed(match_ID):
 		overDetails = match[over]
 		for ball in range(1,7):
 			ballColumn = convertValueToColumn(ball,"ball")
-			if checkIfKeyExists(overDetails, ballColumn):
+			if ballColumn in overDetails:
 				wicketDetails = overDetails[ballColumn]
 				overNumber = getColumnValue(over)
-				if checkIfKeyExists(wicketDetails,team1):
+				if team1 in wicketDetails:
 					playersDismissed[team1].append(getWicketDetailsOfTeam(wicketDetails[team1],overNumber,ball))
-				if checkIfKeyExists(wicketDetails,team2):
+				if team2 in wicketDetails:
 					playersDismissed[team2].append(getWicketDetailsOfTeam(wicketDetails[team2],overNumber,ball))
 	return playersDismissed
 
