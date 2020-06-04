@@ -59,13 +59,10 @@ def getPrevOverCumulativeRuns(innings,overNumber):
 # add run rate and cummulative runs statistics to a given innings' stats
 def addStatsToInnings(innings):
 	for over in innings:
-		if over["over"]==1:
-			over["cumulativeRuns"] = over["runs"]
-			over["runRate"] = over["runs"]
-			break
-	for over in innings:
 		overNumber = over["over"]
 		if overNumber==1:
+			over["cumulativeRuns"] = over["runs"]
+			over["runRate"] = over["runs"]
 			continue
 		over["cumulativeRuns"] = over["runs"] + getPrevOverCumulativeRuns(innings,overNumber-1)
 		over["runRate"] = over["cumulativeRuns"]/overNumber
