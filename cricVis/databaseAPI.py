@@ -1,7 +1,4 @@
-from firebase_admin import db
 from cricVis.models import *
-
-ref = db.reference('/')
 
 def checkIfKeyExists(dictionary,key):
 	try:

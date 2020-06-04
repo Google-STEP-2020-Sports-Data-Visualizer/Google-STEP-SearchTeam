@@ -19,3 +19,5 @@ cred = credentials.Certificate('cricVis/static/cricVis/cricvistesting-firebase-a
 initialize_app(cred, {
 	'databaseURL' : 'https://cricvistesting.firebaseio.com/'
 })
+
+ref = db.reference('/')
