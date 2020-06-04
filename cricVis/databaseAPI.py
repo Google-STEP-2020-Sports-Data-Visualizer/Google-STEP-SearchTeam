@@ -1,11 +1,5 @@
-from firebase_admin import credentials, initialize_app, db
+from firebase_admin import db
 from cricVis.models import *
-
-cred = credentials.Certificate('cricVis/static/cricVis/cricvistesting-firebase-adminsdk-b4xg8-af8c48bb20.json')
-
-initialize_app(cred, {
-	'databaseURL' : 'https://cricvistesting.firebaseio.com/'
-})
 
 ref = db.reference('/')
 
