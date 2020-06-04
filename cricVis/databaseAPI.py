@@ -1,31 +1,31 @@
 from cricVis.models import *
 
 def getSetOfOvers(match):
-	overs={}
+	overs = {}
 	for over in match:
-		overs[over]=0
+		overs[over] = 0
 	return overs
 
 def getSetOfBalls(over):
-	balls={}
+	balls = {}
 	for ball in over:
-		balls[ball]=0
+		balls[ball] = 0
 	return balls
 
-def getColumnValue(column_value):
-	value = column_value.split("_")[1]
+def getColumnValue(columnValue):
+	value = columnValue.split("_")[1]
 	return int(value)
 
 def getImageName(team):
 	return teamImageName[team]
 
 
-def getTeamName(matchID,team):
+def getTeamName(matchID, team):
 	match = db.reference('/MatchDescription').child(matchID).get()
 	return str(match[team])
 
 # gets the runs, breakdown of runs, and over number for a team in a given over
-def getOverStatsOfTeam(overDetails,team,over):
+def getOverStatsOfTeam(overDetails, team, over):
 	overStats = {}
 	overStats["over"] = over
 	overStats["runs"] = overDetails[team]["runs"]
@@ -33,7 +33,7 @@ def getOverStatsOfTeam(overDetails,team,over):
 	return overStats
 
 # gets the player dismissed, bowler, type of dismissal, non-striker player, over number and ball for a team at a given over and ball
-def getWicketDetailsOfTeam(wicketDetails,over,ball):
+def getWicketDetailsOfTeam(wicketDetails, over, ball):
 	wicket = {}
 	for detail in wicketDetails:
 		wicket[detail] = wicketDetails[detail]
@@ -45,20 +45,20 @@ def getPlayerTeam(playerName):
 	return db.reference('/PlayerDescription').child(playerName).child("team").get()
 
 # get the previous over's cummulative runs, used to calculate current over's cumulative runs
-def getPrevOverCumulativeRuns(innings,overNumber):
+def getPrevOverCumulativeRuns(innings, overNumber):
 	for over in innings:
-		if over["over"]==overNumber:
+		if over["over"] == overNumber:
 			return over["cumulativeRuns"]
 
 # add run rate and cummulative runs statistics to a given innings' stats
 def addStatsToInnings(innings):
 	for over in innings:
 		overNumber = over["over"]
-		if overNumber==1:
+		if overNumber == 1:
 			over["cumulativeRuns"] = over["runs"]
 			over["runRate"] = over["runs"]
 			continue
-		over["cumulativeRuns"] = over["runs"] + getPrevOverCumulativeRuns(innings,overNumber-1)
+		over["cumulativeRuns"] = over["runs"] + getPrevOverCumulativeRuns(innings, overNumber-1)
 		over["runRate"] = over["cumulativeRuns"]/overNumber
 	return innings
 
@@ -70,10 +70,10 @@ def getAllData():
 		matchData = {}
 		match = allMatches[matchID]
 		matchData["matchID"] = matchID
-		matchData["team1"] = getTeamName(matchID,"team1")
-		matchData["team2"] = getTeamName(matchID,"team2")
-		# matchData["team1_image"] = getImageName(matchData["team1"])
-		# matchData["team2_image"] = getImageName(matchData["team2"])
+		matchData["team1"] = getTeamName(matchID, "team1")
+		matchData["team2"] = getTeamName(matchID, "team2")
+		matchData["team1_image"] = getImageName(matchData["team1"])
+		matchData["team2_image"] = getImageName(matchData["team2"])
 		matchData["matchDate"] = match["matchDate"]
 		allData.append(matchData)
 	return allData
@@ -81,8 +81,8 @@ def getAllData():
 # gets the match statistics for batting: for an over, the runs scored and breakdown of runs for each team
 def getMatchStats(match_ID):
 	matchStats = {}
-	team1 = getTeamName(match_ID,"team1")
-	team2 = getTeamName(match_ID,"team2")
+	team1 = getTeamName(match_ID, "team1")
+	team2 = getTeamName(match_ID, "team2")
 	matchStats[team1] = []
 	matchStats[team2] = []
 	match = db.reference('/MatchStats').child(match_ID).get()
@@ -92,10 +92,10 @@ def getMatchStats(match_ID):
 		overDetails = match[over]
 		overNumber = getColumnValue(over)
 		if team1 in overDetails:
-			team1OverStats = getOverStatsOfTeam(overDetails,team1,overNumber)
+			team1OverStats = getOverStatsOfTeam(overDetails, team1, overNumber)
 			matchStats[team1].append(team1OverStats)
 		if team2 in overDetails:
-			team2OverStats = getOverStatsOfTeam(overDetails,team2,overNumber)
+			team2OverStats = getOverStatsOfTeam(overDetails, team2, overNumber)
 			matchStats[team2].append(team2OverStats)
 	matchStats[team1] = addStatsToInnings(matchStats[team1])
 	matchStats[team2] = addStatsToInnings(matchStats[team2])
@@ -116,16 +116,16 @@ def getPlayersDismissed(match_ID):
 			wicketDetails = overDetails[ball]
 			overNumber = getColumnValue(over)
 			if team1 in wicketDetails:
-				playersDismissed[team1].append(getWicketDetailsOfTeam(wicketDetails[team1],overNumber,ball))
+				playersDismissed[team1].append(getWicketDetailsOfTeam(wicketDetails[team1], overNumber, ball))
 			if team2 in wicketDetails:
-				playersDismissed[team2].append(getWicketDetailsOfTeam(wicketDetails[team2],overNumber,ball))
+				playersDismissed[team2].append(getWicketDetailsOfTeam(wicketDetails[team2], overNumber, ball))
 	return playersDismissed
 
 # gets teamNames of the given match in a JSON format (a helper function needed in views.py)
 def getTeamNames(match_ID):
 	teamNames = {}
-	teamNames["team1"] = getTeamName(match_ID,"team1")
-	teamNames["team2"] = getTeamName(match_ID,"team2")
+	teamNames["team1"] = getTeamName(match_ID, "team1")
+	teamNames["team2"] = getTeamName(match_ID, "team2")
 	return teamNames
 
 # gets the players playing in a particular match and group them by their team
