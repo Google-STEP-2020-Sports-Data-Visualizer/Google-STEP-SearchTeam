@@ -21,7 +21,7 @@ def getColumnValue(column_value):
 	return int(value)
 
 def getImageName(team):
-	return team_imageName[team]
+	return teamImageName[team]
 
 def convertValueToColumn(value,columnName):
 	return columnName+"_"+str(value)
