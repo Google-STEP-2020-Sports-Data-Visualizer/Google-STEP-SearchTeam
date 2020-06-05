@@ -59,6 +59,7 @@ def getPrevOverCumulativeRuns(innings, overNumber):
 """ add run rate and cumulative runs statistics to a given innings' stats """
 
 def addStatsToInnings(innings):
+	innings = sorted(innings, key = lambda x : x["over"])
 	for over in innings:
 		overNumber = over["over"]
 		if overNumber == 1:
