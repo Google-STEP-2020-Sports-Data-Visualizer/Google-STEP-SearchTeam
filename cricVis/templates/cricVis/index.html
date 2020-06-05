@@ -23,7 +23,7 @@
         <div class="list-group match-group">
           {% for match in allMatches %}
             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-              <div class="d-flex w-100 justify-content-around match" data-value={{ match.match_ID }}>
+              <div class="d-flex w-100 justify-content-around match" data-value={{ match.matchID }}>
                 <img src={{ match.team1_image }} alt="srh" width="30" height="30">
                 <h5 class="mb-1"> {{ match.team1 }} v/s {{ match.team2 }}</h5>
                 <img src={{ match.team2_image }} alt="srh" width="30" height="30">
@@ -57,6 +57,7 @@
         </div>
       </div>
     </div>
+
   </body>
 </html>
 <script>
