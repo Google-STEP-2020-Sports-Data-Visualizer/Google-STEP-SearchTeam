@@ -1,7 +1,7 @@
 from django.db import models
 from firebase_admin import credentials, initialize_app, db
 # Create your models here.
-teamImageName = { 
+teamImageName = {
     "Sunrisers Hyderbad": "../static/cricVis/SRH.png",
     "Mumbai Indians":"../static/cricVis/MI.png",
     "Gujarat Lions":"../static/cricVis/GL.png",
@@ -14,10 +14,10 @@ teamImageName = {
     "Chennai Super Kings":"../static/cricVis/CSK.png",
     "Rajasthan Royals": "../static/cricVis/RR.png"}
 
-cred = credentials.Certificate('cricVis/static/cricVis/cricvistesting-firebase-adminsdk-b4xg8-af8c48bb20.json')
+cred = credentials.Certificate('cricVis/static/cricVis/cricVis-sdk.json')
 
 initialize_app(cred, {
-	'databaseURL' : 'https://cricvistesting.firebaseio.com/'
+	'databaseURL' : 'https://cricvis-1a59f.firebaseio.com/'
 })
 
 ref = db.reference('/')
