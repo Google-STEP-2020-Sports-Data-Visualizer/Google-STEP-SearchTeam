@@ -17,8 +17,9 @@ def getColumnValue(columnValue):
 	return int(value)
 
 def getImageName(team):
-	return teamImageName[team]
-
+	if team in teamImageName:
+		return teamImageName[team]
+	return "../static/cricVis/SRH.png"
 
 def getTeamName(matchID, team):
 	match = db.reference('/MatchDescription').child(matchID).get()
@@ -74,12 +75,16 @@ which will be list of {matchID:, matchDate:, team1:,team2:} """
 def getAllData():
 	allData = []
 	allMatches = ref.child("MatchDescription").get()
+	print(allMatches)
+	counter=1
 	for matchID in allMatches:
+		print(counter)
+		counter+=1
 		matchData = {}
 		match = allMatches[matchID]
 		matchData["matchID"] = matchID
-		matchData["team1"] = getTeamName(matchID, "team1")
-		matchData["team2"] = getTeamName(matchID, "team2")
+		matchData["team1"] = match["team1"]
+		matchData["team2"] = match["team2"]
 		matchData["team1_image"] = getImageName(matchData["team1"])
 		matchData["team2_image"] = getImageName(matchData["team2"])
 		matchData["matchDate"] = match["matchDate"]
@@ -89,10 +94,10 @@ def getAllData():
 """ gets the match statistics for batting: for an over, the runs scored 
 and breakdown of runs for each team """
 
-def getMatchStats(matchID):
+def getMatchStats(matchID,teamNames):
 	matchStats = {}
-	team1 = getTeamName(matchID, "team1")
-	team2 = getTeamName(matchID, "team2")
+	team1 = teamNames["team1"]
+	team2 = teamNames["team2"]
 	matchStats[team1] = []
 	matchStats[team2] = []
 	match = db.reference('/MatchStats').child(matchID).get()
@@ -113,9 +118,8 @@ def getMatchStats(matchID):
 """ gets the match statistics for bowling: for an over and ball, 
 the player dismissed, the bowler, type of dismissal and non striker for each team """
 
-def getPlayersDismissed(matchID):
+def getPlayersDismissed(matchID,teamNames):
 	playersDismissed = {}
-	teamNames = getTeamNames(matchID)
 	team1, team2 = teamNames["team1"], teamNames["team2"]
 	playersDismissed[team1], playersDismissed[team2] = [], []
 	match = db.reference('/MatchDismissal').child(matchID).get()

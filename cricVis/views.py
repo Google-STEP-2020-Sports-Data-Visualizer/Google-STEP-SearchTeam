@@ -52,8 +52,9 @@ def getChartResponse(matchID,matchStats,playersDismissed,teams):
 def fetchGraphData(request):
     if request.method == "GET":
         matchID = request.GET['matchID']
-        matchStats = getMatchStats(matchID)
-        playersDismissed =  getPlayersDismissed(matchID)
         teams = getTeamNames(matchID)
+        matchStats = getMatchStats(matchID,teams)
+        playersDismissed =  getPlayersDismissed(matchID,teams)
+        
 
         return HttpResponse(json.dumps(getChartResponse(matchID,matchStats,playersDismissed,teams)))
