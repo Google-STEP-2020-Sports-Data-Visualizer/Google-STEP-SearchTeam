@@ -4,24 +4,86 @@
     <meta charset="utf-8">
     <title>CricVis - Cricket Data Visualization</title>
     <link rel="icon" href="../static/cricVis/favicon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="../static/cricVis/style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Coda' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
   </head>
   <body>
-    <h2> CricVis: A Cricket Data Visualization App </h2>
     <!-- Populate the match dropdown with matches and their dates, with match IDs as the option "value" -->
-    <select name="match" id="match-select">
-      {% for match in allMatches %}
-        <option value={{ match.matchID }} > {{ match.team1 }} v/s {{ match.team2 }} {{ match.date }} </option>
-      {% endfor %}
-    </select>
-    <button id="create-charts">View Results</button>
+    <div class="content">
+      <div class="main_container">
+        <div class="heading_container">
+          <h2> CricVis: A Cricket Data Visualization App </h2>
+        </div>
+        <div class="list-group match-group">
+          {% for match in allMatches %}
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-around match" data-value={{ match.matchID }}>
+                <img src={{ match.team1_image }} alt="srh" width="30" height="30">
+                <h5 class="mb-1"> {{ match.team1 }} v/s {{ match.team2 }}</h5>
+                <img src={{ match.team2_image }} alt="srh" width="30" height="30">
+              </div>
+              <div class="d-flex w-100 justify-content-center">
+                <small class="text-muted">{{ match.date }}</small>
+              </div>
+            </a>
+          {% endfor %}
+        </div>
+        <div id="toggleChartsBar" class="container-div">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#WormChartContainer">Worm Chart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#RunRateChartContainer">Run Rate Chart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#ManhattanChartContainer">Manhattan Chart</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content container-div" id="chartsContainer">
+          <div id="WormChartContainer" class="container tab-pane active"><br>
+          </div>
+          <div id="RunRateChartContainer" class="container tab-pane"><br>
+          </div>
+          <div id="ManhattanChartContainer" class="container tab-pane"><br>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
 <script>
-
+  function plotCharts(chartsData){
+    // TO-DO: Use the charting library to plot the charts
+  }
+  function emptyChartDivs(){
+    $('#WormChartContainer').empty();
+    $('#RunRateChartContainer').empty();
+    $('#ManhattanChartContainer').empty();
+  }
+  function enableChartsDiv(){
+    $("#toggleChartsBar").css("visibility","visible");
+    $("#chartsContainer").css("visibility","visible");
+    emptyChartDivs();
+  }
   // on clicking the "View Results" button, send a GET request to fetchGraphData function in views.py and log the chartsData response.
-  $('#create-charts').click(()=>{
-    let matchID = $('#match-select').val();
+  $('.match-group .match').click(function(){
+    $(this).parent().parent().find('.match').removeClass('badge');
+    $(this).parent().parent().find('.match').removeClass('badge-pill');
+    $(this).parent().parent().find('.match').removeClass('badge-primary');
+    $(this).addClass('badge');
+    $(this).addClass('badge-pill');
+    $(this).addClass('badge-primary');
+    let matchID = $(this).attr('data-value');
+    console.log(matchID);
     $.ajax({
       type: 'GET',
       url: '/cricVis/fetchGraphData',
@@ -31,6 +93,8 @@
       success: function(chartsData){
         chartsData = JSON.parse(chartsData);
         console.log(chartsData);
+        enableChartsDiv();
+        plotCharts(chartsData);
       },
       error: function(error){
         console.log(error);
