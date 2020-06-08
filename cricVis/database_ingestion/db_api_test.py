@@ -1,3 +1,4 @@
+#Make a GET call to the database to check latency in retireving data
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
