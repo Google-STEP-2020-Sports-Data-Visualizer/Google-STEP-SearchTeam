@@ -22,17 +22,6 @@
         <div class="heading_container">
           <h2> CricVis: A Cricket Data Visualization App </h2>
         </div>
-        {% if user.is_authenticated %}
-        <h3>Welcome, {{ user.username }} !</h3>
-        <form method="post" action="{% url 'account_logout' %}">
-          {% csrf_token %}
-          {% if redirect_field_value %}
-          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-          {% endif %}
-          <div class="button_container">
-            <button type="submit" class="btn btn-secondary">Log Out</button>
-          </div>
-        </form>
         <div class="list-group match-group match-container">
           {% for match in allMatches %}
             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -80,9 +69,6 @@
             </ul>
           </div>
         </div>
-        {% else %}
-        <a href="{% provider_login_url 'google' %}" role="button" class="btn btn-primary">Login with Google</a>
-        {% endif %}
       </div>
     </div>
 
