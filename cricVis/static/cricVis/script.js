@@ -1,5 +1,262 @@
-function plotCharts(chartsData){
-  // TO-DO: Use the charting library to plot the charts
+google.charts.load('current', {'packages':['corechart','bar']});
+google.charts.setOnLoadCallback(plotCharts);
+function plotCharts(chartsData)
+{
+  console.log(chartsData);
+
+ 
+  var wormdata = new google.visualization.DataTable();
+ 
+  wormdata.addColumn('number', 'Overs');
+  wormdata.addColumn('number', chartsData.wormChartData.team1.teamName);
+  wormdata.addColumn({type: 'string', role: 'tooltip'});
+  wormdata.addColumn('number', chartsData.wormChartData.team2.teamName);
+  wormdata.addColumn({type: 'string', role: 'tooltip'});
+  var s1='',s2='';
+  var i;
+  if(chartsData.wormChartData.team1.overs.length>=chartsData.wormChartData.team2.overs.length)
+  {
+   
+      for (i = 0; i < chartsData.wormChartData.team2.overs.length; i++)
+      {
+        s1='';
+        s2='';
+        if (chartsData.wormChartData.team1.overs[i].playersDismissed.length>0)
+        {
+          s1='\nPlayers Dismissed:';
+          for (var j = 0; j < chartsData.wormChartData.team1.overs[i].playersDismissed.length; j++)
+          {
+            s1 = s1.concat('\n'+ chartsData.wormChartData.team1.overs[i].playersDismissed[j]);
+          }
+
+        }
+        if (chartsData.wormChartData.team2.overs[i].playersDismissed.length>0)
+        {
+          s2='\nPlayers Dismissed:';
+          for (var j = 0; j < chartsData.wormChartData.team2.overs[i].playersDismissed.length; j++)
+          {
+            s2 = s2.concat('\n'+ chartsData.wormChartData.team2.overs[i].playersDismissed[j]);
+          }
+
+        }
+          wormdata.addRow([i+1,chartsData.wormChartData.team1.overs[i].cumulativeRuns,i+1+'\n'+chartsData.wormChartData.team1.teamName+': '+chartsData.wormChartData.team1.overs[i].cumulativeRuns+s1,chartsData.wormChartData.team2.overs[i].cumulativeRuns,i+1+'\n'+chartsData.wormChartData.team2.teamName+': '+chartsData.wormChartData.team2.overs[i].cumulativeRuns+s2]);
+      }
+      for (i = chartsData.wormChartData.team2.overs.length; i < chartsData.wormChartData.team1.overs.length; i++)
+      {
+        s1='';
+        if (chartsData.wormChartData.team1.overs[i].playersDismissed.length>0)
+        {
+          s1='\nPlayers Dismissed:';
+          for (var j = 0; j < chartsData.wormChartData.team1.overs[i].playersDismissed.length; j++)
+          {
+            s1 = s1.concat('\n'+ chartsData.wormChartData.team1.overs[i].playersDismissed[j]);
+          }
+
+        }
+          wormdata.addRow([i+1,chartsData.wormChartData.team1.overs[i].cumulativeRuns,i+1+'\n'+chartsData.wormChartData.team1.teamName+': '+chartsData.wormChartData.team1.overs[i].cumulativeRuns+s1,null,null]);
+      }
+  }
+  else
+  {
+      for (i = 0; i < chartsData.wormChartData.team1.overs.length; i++)
+      {
+        s1='';
+        s2='';
+        if (chartsData.wormChartData.team1.overs[i].playersDismissed.length>0)
+        {
+          s1='\nPlayers Dismissed:';
+          for (var j = 0; j < chartsData.wormChartData.team1.overs[i].playersDismissed.length; j++)
+          {
+            s1 = s1.concat('\n'+ chartsData.wormChartData.team1.overs[i].playersDismissed[j]);
+          }
+
+        }
+        if (chartsData.wormChartData.team2.overs[i].playersDismissed.length>0)
+        {
+          s2='\nPlayers Dismissed:';
+          for (var j = 0; j < chartsData.wormChartData.team2.overs[i].playersDismissed.length; j++)
+          {
+            s2 = s2.concat('\n'+ chartsData.wormChartData.team2.overs[i].playersDismissed[j]);
+          }
+
+        }
+          wormdata.addRow([i+1,chartsData.wormChartData.team1.overs[i].cumulativeRuns,i+1+'\n'+chartsData.wormChartData.team1.teamName+': '+chartsData.wormChartData.team1.overs[i].cumulativeRuns+s1,chartsData.wormChartData.team2.overs[i].cumulativeRuns,i+1+'\n'+chartsData.wormChartData.team2.teamName+': '+chartsData.wormChartData.team2.overs[i].cumulativeRuns+s2]);
+      }
+      for (i = chartsData.wormChartData.team1.overs.length; i < chartsData.wormChartData.team2.overs.length; i++)
+      {
+        s2='';
+        if (chartsData.wormChartData.team2.overs[i].playersDismissed.length>0)
+        {
+          s2='\nPlayers Dismissed:';
+          for (var j = 0; j < chartsData.wormChartData.team2.overs[i].playersDismissed.length; j++)
+          {
+            s2 = s2.concat('\n'+ chartsData.wormChartData.team2.overs[i].playersDismissed[j]);
+          }
+
+        }
+          wormdata.addRow([i+1,null,null,chartsData.wormChartData.team2.overs[i].cumulativeRuns,i+1+'\n'+chartsData.wormChartData.team2.teamName+': '+chartsData.wormChartData.team2.overs[i].cumulativeRuns+s2]);
+      }
+  }
+
+ 
+  var wormoptions =
+  {
+      title: 'Worm Chart',
+      width: 1200,
+      height: 500
+  };    
+  var wormchart = new google.visualization.LineChart(document.getElementById('WormChartContainer'));
+  wormchart.draw(wormdata, wormoptions);
+ 
+
+ 
+ 
+  var runratedata = new google.visualization.DataTable();
+
+  runratedata.addColumn('number', 'Overs');
+  runratedata.addColumn('number', chartsData.runRateChartData.team1.teamName);
+  runratedata.addColumn({type: 'string', role: 'tooltip'});
+
+  runratedata.addColumn('number', chartsData.runRateChartData.team2.teamName);
+  runratedata.addColumn({type: 'string', role: 'tooltip'});
+
+ 
+  if(chartsData.runRateChartData.team1.overs.length>=chartsData.runRateChartData.team2.overs.length)
+  {
+
+      for (i = 0; i < chartsData.runRateChartData.team2.overs.length; i++)
+      {
+        s1='';
+        s2='';
+        if (chartsData.runRateChartData.team1.overs[i].playersDismissed.length>0)
+        {
+          s1='\nPlayers Dismissed:';
+          for (var j = 0; j < chartsData.runRateChartData.team1.overs[i].playersDismissed.length; j++)
+          {
+            s1 = s1.concat('\n'+ chartsData.runRateChartData.team1.overs[i].playersDismissed[j]);
+          }
+
+        }
+        if (chartsData.runRateChartData.team2.overs[i].playersDismissed.length>0)
+        {
+          s2='\nPlayers Dismissed:';
+          for (var j = 0; j < chartsData.runRateChartData.team2.overs[i].playersDismissed.length; j++)
+          {
+            s2 = s2.concat('\n'+ chartsData.runRateChartData.team2.overs[i].playersDismissed[j]);
+          }
+
+        }
+          runratedata.addRow([i+1,chartsData.runRateChartData.team1.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team1.teamName+': '+chartsData.runRateChartData.team1.overs[i].runRate+s1,chartsData.runRateChartData.team2.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team2.teamName+': '+chartsData.runRateChartData.team2.overs[i].runRate+s2]);
+      }
+      for (i = chartsData.runRateChartData.team2.overs.length; i < chartsData.runRateChartData.team1.overs.length; i++)
+      {
+        s1='';
+        if (chartsData.runRateChartData.team1.overs[i].playersDismissed.length>0)
+        {
+          s1='\nPlayers Dismissed:';
+          for (var j = 0; j < chartsData.runRateChartData.team1.overs[i].playersDismissed.length; j++)
+          {
+            s1 = s1.concat('\n'+ chartsData.runRateChartData.team1.overs[i].playersDismissed[j]);
+          }
+
+        }
+          runratedata.addRow([i+1,chartsData.runRateChartData.team1.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team1.teamName+': '+chartsData.runRateChartData.team1.overs[i].runRate+s1,null,null]);
+      }
+  }
+  else
+  {
+      for (i = 0; i < chartsData.runRateChartData.team1.overs.length; i++)
+      {
+          s1='';
+        s2='';
+        if (chartsData.runRateChartData.team1.overs[i].playersDismissed.length>0)
+        {
+          s1='\nPlayers Dismissed:';
+          for (var j = 0; j < chartsData.runRateChartData.team1.overs[i].playersDismissed.length; j++)
+          {
+            s1 = s1.concat('\n'+ chartsData.runRateChartData.team1.overs[i].playersDismissed[j]);
+          }
+
+        }
+        if (chartsData.runRateChartData.team2.overs[i].playersDismissed.length>0)
+        {
+          s2='\nPlayers Dismissed:';
+          for (var j = 0; j < chartsData.runRateChartData.team2.overs[i].playersDismissed.length; j++)
+          {
+            s2 = s2.concat('\n'+ chartsData.runRateChartData.team2.overs[i].playersDismissed[j]);
+          }
+
+        }
+          runratedata.addRow([i+1,chartsData.runRateChartData.team1.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team1.teamName+': '+chartsData.runRateChartData.team1.overs[i].runRate+s1,chartsData.runRateChartData.team2.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team2.teamName+': '+chartsData.runRateChartData.team2.overs[i].runRate+s2]);
+      }
+      for (i = chartsData.runRateChartData.team1.overs.length; i < chartsData.runRateChartData.team2.overs.length; i++)
+      {
+          s2='';
+        if (chartsData.runRateChartData.team2.overs[i].playersDismissed.length>0)
+        {
+          s2='\nPlayers Dismissed:';
+          for (var j = 0; j < chartsData.runRateChartData.team2.overs[i].playersDismissed.length; j++)
+          {
+            s2 = s2.concat('\n'+ chartsData.runRateChartData.team2.overs[i].playersDismissed[j]);
+          }
+
+        }
+          runratedata.addRow([i+1,null,null,chartsData.runRateChartData.team2.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team2.teamName+': '+chartsData.runRateChartData.team2.overs[i].runRate+s2]);
+      }
+  }
+
+ 
+  var runrateoptions =
+  {
+      title: 'Run Rate Graph',
+      width: 1200,
+      height: 500
+  };    
+  var runratechart = new google.visualization.LineChart(document.getElementById('RunRateChartContainer'));
+  runratechart.draw(runratedata, runrateoptions);
+ 
+ 
+  var manhattandata = new google.visualization.DataTable();
+
+       
+        manhattandata.addColumn('number', 'Overs');
+        manhattandata.addColumn('number', chartsData.manhattanChartData.team1.teamName);
+        manhattandata.addColumn('number', chartsData.manhattanChartData.team2.teamName);
+       
+        if(chartsData.manhattanChartData.team1.overs.length>=chartsData.manhattanChartData.team2.overs.length)
+        {
+            for (i = 0; i < chartsData.manhattanChartData.team2.overs.length; i++)
+            {
+             
+                manhattandata.addRow([i+1,chartsData.manhattanChartData.team1.overs[i].runs,chartsData.manhattanChartData.team2.overs[i].runs]);
+            }
+            for (i = chartsData.manhattanChartData.team2.overs.length; i < chartsData.manhattanChartData.team1.overs.length; i++)
+            {
+                manhattandata.addRow([i+1,chartsData.manhattanChartData.team1.overs[i].runs,null]);
+            }
+        }
+        else
+        {
+            for (i = 0; i < chartsData.manhattanChartData.team1.overs.length; i++)
+            {
+                                                manhattandata.addRow([i+1,chartsData.manhattanChartData.team1.overs[i].runs,chartsData.manhattanChartData.team2.overs[i].runs]);
+            }
+            for (i = chartsData.manhattanChartData.team1.overs.length; i < chartsData.manhattanChartData.team2.overs.length; i++)
+            {
+                manhattandata.addRow([i+1,null,chartsData.manhattanChartData.team2.overs[i].runs]);
+            }
+        }
+
+       
+        var manhattanoptions =
+        {
+            title: 'Manhattan Graph',
+            width: 1200,
+            height: 500
+        };    
+        var manhattanchart = new google.charts.Bar(document.getElementById('ManhattanChartContainer'));
+        manhattanchart.draw(manhattandata, google.charts.Bar.convertOptions(manhattanoptions));
+     
 }
 function createHTMLElement(elementType,className=null){
   let element = document.createElement(elementType);
