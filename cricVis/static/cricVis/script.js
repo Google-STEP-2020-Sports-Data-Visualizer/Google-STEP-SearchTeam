@@ -26,7 +26,7 @@ function plotCharts(chartsData)
           s1='\nPlayers Dismissed:';
           for (var j = 0; j < chartsData.wormChartData.team1.overs[i].playersDismissed.length; j++)
           {
-            s1 = s1.concat('\n'+ chartsData.wormChartData.team1.overs[i].playersDismissed[j]);
+            s1 = s1.concat('\n'+ chartsData.wormChartData.team1.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.wormChartData.team1.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.wormChartData.team1.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.wormChartData.team1.overs[i].playersDismissed[j].fielder +')');
           }
 
         }
@@ -35,7 +35,7 @@ function plotCharts(chartsData)
           s2='\nPlayers Dismissed:';
           for (var j = 0; j < chartsData.wormChartData.team2.overs[i].playersDismissed.length; j++)
           {
-            s2 = s2.concat('\n'+ chartsData.wormChartData.team2.overs[i].playersDismissed[j]);
+            s2 = s2.concat('\n'+ chartsData.wormChartData.team2.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].fielder +')');
           }
 
         }
@@ -49,7 +49,7 @@ function plotCharts(chartsData)
           s1='\nPlayers Dismissed:';
           for (var j = 0; j < chartsData.wormChartData.team1.overs[i].playersDismissed.length; j++)
           {
-            s1 = s1.concat('\n'+ chartsData.wormChartData.team1.overs[i].playersDismissed[j]);
+            s1 = s1.concat('\n'+ chartsData.wormChartData.team1.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.wormChartData.team1.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.wormChartData.team1.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.wormChartData.team1.overs[i].playersDismissed[j].fielder +')');
           }
 
         }
@@ -67,7 +67,7 @@ function plotCharts(chartsData)
           s1='\nPlayers Dismissed:';
           for (var j = 0; j < chartsData.wormChartData.team1.overs[i].playersDismissed.length; j++)
           {
-            s1 = s1.concat('\n'+ chartsData.wormChartData.team1.overs[i].playersDismissed[j]);
+            s1 = s1.concat('\n'+ chartsData.wormChartData.team1.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.wormChartData.team1.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.wormChartData.team1.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.wormChartData.team1.overs[i].playersDismissed[j].fielder +')');
           }
 
         }
@@ -76,7 +76,7 @@ function plotCharts(chartsData)
           s2='\nPlayers Dismissed:';
           for (var j = 0; j < chartsData.wormChartData.team2.overs[i].playersDismissed.length; j++)
           {
-            s2 = s2.concat('\n'+ chartsData.wormChartData.team2.overs[i].playersDismissed[j]);
+            s2 = s2.concat('\n'+ chartsData.wormChartData.team2.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].fielder +')');
           }
 
         }
@@ -90,7 +90,7 @@ function plotCharts(chartsData)
           s2='\nPlayers Dismissed:';
           for (var j = 0; j < chartsData.wormChartData.team2.overs[i].playersDismissed.length; j++)
           {
-            s2 = s2.concat('\n'+ chartsData.wormChartData.team2.overs[i].playersDismissed[j]);
+            s2 = s2.concat('\n'+ chartsData.wormChartData.team2.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].fielder +')');
           }
 
         }
@@ -133,7 +133,7 @@ function plotCharts(chartsData)
           s1='\nPlayers Dismissed:';
           for (var j = 0; j < chartsData.runRateChartData.team1.overs[i].playersDismissed.length; j++)
           {
-            s1 = s1.concat('\n'+ chartsData.runRateChartData.team1.overs[i].playersDismissed[j]);
+            s1 = s1.concat('\n'+ chartsData.runRateChartData.team1.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.runRateChartData.team1.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.runRateChartData.team1.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.runRateChartData.team1.overs[i].playersDismissed[j].fielder +')');
           }
 
         }
@@ -142,11 +142,11 @@ function plotCharts(chartsData)
           s2='\nPlayers Dismissed:';
           for (var j = 0; j < chartsData.runRateChartData.team2.overs[i].playersDismissed.length; j++)
           {
-            s2 = s2.concat('\n'+ chartsData.runRateChartData.team2.overs[i].playersDismissed[j]);
+            s2 = s2.concat('\n'+ chartsData.wormChartData.team2.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].fielder +')');
           }
 
         }
-          runratedata.addRow([i+1,chartsData.runRateChartData.team1.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team1.teamName+': '+chartsData.runRateChartData.team1.overs[i].runRate+s1,chartsData.runRateChartData.team2.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team2.teamName+': '+chartsData.runRateChartData.team2.overs[i].runRate+s2]);
+          runratedata.addRow([i+1,chartsData.runRateChartData.team1.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team1.teamName+': '+chartsData.runRateChartData.team1.overs[i].runRate.toFixed(2)+s1,chartsData.runRateChartData.team2.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team2.teamName+': '+chartsData.runRateChartData.team2.overs[i].runRate.toFixed(2)+s2]);
       }
       for (i = chartsData.runRateChartData.team2.overs.length; i < chartsData.runRateChartData.team1.overs.length; i++)
       {
@@ -156,25 +156,25 @@ function plotCharts(chartsData)
           s1='\nPlayers Dismissed:';
           for (var j = 0; j < chartsData.runRateChartData.team1.overs[i].playersDismissed.length; j++)
           {
-            s1 = s1.concat('\n'+ chartsData.runRateChartData.team1.overs[i].playersDismissed[j]);
+            s1 = s1.concat('\n'+ chartsData.runRateChartData.team1.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.runRateChartData.team1.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.runRateChartData.team1.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.runRateChartData.team1.overs[i].playersDismissed[j].fielder +')');
           }
 
         }
-          runratedata.addRow([i+1,chartsData.runRateChartData.team1.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team1.teamName+': '+chartsData.runRateChartData.team1.overs[i].runRate+s1,null,null]);
+          runratedata.addRow([i+1,chartsData.runRateChartData.team1.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team1.teamName+': '+chartsData.runRateChartData.team1.overs[i].runRate.toFixed(2)+s1,null,null]);
       }
   }
   else
   {
       for (i = 0; i < chartsData.runRateChartData.team1.overs.length; i++)
       {
-          s1='';
+        s1='';
         s2='';
         if (chartsData.runRateChartData.team1.overs[i].playersDismissed.length>0)
         {
           s1='\nPlayers Dismissed:';
           for (var j = 0; j < chartsData.runRateChartData.team1.overs[i].playersDismissed.length; j++)
           {
-            s1 = s1.concat('\n'+ chartsData.runRateChartData.team1.overs[i].playersDismissed[j]);
+            s1 = s1.concat('\n'+ chartsData.runRateChartData.team1.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.runRateChartData.team1.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.runRateChartData.team1.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.runRateChartData.team1.overs[i].playersDismissed[j].fielder +')');
           }
 
         }
@@ -183,11 +183,11 @@ function plotCharts(chartsData)
           s2='\nPlayers Dismissed:';
           for (var j = 0; j < chartsData.runRateChartData.team2.overs[i].playersDismissed.length; j++)
           {
-            s2 = s2.concat('\n'+ chartsData.runRateChartData.team2.overs[i].playersDismissed[j]);
+            s2 = s2.concat('\n'+ chartsData.wormChartData.team2.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].fielder +')');
           }
 
         }
-          runratedata.addRow([i+1,chartsData.runRateChartData.team1.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team1.teamName+': '+chartsData.runRateChartData.team1.overs[i].runRate+s1,chartsData.runRateChartData.team2.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team2.teamName+': '+chartsData.runRateChartData.team2.overs[i].runRate+s2]);
+          runratedata.addRow([i+1,chartsData.runRateChartData.team1.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team1.teamName+': '+chartsData.runRateChartData.team1.overs[i].runRate.toFixed(2)+s1,chartsData.runRateChartData.team2.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team2.teamName+': '+chartsData.runRateChartData.team2.overs[i].runRate.toFixed(2)+s2]);
       }
       for (i = chartsData.runRateChartData.team1.overs.length; i < chartsData.runRateChartData.team2.overs.length; i++)
       {
@@ -197,11 +197,11 @@ function plotCharts(chartsData)
           s2='\nPlayers Dismissed:';
           for (var j = 0; j < chartsData.runRateChartData.team2.overs[i].playersDismissed.length; j++)
           {
-            s2 = s2.concat('\n'+ chartsData.runRateChartData.team2.overs[i].playersDismissed[j]);
+            s2 = s2.concat('\n'+ chartsData.wormChartData.team2.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].fielder +')');
           }
 
         }
-          runratedata.addRow([i+1,null,null,chartsData.runRateChartData.team2.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team2.teamName+': '+chartsData.runRateChartData.team2.overs[i].runRate+s2]);
+          runratedata.addRow([i+1,null,null,chartsData.runRateChartData.team2.overs[i].runRate,i+1+'\n'+chartsData.runRateChartData.team2.teamName+': '+chartsData.runRateChartData.team2.overs[i].runRate.toFixed(2)+s2]);
       }
   }
 
