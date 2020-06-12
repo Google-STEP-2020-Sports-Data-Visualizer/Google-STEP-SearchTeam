@@ -142,7 +142,7 @@ function plotCharts(chartsData)
           s2='\nPlayers Dismissed:';
           for (var j = 0; j < chartsData.runRateChartData.team2.overs[i].playersDismissed.length; j++)
           {
-            s2 = s2.concat('\n'+ chartsData.wormChartData.team2.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].fielder +')');
+            s2 = s2.concat('\n'+ chartsData.runRateChartData.team2.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.runRateChartData.team2.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.runRateChartData.team2.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.runRateChartData.team2.overs[i].playersDismissed[j].fielder +')');
           }
 
         }
@@ -183,7 +183,7 @@ function plotCharts(chartsData)
           s2='\nPlayers Dismissed:';
           for (var j = 0; j < chartsData.runRateChartData.team2.overs[i].playersDismissed.length; j++)
           {
-            s2 = s2.concat('\n'+ chartsData.wormChartData.team2.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].fielder +')');
+            s2 = s2.concat('\n'+ chartsData.runRateChartData.team2.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.runRateChartData.team2.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.runRateChartData.team2.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.runRateChartData.team2.overs[i].playersDismissed[j].fielder +')');
           }
 
         }
@@ -197,7 +197,7 @@ function plotCharts(chartsData)
           s2='\nPlayers Dismissed:';
           for (var j = 0; j < chartsData.runRateChartData.team2.overs[i].playersDismissed.length; j++)
           {
-            s2 = s2.concat('\n'+ chartsData.wormChartData.team2.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.wormChartData.team2.overs[i].playersDismissed[j].fielder +')');
+            s2 = s2.concat('\n'+ chartsData.runRateChartData.team2.overs[i].playersDismissed[j].playerDismissed+' (Dismissal-type: '+chartsData.runRateChartData.team2.overs[i].playersDismissed[j].type+', Bowler: '+chartsData.runRateChartData.team2.overs[i].playersDismissed[j].bowler+', Fielder: '+chartsData.runRateChartData.team2.overs[i].playersDismissed[j].fielder +')');
           }
 
         }
