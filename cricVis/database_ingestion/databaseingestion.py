@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import json
 from collections import defaultdict
 
@@ -37,8 +38,8 @@ match_cols_orig = ['id',
 'player_of_match',
 'venue']
 
-df_deliveries = pd.read_csv("deliveries.csv", usecols=del_cols_orig)
-df_matches = pd.read_csv("matches.csv", usecols=match_cols_orig)
+df_deliveries = pd.read_csv("csv_files/deliveries.csv", usecols=del_cols_orig)
+df_matches = pd.read_csv("csv_files/matches.csv", usecols=match_cols_orig)
 df_matches.rename(columns={"id": "matchID"}, inplace=True)
 
 df_deliveries.rename(columns={"match_id": "matchID"}, inplace=True)
@@ -46,23 +47,40 @@ df_deliveries.rename(columns={"match_id": "matchID"}, inplace=True)
 """
 Table 1 : MatchStatsTable
 
-(match_id, #over,teamName), breakdownRuns, runs,
+(matchID, #over, team), breakdownRuns, runs
 
 Table  2 : DismissalTable
 
-(match_id, #over, #ball,teamName), player_dismissed, non-striker, bowler, fielder, type_of_dismissal
+(matchID, #over, #ball, team), playerDismissed, nonStriker, bowler, fielder, type
 
 Table 3: Player Description
 
-Season, Team_name,  (player_name)
+(playerName, season), team
 
 Table 4: Match Description
 
-(Match_id), Match_Date, season, venue (combine venue and city fields of matches.csv), team1, team2, innings(boolean: 1: if team 1 batted first, 0 otherwise), result, playerOfMatch, winByRuns, winByWickets
+(matchID), matchDate, season, venue (combine venue and city fields of matches.csv), team1, team2, tossWinner, tossDecision, result, playerOfMatch, winByRuns, winByWickets
 
-Table 5: Player_Match Relation (Many : Many Relation one match: multiple players, one player: multiple matches)
+Table 5: Player_Match Relation (Many - Many Relation: one match -> multiple players, one player -> multiple matches)
 
-(Player_Name, Match_ID)
+(playerName, matchID)
+
+Table 6: Season-wise
+
+(season, team), finalMatchScoreBatting, lowestScore, highestScore
+
+Table 7: Team-wise
+
+(team), matchWins, seasonWins, runnerUps, tossWins, averageScore
+
+Table 8: Venue-wise
+
+(city, stadium), numberOfMatches, averageScore
+
+Table 9: Stadium-City (Many - One Relation)
+
+(stadium, city)
+
 
 """
 
@@ -82,7 +100,6 @@ match_stats = df_deliveries[["matchID",
 match_stats.rename(columns={"batting_team": "team",
                             "total_runs": "runs"}, inplace=True)
 
-match_stats.fillna("-", inplace=True)
 
 
 ############# DismissalTable initial dataframe
@@ -105,6 +122,7 @@ match_dismissal.rename(columns={"batting_team": "team",
                                 "non_striker": "nonStriker",
                                 "dismissal_kind": "type"}, inplace=True)
 
+# Some rows have NaN in the "fielder" column
 match_dismissal.fillna("-", inplace=True)
 
 ############ Player Description & Player Match initial dataframes
@@ -182,23 +200,53 @@ match_desc.rename(columns={"date": "matchDate",
                             "win_by_runs": "winByRuns",
                             "win_by_wickets": "winByWickets",
                             "winner": "result",
-                            "player_of_match": "playerOfMatch"},
+                            "player_of_match": "playerOfMatch",
+                            "toss_winner": "tossWinner",
+                            "toss_decision": "tossDecision"},
                   inplace=True)
 
-# Note: In context of the current data, adding the innings was unnecessary,
-# as the csv files had already labeled the first team to bat as team1,
-# which means, all the innings have the value "1" here
-match_desc["innings"] = match_desc[["team1", "team2",
-                                "toss_winner", "toss_decision"]].apply(
-                                lambda x: 1 if (((x["toss_winner"] == x["team1"])
-                                            & (x["toss_decision"] == "bat"))
-                                            | ((x["toss_winner"] == x["team2"])
-                                            & (x["toss_decision"] == "field")))
-                                          else 0, axis=1
-                                )
-
-match_desc.drop(columns=["toss_winner", "toss_decision"], inplace=True)
+# Venue isn't avaliable for all matches i.e. some rows have NaN under "venue"
 match_desc.fillna("-", inplace=True)
+
+
+################ SeasonWise Initial Table
+season_wise = pd.merge(df_deliveries[['matchID',
+                                      'total_runs',
+                                      'batting_team']].copy(),
+                       df_matches[['matchID',
+                                   'season']].copy(),
+                       how='inner', on='matchID')
+
+season_wise.rename(columns={"batting_team": "team",
+                            "total_runs": "runs"}, inplace=True)
+
+
+############### TeamWise Initial Table
+team_wise = pd.merge(df_deliveries[['matchID',
+                                    'total_runs',
+                                    'batting_team']].copy(),
+                       df_matches[['matchID',
+                                   'season',
+                                   'toss_winner',
+                                   'winner']].copy(),
+                       how='inner', on='matchID')\
+                       .rename(columns={"batting_team": "team",
+                                        "total_runs": "runs",
+                                        "toss_winner": "tossWinner",
+                                        "winner": "result"})
+
+
+############## VenueWise initial Table
+venue_wise = pd.merge(df_deliveries[['matchID',
+                                    'total_runs']].copy(),
+                       df_matches[['matchID',
+                                   'city',
+                                   'venue']].copy(),
+                       how='inner', on='matchID')\
+                       .rename(columns={"venue": "stadium",
+                                        "total_runs": "runs"})
+
+venue_wise.fillna("Dubai", inplace=True)
 
 
 """
@@ -418,21 +466,155 @@ for name, df_group in match_desc_grouped:
         results["MatchDescription"][matchID]['venue'] = row.venue
         results["MatchDescription"][matchID]['team1'] = row.team1
         results["MatchDescription"][matchID]['team2'] = row.team2
-        results["MatchDescription"][matchID]['innings'] = row.innings
+        results["MatchDescription"][matchID]['tossWinner'] = row.tossWinner
+        results["MatchDescription"][matchID]['tossDecision'] = row.tossDecision
         results["MatchDescription"][matchID]['result'] = row.result
         results["MatchDescription"][matchID]['playerOfMatch'] = row.playerOfMatch
         results["MatchDescription"][matchID]['winByRuns'] = row.winByRuns
         results["MatchDescription"][matchID]['winByWickets'] = row.winByWickets
 
-
+"""
 r = json.dumps(results["MatchDescription"])
 r = json.loads(r)
 out_file = open("MatchDescription.json", "w")
 json.dump(r, out_file, indent=2)
+"""
+
+
+########## Calculations to find finalMatchScoreBatting,
+########## lowestScore, highestScore in SeasonWise table
+
+season_wise_grouped_initial = season_wise.groupby(["season",
+                                            "team",
+                                            "matchID"], as_index=False)\
+                                            [["runs"]].sum()
+
+# Enlists matchID of the final match of each season
+final_matches = season_wise_grouped_initial.groupby("season")\
+                                            [["matchID"]].max()["matchID"].to_list()
+
+final_scores = season_wise_grouped_initial.copy()
+final_scores["runs"] = final_scores["runs"]\
+                                    .mask(~final_scores["matchID"]\
+                                    .isin(final_matches), \
+                                    0)
+
+season_wise_grouped = final_scores.groupby(["season",
+                                            "team"])\
+                                            [["runs"]].max()\
+                                            .rename(columns=\
+                                            {"runs": "finalMatchScoreBatting"})
+
+season_wise_grouped["lowestScore"] = season_wise_grouped_initial.groupby(["season",
+                                            "team"])\
+                                            [["runs"]].min()
+
+season_wise_grouped["highestScore"] = season_wise_grouped_initial.groupby(["season",
+                                            "team"])\
+                                            [["runs"]].max()
+
+
+for row in season_wise_grouped.itertuples():
+    season = getattr(row, 'Index')[0]
+    team = getattr(row, 'Index')[1]
+    results["SeasonWise"][season][team]['finalMatchScoreBatting'] = row.finalMatchScoreBatting
+    results["SeasonWise"][season][team]['lowestScore'] = row.lowestScore
+    results["SeasonWise"][season][team]['highestScore'] = row.highestScore
+
+"""
+r = json.dumps(results["SeasonWise"])
+r = json.loads(r)
+out_file = open("json_output/SeasonWise.json", "w")
+json.dump(r, out_file, indent=2)
+"""
+
+########## Team Wise calculations
+#(team), matchWins, seasonWins, runnerUps, tossWins, averageScore
+team_wise_grouped_initial = team_wise.groupby(["team",
+                                            "season",
+                                            "matchID",
+                                            "result",
+                                            "tossWinner"], as_index=False)\
+                                            [["runs"]].sum()
+
+team_wise_grouped = team_wise_grouped_initial.groupby(["team"])[["runs"]].mean().rename(columns={"runs": "averageScore"})
+team_wise_tossWins = team_wise_grouped_initial[["matchID", "tossWinner"]].drop_duplicates().groupby("tossWinner")["tossWinner"].count()
+team_wise_tossWins.index.name = "team"
+team_wise_matchWins = team_wise_grouped_initial[team_wise_grouped_initial["team"] == team_wise_grouped_initial["result"]].dropna(axis=0).groupby("team")["team"].count()
+
+team_wise_grouped_initial = team_wise_grouped_initial\
+                    .mask(~(team_wise_grouped_initial["matchID"]\
+                    .isin(final_matches)))\
+                    .dropna(axis=0)
+team_wise_seasonWins = team_wise_grouped_initial[team_wise_grouped_initial["team"] == team_wise_grouped_initial["result"]].dropna(axis=0).groupby(["team"])["team"].count()
+team_wise_runnerUps = team_wise_grouped_initial[team_wise_grouped_initial["team"] != team_wise_grouped_initial["result"]].dropna(axis=0).groupby("team")["team"].count()
+
+team_wise_grouped["matchWins"] = team_wise_matchWins
+team_wise_grouped["seasonWins"] = team_wise_seasonWins
+team_wise_grouped["runnerUps"] = team_wise_runnerUps
+team_wise_grouped["tossWins"] = team_wise_tossWins
+
+team_wise_grouped.replace(np.nan, 0, inplace=True)
+
+for row in team_wise_grouped.itertuples():
+    team = row.Index
+    results["TeamWise"][team]['matchWins'] = int(row.matchWins)
+    results["TeamWise"][team]['seasonWins'] = int(row.seasonWins)
+    results["TeamWise"][team]['runnerUps'] = int(row.runnerUps)
+    results["TeamWise"][team]['tossWins'] = int(row.tossWins)
+    results["TeamWise"][team]['averageScore'] = row.averageScore
+
+
+"""
+r = json.dumps(results["TeamWise"])
+r = json.loads(r)
+out_file = open("json_output/TeamWise.json", "w")
+json.dump(r, out_file, indent=2)
+"""
+
+########## VenueWise calculations
+#(city, stadium), numberOfMatches, averageScore
+
+venue_wise_grouped_initial = venue_wise.groupby(["city", "stadium", "matchID"], as_index=False)[["runs"]].sum()
+venue_wise_grouped_initial.city = venue_wise_grouped_initial.city.map(lambda x: x.replace(".", ""))
+venue_wise_grouped_initial.stadium = venue_wise_grouped_initial.stadium.map(lambda x: x.replace(".", ""))
+
+venue_wise_grouped = venue_wise_grouped_initial.groupby(["city", "stadium"])[["matchID"]].count().rename(columns={"matchID": "numberOfMatches"})
+venue_wise_grouped["averageScore"] = venue_wise_grouped_initial.groupby(["city", "stadium"])[["runs"]].mean()
+
+for row in venue_wise_grouped.itertuples():
+    city = getattr(row, 'Index')[0]
+    stadium = getattr(row, 'Index')[1]
+    results["VenueWise"][city][stadium]['numberOfMatches'] = row.numberOfMatches
+    results["VenueWise"][city][stadium]['averageScore'] = row.averageScore
+
+
+"""
+r = json.dumps(results["VenueWise"])
+r = json.loads(r)
+out_file = open("json_output/VenueWise.json", "w")
+json.dump(r, out_file, indent=2)
+"""
+
+
+########## StadiumCity
+stadium_city = venue_wise_grouped_initial.groupby("stadium")[["city"]]
+
+for name, df_group in stadium_city:
+    for row in df_group.itertuples():
+        stadium = row.stadium
+        results["StadiumCity"][stadium] = row.city
+
+"""
+r = json.dumps(results["StadiumCity"])
+r = json.loads(r)
+out_file = open("json_output/StadiumCity.json", "w")
+json.dump(r, out_file, indent=2)
+"""
 
 
 
 final_collection_json = json.dumps(results)
 final_collection_json = json.loads(final_collection_json)
-out_file = open("cricVisDatabase.json", "w")
+out_file = open("json_output/cricVisDatabase.json", "w")
 json.dump(final_collection_json, out_file, indent=2)

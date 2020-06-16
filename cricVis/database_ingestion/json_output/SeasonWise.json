@@ -1,0 +1,442 @@
+{
+  "2008": {
+    "Chennai Super Kings": {
+      "finalMatchScoreBatting": 163,
+      "lowestScore": 55,
+      "highestScore": 240
+    },
+    "Deccan Chargers": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 110,
+      "highestScore": 214
+    },
+    "Delhi Daredevils": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 87,
+      "highestScore": 194
+    },
+    "Kings XI Punjab": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 94,
+      "highestScore": 221
+    },
+    "Kolkata Knight Riders": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 67,
+      "highestScore": 222
+    },
+    "Mumbai Indians": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 68,
+      "highestScore": 202
+    },
+    "Rajasthan Royals": {
+      "finalMatchScoreBatting": 164,
+      "lowestScore": 103,
+      "highestScore": 217
+    },
+    "Royal Challengers Bangalore": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 82,
+      "highestScore": 181
+    }
+  },
+  "2009": {
+    "Chennai Super Kings": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 116,
+      "highestScore": 188
+    },
+    "Deccan Chargers": {
+      "finalMatchScoreBatting": 143,
+      "lowestScore": 100,
+      "highestScore": 184
+    },
+    "Delhi Daredevils": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 58,
+      "highestScore": 189
+    },
+    "Kings XI Punjab": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 92,
+      "highestScore": 174
+    },
+    "Kolkata Knight Riders": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 79,
+      "highestScore": 189
+    },
+    "Mumbai Indians": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 116,
+      "highestScore": 187
+    },
+    "Rajasthan Royals": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 58,
+      "highestScore": 211
+    },
+    "Royal Challengers Bangalore": {
+      "finalMatchScoreBatting": 137,
+      "lowestScore": 87,
+      "highestScore": 176
+    }
+  },
+  "2010": {
+    "Chennai Super Kings": {
+      "finalMatchScoreBatting": 168,
+      "lowestScore": 112,
+      "highestScore": 246
+    },
+    "Deccan Chargers": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 82,
+      "highestScore": 190
+    },
+    "Delhi Daredevils": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 111,
+      "highestScore": 188
+    },
+    "Kings XI Punjab": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 112,
+      "highestScore": 204
+    },
+    "Kolkata Knight Riders": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 109,
+      "highestScore": 200
+    },
+    "Mumbai Indians": {
+      "finalMatchScoreBatting": 146,
+      "lowestScore": 133,
+      "highestScore": 218
+    },
+    "Rajasthan Royals": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 92,
+      "highestScore": 223
+    },
+    "Royal Challengers Bangalore": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 86,
+      "highestScore": 204
+    }
+  },
+  "2011": {
+    "Chennai Super Kings": {
+      "finalMatchScoreBatting": 205,
+      "lowestScore": 114,
+      "highestScore": 205
+    },
+    "Deccan Chargers": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 129,
+      "highestScore": 198
+    },
+    "Delhi Daredevils": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 56,
+      "highestScore": 231
+    },
+    "Kings XI Punjab": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 112,
+      "highestScore": 232
+    },
+    "Kochi Tuskers Kerala": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 74,
+      "highestScore": 184
+    },
+    "Kolkata Knight Riders": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 61,
+      "highestScore": 175
+    },
+    "Mumbai Indians": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 87,
+      "highestScore": 182
+    },
+    "Pune Warriors": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 113,
+      "highestScore": 187
+    },
+    "Rajasthan Royals": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 81,
+      "highestScore": 159
+    },
+    "Royal Challengers Bangalore": {
+      "finalMatchScoreBatting": 147,
+      "lowestScore": 105,
+      "highestScore": 205
+    }
+  },
+  "2012": {
+    "Chennai Super Kings": {
+      "finalMatchScoreBatting": 190,
+      "lowestScore": 110,
+      "highestScore": 222
+    },
+    "Deccan Chargers": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 100,
+      "highestScore": 196
+    },
+    "Delhi Daredevils": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 93,
+      "highestScore": 207
+    },
+    "Kings XI Punjab": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 116,
+      "highestScore": 194
+    },
+    "Kolkata Knight Riders": {
+      "finalMatchScoreBatting": 192,
+      "lowestScore": 97,
+      "highestScore": 192
+    },
+    "Mumbai Indians": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 92,
+      "highestScore": 197
+    },
+    "Pune Warriors": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 102,
+      "highestScore": 192
+    },
+    "Rajasthan Royals": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 126,
+      "highestScore": 197
+    },
+    "Royal Challengers Bangalore": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 123,
+      "highestScore": 215
+    }
+  },
+  "2013": {
+    "Chennai Super Kings": {
+      "finalMatchScoreBatting": 125,
+      "lowestScore": 79,
+      "highestScore": 223
+    },
+    "Delhi Daredevils": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 80,
+      "highestScore": 179
+    },
+    "Kings XI Punjab": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 100,
+      "highestScore": 194
+    },
+    "Kolkata Knight Riders": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 105,
+      "highestScore": 186
+    },
+    "Mumbai Indians": {
+      "finalMatchScoreBatting": 148,
+      "lowestScore": 92,
+      "highestScore": 209
+    },
+    "Pune Warriors": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 99,
+      "highestScore": 185
+    },
+    "Rajasthan Royals": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 113,
+      "highestScore": 185
+    },
+    "Royal Challengers Bangalore": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 106,
+      "highestScore": 263
+    },
+    "Sunrisers Hyderabad": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 81,
+      "highestScore": 178
+    }
+  },
+  "2014": {
+    "Chennai Super Kings": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 138,
+      "highestScore": 205
+    },
+    "Delhi Daredevils": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 84,
+      "highestScore": 180
+    },
+    "Kings XI Punjab": {
+      "finalMatchScoreBatting": 199,
+      "lowestScore": 119,
+      "highestScore": 231
+    },
+    "Kolkata Knight Riders": {
+      "finalMatchScoreBatting": 200,
+      "lowestScore": 109,
+      "highestScore": 200
+    },
+    "Mumbai Indians": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 115,
+      "highestScore": 195
+    },
+    "Rajasthan Royals": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 71,
+      "highestScore": 201
+    },
+    "Royal Challengers Bangalore": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 70,
+      "highestScore": 190
+    },
+    "Sunrisers Hyderabad": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 44,
+      "highestScore": 205
+    }
+  },
+  "2015": {
+    "Chennai Super Kings": {
+      "finalMatchScoreBatting": 161,
+      "lowestScore": 119,
+      "highestScore": 209
+    },
+    "Delhi Daredevils": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 95,
+      "highestScore": 190
+    },
+    "Kings XI Punjab": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 88,
+      "highestScore": 206
+    },
+    "Kolkata Knight Riders": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 101,
+      "highestScore": 190
+    },
+    "Mumbai Indians": {
+      "finalMatchScoreBatting": 202,
+      "lowestScore": 114,
+      "highestScore": 209
+    },
+    "Rajasthan Royals": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 109,
+      "highestScore": 199
+    },
+    "Royal Challengers Bangalore": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 2,
+      "highestScore": 235
+    },
+    "Sunrisers Hyderabad": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 113,
+      "highestScore": 201
+    }
+  },
+  "2016": {
+    "Delhi Daredevils": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 98,
+      "highestScore": 192
+    },
+    "Gujarat Lions": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 104,
+      "highestScore": 196
+    },
+    "Kings XI Punjab": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 111,
+      "highestScore": 181
+    },
+    "Kolkata Knight Riders": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 66,
+      "highestScore": 189
+    },
+    "Mumbai Indians": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 92,
+      "highestScore": 206
+    },
+    "Rising Pune Supergiants": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 76,
+      "highestScore": 195
+    },
+    "Royal Challengers Bangalore": {
+      "finalMatchScoreBatting": 200,
+      "lowestScore": 139,
+      "highestScore": 248
+    },
+    "Sunrisers Hyderabad": {
+      "finalMatchScoreBatting": 208,
+      "lowestScore": 118,
+      "highestScore": 208
+    }
+  },
+  "2017": {
+    "Delhi Daredevils": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 66,
+      "highestScore": 214
+    },
+    "Gujarat Lions": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 135,
+      "highestScore": 208
+    },
+    "Kings XI Punjab": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 68,
+      "highestScore": 230
+    },
+    "Kolkata Knight Riders": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 48,
+      "highestScore": 187
+    },
+    "Mumbai Indians": {
+      "finalMatchScoreBatting": 129,
+      "lowestScore": 111,
+      "highestScore": 223
+    },
+    "Rising Pune Supergiant": {
+      "finalMatchScoreBatting": 128,
+      "lowestScore": 78,
+      "highestScore": 187
+    },
+    "Royal Challengers Bangalore": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 49,
+      "highestScore": 213
+    },
+    "Sunrisers Hyderabad": {
+      "finalMatchScoreBatting": 0,
+      "lowestScore": 128,
+      "highestScore": 209
+    }
+  }
+}
