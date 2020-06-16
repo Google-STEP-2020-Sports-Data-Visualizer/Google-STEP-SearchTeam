@@ -69,6 +69,12 @@
       "averageScore": 321.8888888888889
     }
   },
+  "Dubai": {
+    "Dubai International Cricket Stadium": {
+      "numberOfMatches": 7,
+      "averageScore": 294.85714285714283
+    }
+  },
   "Durban": {
     "Kingsmead": {
       "numberOfMatches": 15,
@@ -143,12 +149,6 @@
       "averageScore": 315.63157894736844
     }
   },
-  "N.A.": {
-    "Dubai International Cricket Stadium": {
-      "numberOfMatches": 7,
-      "averageScore": 294.85714285714283
-    }
-  },
   "Nagpur": {
     "Vidarbha Cricket Association Stadium, Jamtha": {
       "numberOfMatches": 3,
@@ -196,7 +196,7 @@
     }
   },
   "Visakhapatnam": {
-    "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium": {
+    "Dr YS Rajasekhara Reddy ACA-VDCA Cricket Stadium": {
       "numberOfMatches": 11,
       "averageScore": 283.72727272727275
     }
