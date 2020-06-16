@@ -618,3 +618,7 @@ final_collection_json = json.dumps(results)
 final_collection_json = json.loads(final_collection_json)
 out_file = open("json_output/cricVisDatabase.json", "w")
 json.dump(final_collection_json, out_file, indent=2)
+
+# Import the saved .json file into an instance of Realtime Database
+# Warning: Doing so will erase previously stored data from the database.
+# In case the current database needs to be expanded, write PUSH functions using firebase-admin library
