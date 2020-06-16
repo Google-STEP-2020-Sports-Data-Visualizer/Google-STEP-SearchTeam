@@ -3,251 +3,30 @@ import numpy as np
 import json
 from collections import defaultdict
 
-del_cols_orig = ['match_id',
-'inning',
-'batting_team',
-'bowling_team',
-'over',
-'ball',
-'batsman',
-'non_striker',
-'bowler',
-'wide_runs',
-'bye_runs',
-'legbye_runs',
-'noball_runs',
-'penalty_runs',
-'batsman_runs',
-'extra_runs',
-'total_runs',
-'player_dismissed',
-'dismissal_kind',
-'fielder']
+from utils.initialise_dataframes import *
+from utils.initialise_final_dataframes import *
 
-match_cols_orig = ['id',
-'season',
-'city',
-'date',
-'team1',
-'team2',
-'toss_winner',
-'toss_decision',
-'winner',
-'win_by_runs',
-'win_by_wickets',
-'player_of_match',
-'venue']
+# Initialise the deliveries and matches dataframes
+df_deliveries, df_matches = initialise_dataframes()
 
-df_deliveries = pd.read_csv("csv_files/deliveries.csv", usecols=del_cols_orig)
-df_matches = pd.read_csv("csv_files/matches.csv", usecols=match_cols_orig)
-df_matches.rename(columns={"id": "matchID"}, inplace=True)
-
-df_deliveries.rename(columns={"match_id": "matchID"}, inplace=True)
-
-"""
-Table 1 : MatchStatsTable
-
-(matchID, #over, team), breakdownRuns, runs
-
-Table  2 : DismissalTable
-
-(matchID, #over, #ball, team), playerDismissed, nonStriker, bowler, fielder, type
-
-Table 3: Player Description
-
-(playerName, season), team
-
-Table 4: Match Description
-
-(matchID), matchDate, season, venue (combine venue and city fields of matches.csv), team1, team2, tossWinner, tossDecision, result, playerOfMatch, winByRuns, winByWickets
-
-Table 5: Player_Match Relation (Many - Many Relation: one match -> multiple players, one player -> multiple matches)
-
-(playerName, matchID)
-
-Table 6: Season-wise
-
-(season, team), finalMatchScoreBatting, lowestScore, highestScore
-
-Table 7: Team-wise
-
-(team), matchWins, seasonWins, runnerUps, tossWins, averageScore
-
-Table 8: Venue-wise
-
-(city, stadium), numberOfMatches, averageScore
-
-Table 9: Stadium-City (Many - One Relation)
-
-(stadium, city)
-
-
-"""
-
-################ MatchStats initial dataframe
-match_stats = df_deliveries[["matchID",
-"over",
-"batting_team",
-'wide_runs',
-'bye_runs',
-'legbye_runs',
-'noball_runs',
-'penalty_runs',
-'batsman_runs',
-'extra_runs',
-'total_runs']].copy();
-
-match_stats.rename(columns={"batting_team": "team",
-                            "total_runs": "runs"}, inplace=True)
-
-
-
-############# DismissalTable initial dataframe
-match_dismissal = df_deliveries.filter(["matchID",
-"over",
-"ball",
-"batting_team",
-"player_dismissed",
-"non_striker",
-"bowler",
-"fielder",
-"dismissal_kind"
-], axis=1)
-
-match_dismissal.dropna(axis=0, subset=["player_dismissed"], inplace=True)
-match_dismissal = match_dismissal.reset_index(drop=True)
-
-match_dismissal.rename(columns={"batting_team": "team",
-                                "player_dismissed": "playerDismissed",
-                                "non_striker": "nonStriker",
-                                "dismissal_kind": "type"}, inplace=True)
-
-# Some rows have NaN in the "fielder" column
-match_dismissal.fillna("-", inplace=True)
-
-############ Player Description & Player Match initial dataframes
-
-df_players_seasons = pd.merge(df_deliveries[['matchID',
-                                            'batting_team',
-                                            'bowling_team',
-                                            'batsman',
-                                            'non_striker',
-                                            'bowler',
-                                            'fielder']].copy(),
-                              df_matches[['matchID',
-                                          'season']].copy(),
-                              how='inner', on='matchID')
-
-# Batsmen
-player_desc = df_players_seasons.filter(["matchID","season", "batting_team", "batsman"], axis=1)
-player_desc.rename(columns={"batsman": "player",
-                            "batting_team": "team"},
-                            inplace=True)
-
-# Non-strikers
-player_desc2 = df_players_seasons.filter(["matchID","season", "batting_team", "non_striker"], axis=1)
-player_desc2.rename(columns={"non_striker": "player",
-                            "batting_team": "team"},
-                            inplace=True)
-
-# Bowlers
-player_desc3 = df_players_seasons.filter(["matchID","season", "bowling_team", "bowler"], axis=1)
-player_desc3.rename(columns={"bowler": "player",
-                            "bowling_team": "team"},
-                            inplace=True)
-
-# Fielders
-player_desc4 = df_players_seasons.filter(["matchID","season", "bowling_team", "fielder"], axis=1)
-player_desc4.rename(columns={"fielder": "player",
-                            "bowling_team": "team"},
-                            inplace=True)
-
-# Append all of them
-player_desc = player_desc.append(player_desc2, ignore_index=True)
-player_desc = player_desc.append(player_desc3, ignore_index=True)
-player_desc = player_desc.append(player_desc4, ignore_index=True)
-
-# Remove all rows with NaN values
-player_desc.dropna(axis=0, subset=["player"], inplace=True)
-
-# To remove the " (sub)" substring that was there in the original data
-# to signify that the player came in as a substitute
-player_desc.player = player_desc.player.map(lambda x: x.rstrip(" (sub)"))
-
-# Player Match dataframe
-player_match = player_desc.filter(["matchID", "player"], axis=1)
-player_match = player_match.reset_index(drop=True)
-
-# Player Description dataframe
-player_desc = player_desc.filter(["season", "team", "player"], axis=1)
-player_desc = player_desc.reset_index(drop=True)
-
-# Remove all duplicate rows
-player_desc.drop_duplicates(inplace=True)
-player_desc.fillna("-", inplace=True)
-
-player_match.drop_duplicates(inplace=True)
-player_match.fillna("-", inplace=True)
-
-
-############# Match Description initial dataframe
-
-match_desc = df_matches.copy()
-match_desc.venue = match_desc.venue.astype(str) + ", " + match_desc.city
-match_desc.drop(columns=["city"], axis=1, inplace=True)
-
-match_desc.rename(columns={"date": "matchDate",
-                            "win_by_runs": "winByRuns",
-                            "win_by_wickets": "winByWickets",
-                            "winner": "result",
-                            "player_of_match": "playerOfMatch",
-                            "toss_winner": "tossWinner",
-                            "toss_decision": "tossDecision"},
-                  inplace=True)
-
-# Venue isn't avaliable for all matches i.e. some rows have NaN under "venue"
-match_desc.fillna("-", inplace=True)
-
-
-################ SeasonWise Initial Table
-season_wise = pd.merge(df_deliveries[['matchID',
-                                      'total_runs',
-                                      'batting_team']].copy(),
-                       df_matches[['matchID',
-                                   'season']].copy(),
-                       how='inner', on='matchID')
-
-season_wise.rename(columns={"batting_team": "team",
-                            "total_runs": "runs"}, inplace=True)
-
-
-############### TeamWise Initial Table
-team_wise = pd.merge(df_deliveries[['matchID',
-                                    'total_runs',
-                                    'batting_team']].copy(),
-                       df_matches[['matchID',
-                                   'season',
-                                   'toss_winner',
-                                   'winner']].copy(),
-                       how='inner', on='matchID')\
-                       .rename(columns={"batting_team": "team",
-                                        "total_runs": "runs",
-                                        "toss_winner": "tossWinner",
-                                        "winner": "result"})
-
-
-############## VenueWise initial Table
-venue_wise = pd.merge(df_deliveries[['matchID',
-                                    'total_runs']].copy(),
-                       df_matches[['matchID',
-                                   'city',
-                                   'venue']].copy(),
-                       how='inner', on='matchID')\
-                       .rename(columns={"venue": "stadium",
-                                        "total_runs": "runs"})
-
-venue_wise.fillna("Dubai", inplace=True)
-
+# Initialise the following dataframes in accordance with schema:
+# 1. match_stats
+# 2. match_dismissal
+# 3. player_desc
+# 4. player_match
+# 5. match_desc
+# 6. season_wise
+# 7. team_wise
+# 8. venue_wise
+final_dataframes = initialise_final_dataframes(df_deliveries, df_matches)
+match_stats = final_dataframes["match_stats"]
+match_dismissal = final_dataframes["match_dismissal"]
+player_desc = final_dataframes["player_desc"]
+player_match = final_dataframes["player_match"]
+match_desc = final_dataframes["match_desc"]
+season_wise = final_dataframes["season_wise"]
+team_wise = final_dataframes["team_wise"]
+venue_wise = final_dataframes["venue_wise"]
 
 """
 MatchStats {
@@ -329,6 +108,7 @@ MatchDescription {
     matchID_value: {
     }
 }
+
 
 """
 
