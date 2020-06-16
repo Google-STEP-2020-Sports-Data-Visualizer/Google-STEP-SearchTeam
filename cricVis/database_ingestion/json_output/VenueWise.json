@@ -1,0 +1,204 @@
+{
+  "Abu Dhabi": {
+    "Sheikh Zayed Stadium": {
+      "numberOfMatches": 7,
+      "averageScore": 276.14285714285717
+    }
+  },
+  "Ahmedabad": {
+    "Sardar Patel Stadium, Motera": {
+      "numberOfMatches": 12,
+      "averageScore": 313.9166666666667
+    }
+  },
+  "Bangalore": {
+    "M Chinnaswamy Stadium": {
+      "numberOfMatches": 66,
+      "averageScore": 311.54545454545456
+    }
+  },
+  "Bloemfontein": {
+    "OUTsurance Oval": {
+      "numberOfMatches": 2,
+      "averageScore": 264.5
+    }
+  },
+  "Cape Town": {
+    "Newlands": {
+      "numberOfMatches": 7,
+      "averageScore": 256.7142857142857
+    }
+  },
+  "Centurion": {
+    "SuperSport Park": {
+      "numberOfMatches": 12,
+      "averageScore": 304.4166666666667
+    }
+  },
+  "Chandigarh": {
+    "Punjab Cricket Association IS Bindra Stadium, Mohali": {
+      "numberOfMatches": 11,
+      "averageScore": 322.27272727272725
+    },
+    "Punjab Cricket Association Stadium, Mohali": {
+      "numberOfMatches": 35,
+      "averageScore": 313.9142857142857
+    }
+  },
+  "Chennai": {
+    "MA Chidambaram Stadium, Chepauk": {
+      "numberOfMatches": 48,
+      "averageScore": 318.2708333333333
+    }
+  },
+  "Cuttack": {
+    "Barabati Stadium": {
+      "numberOfMatches": 7,
+      "averageScore": 325.42857142857144
+    }
+  },
+  "Delhi": {
+    "Feroz Shah Kotla": {
+      "numberOfMatches": 60,
+      "averageScore": 307.01666666666665
+    }
+  },
+  "Dharamsala": {
+    "Himachal Pradesh Cricket Association Stadium": {
+      "numberOfMatches": 9,
+      "averageScore": 321.8888888888889
+    }
+  },
+  "Durban": {
+    "Kingsmead": {
+      "numberOfMatches": 15,
+      "averageScore": 290.2
+    }
+  },
+  "East London": {
+    "Buffalo Park": {
+      "numberOfMatches": 3,
+      "averageScore": 266.3333333333333
+    }
+  },
+  "Hyderabad": {
+    "Rajiv Gandhi International Stadium, Uppal": {
+      "numberOfMatches": 49,
+      "averageScore": 303.83673469387753
+    }
+  },
+  "Indore": {
+    "Holkar Cricket Stadium": {
+      "numberOfMatches": 5,
+      "averageScore": 315.2
+    }
+  },
+  "Jaipur": {
+    "Sawai Mansingh Stadium": {
+      "numberOfMatches": 33,
+      "averageScore": 298.8181818181818
+    }
+  },
+  "Johannesburg": {
+    "New Wanderers Stadium": {
+      "numberOfMatches": 8,
+      "averageScore": 286.5
+    }
+  },
+  "Kanpur": {
+    "Green Park": {
+      "numberOfMatches": 4,
+      "averageScore": 324.5
+    }
+  },
+  "Kimberley": {
+    "De Beers Diamond Oval": {
+      "numberOfMatches": 3,
+      "averageScore": 299.0
+    }
+  },
+  "Kochi": {
+    "Nehru Stadium": {
+      "numberOfMatches": 5,
+      "averageScore": 272.6
+    }
+  },
+  "Kolkata": {
+    "Eden Gardens": {
+      "numberOfMatches": 61,
+      "averageScore": 297.08196721311475
+    }
+  },
+  "Mumbai": {
+    "Brabourne Stadium": {
+      "numberOfMatches": 11,
+      "averageScore": 349.27272727272725
+    },
+    "Dr DY Patil Sports Academy": {
+      "numberOfMatches": 17,
+      "averageScore": 282.94117647058823
+    },
+    "Wankhede Stadium": {
+      "numberOfMatches": 57,
+      "averageScore": 315.63157894736844
+    }
+  },
+  "N.A.": {
+    "Dubai International Cricket Stadium": {
+      "numberOfMatches": 7,
+      "averageScore": 294.85714285714283
+    }
+  },
+  "Nagpur": {
+    "Vidarbha Cricket Association Stadium, Jamtha": {
+      "numberOfMatches": 3,
+      "averageScore": 294.0
+    }
+  },
+  "Port Elizabeth": {
+    "St George's Park": {
+      "numberOfMatches": 7,
+      "averageScore": 290.42857142857144
+    }
+  },
+  "Pune": {
+    "Maharashtra Cricket Association Stadium": {
+      "numberOfMatches": 15,
+      "averageScore": 317.46666666666664
+    },
+    "Subrata Roy Sahara Stadium": {
+      "numberOfMatches": 17,
+      "averageScore": 279.70588235294116
+    }
+  },
+  "Raipur": {
+    "Shaheed Veer Narayan Singh International Stadium": {
+      "numberOfMatches": 6,
+      "averageScore": 290.1666666666667
+    }
+  },
+  "Rajkot": {
+    "Saurashtra Cricket Association Stadium": {
+      "numberOfMatches": 10,
+      "averageScore": 333.3
+    }
+  },
+  "Ranchi": {
+    "JSCA International Stadium Complex": {
+      "numberOfMatches": 7,
+      "averageScore": 293.7142857142857
+    }
+  },
+  "Sharjah": {
+    "Sharjah Cricket Stadium": {
+      "numberOfMatches": 6,
+      "averageScore": 304.8333333333333
+    }
+  },
+  "Visakhapatnam": {
+    "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium": {
+      "numberOfMatches": 11,
+      "averageScore": 283.72727272727275
+    }
+  }
+}
