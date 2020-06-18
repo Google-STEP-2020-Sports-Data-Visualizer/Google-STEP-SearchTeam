@@ -39,8 +39,8 @@
         </div>
         <div id="timeSliderContainerParent">
           <div id="timeSliderContainer">
-            <span id="timeValueBubble">0<span></span></span>
-            <input id="timeSlider" type="range" value="0" min="0" max="100">
+            <span id="timeValueBubble">0</span>
+            <input id="timeSlider" type="range" value="0" min="0" max="100" step="5">
           </div>
         </div>
       </div>
@@ -48,3 +48,6 @@
   </body>
 </html>
 <script src="{% static 'cricVis/slider.js' %}"></script>
+<script>
+  enableSlider([1,2,3,4]); //testing slider
+</script>
