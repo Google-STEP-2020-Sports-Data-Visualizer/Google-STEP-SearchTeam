@@ -1,11 +1,60 @@
-#timeSlider{
-    width: 500px;
-    height: 10px;
-    border-radius: 3px;
+#timeSliderContainer {
+  position: relative;
 }
-#timeSlider::-webkit-slider-thumb{
-    appearance: none;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
+
+#timeSliderContainerParent {
+  display: flex;
+  flex-direction: column;
+  margin: 32px;
+}
+
+#timeValueBubble {
+  display: block;
+  width: 50px;
+  height: 35px;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 35px;
+  background: rgb(236, 182, 5);
+  position: absolute;
+  top: -30px;
+  left: 0;
+  margin-left: -16px;
+}
+
+#timeValueBubble::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 9px solid rgb(236, 182, 5);
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  margin-left: -8px;
+}
+
+#timeSlider {
+  width: 500px;
+  margin-top: 24px;
+  -webkit-appearance: none;
+  border-radius: 24px;
+  background: #d3d3d3;
+}
+
+#timeSlider::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 7px;
+  border-radius: 24px;
+}
+
+#timeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #000;
+  height: 18px;
+  width: 18px;
+  border-radius: 100%;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  margin-top: -5.5px;
 }
