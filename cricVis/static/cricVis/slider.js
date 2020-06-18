@@ -1,8 +1,5 @@
-$(function() {
-    $('#timeSlider').on('input', function() {
-      var currentPositionSlider = $(this).val();
-      var portion = (currentPositionSlider) / (100);
-      $('#timeValueBubble').text(currentPositionSlider);
-      $('#timeValueBubble').css('left', portion * $('#timeSlider').width());
-    });
-  });
+function enableSlider(dateList){
+  const rangeMax = (dateList.length - 1) * 5;
+  document.getElementById("timeSlider").max = rangeMax.toString();
+  useSlider(dateList);
+}
