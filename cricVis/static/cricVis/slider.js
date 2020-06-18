@@ -3,3 +3,11 @@ function enableSlider(dateList){
   document.getElementById("timeSlider").max = rangeMax.toString();
   useSlider(dateList);
 }
+function useSlider(dateList){
+  $('#timeSlider').on('input', function() {
+    var currentPositionSlider = $(this).val();
+    var portion = (currentPositionSlider) / ($(this).attr('max'));
+    $('#timeValueBubble').text(dateList[currentPositionSlider / 5]);
+    $('#timeValueBubble').css('left', portion * $('#timeSlider').width());
+  });
+}
