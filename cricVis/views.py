@@ -76,3 +76,18 @@ def createThreads(visualizationRequest, outputQueue):
         thread = threading.Thread(target=getVisualizationResponse,name="Thread"+str(i+1),args=[visualizationRequest[i],outputQueue])
         threads.append(thread)
     return threads
+
+def fetchTimeSeriesData(request):
+    if request.method == "GET":
+        visualizationRequest = request.GET["visualizationRequest"]
+        outputQueue = queue.Queue()
+        threads = createThreads(visualizationRequest, outputQueue)
+        visualizationResponse = []
+        for thread in threads:
+            thread.start()
+            visualizationResponse.append(outputQueue.get())
+        for thread in threads:
+            thread.join()
+        
+        return HttpResponse(json.dumps(visualizationResponse))
+        
