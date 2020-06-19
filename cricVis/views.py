@@ -69,4 +69,10 @@ def fetchGraphData(request):
         allData["chartData"] = getChartResponse(matchID,matchStats,playersDismissed,teams)
 
         return HttpResponse(json.dumps(allData))
-    
+
+def createThreads(visualizationRequest, outputQueue):
+    threads = []
+    for i in range(len(visualizationRequest)):
+        thread = threading.Thread(target=getVisualizationResponse,name="Thread"+str(i+1),args=[visualizationRequest[i],outputQueue])
+        threads.append(thread)
+    return threads
