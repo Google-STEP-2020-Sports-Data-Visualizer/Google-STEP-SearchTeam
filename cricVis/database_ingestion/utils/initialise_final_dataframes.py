@@ -182,7 +182,7 @@ def initialise_player_dataframes(df_deliveries, df_matches):
 def initialise_match_desc(df_deliveries, df_matches):
     # Filter out the columns needed from df_matches
     match_desc = df_matches.copy()
-    match_desc.venue = match_desc.venue.astype(str) + ", " + match_desc.city
+    match_desc.venue = "{stadium}, {city}".format(stadium=match_desc.venue, city=match_desc.city)
     match_desc.drop(columns=["city"], axis=1, inplace=True)
 
     # Rename columns as per the schema naming conventions
