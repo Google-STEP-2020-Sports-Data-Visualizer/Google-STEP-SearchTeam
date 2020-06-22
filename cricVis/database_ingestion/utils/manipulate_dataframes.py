@@ -148,18 +148,18 @@ def group_final_dataframes(final_dataframes):
 
     # Modifying column values so that they match the format of
     # the keys in the final database design
-    match_stats.matchID = "matchID_" + match_stats.matchID.astype(str)
-    match_stats.over = "over_" + match_stats.over.astype(str)
+    match_stats.matchID = "matchID_{value}".format(value=match_stats.matchID)
+    match_stats.over = "over_{value}".format(value=match_stats.over)
 
-    match_dismissal.matchID = "matchID_" + match_dismissal.matchID.astype(str)
-    match_dismissal.over = "over_" + match_dismissal.over.astype(str)
-    match_dismissal.ball = "ball_" + match_dismissal.ball.astype(str)
+    match_dismissal.matchID = "matchID_{value}".format(value=match_dismissal.matchID)
+    match_dismissal.over = "over_{value}".format(value=match_dismissal.over)
+    match_dismissal.ball = "ball_{value}".format(value=match_dismissal.ball)
 
-    player_desc.season = "season_" + player_desc.season.astype(str)
+    player_desc.season = "season_{value}".format(value=player_desc.season)
 
-    player_match.matchID = "matchID_" + player_match.matchID.astype(str)
+    player_match.matchID = "matchID_{value}".format(value=player_match.matchID)
 
-    match_desc.matchID = "matchID_" + match_desc.matchID.astype(str)
+    match_desc.matchID = "matchID_{value}".format(value=match_desc.matchID)
 
     final_dataframes_grouped = {}
     final_dataframes_grouped["match_stats_grouped"] = group_match_stats(match_stats)
