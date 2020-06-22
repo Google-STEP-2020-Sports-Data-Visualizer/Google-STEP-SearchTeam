@@ -1,4 +1,4 @@
-#Make a GET call to the database to check latency in retrieving data
+#Make a GET call to the database to check latency (in seconds) in retrieving data
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
