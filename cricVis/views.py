@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http import Http404, HttpResponse
-import json
+import json, threading, queue
 from cricVis.databaseAPI import *
+from cricVis.timeSeriesAPI import *
 # Create your views here.
 
 """ sent a GET request to get match_ID, team1, team2, match date """
@@ -68,3 +69,25 @@ def fetchGraphData(request):
         allData["chartData"] = getChartResponse(matchID,matchStats,playersDismissed,teams)
 
         return HttpResponse(json.dumps(allData))
+
+def createThreads(visualizationRequest, outputQueue):
+    threads = []
+    for i in range(len(visualizationRequest)):
+        thread = threading.Thread(target=getVisualizationResponse,name="Thread"+str(i+1),args=[visualizationRequest[i],outputQueue])
+        threads.append(thread)
+    return threads
+
+def fetchTimeSeriesData(request):
+    if request.method == "GET":
+        visualizationRequest = request.GET["visualizationRequest"]
+        outputQueue = queue.Queue()
+        threads = createThreads(visualizationRequest, outputQueue)
+        visualizationResponse = []
+        for thread in threads:
+            thread.start()
+            visualizationResponse.append(outputQueue.get())
+        for thread in threads:
+            thread.join()
+        
+        return HttpResponse(json.dumps(visualizationResponse))
+        
