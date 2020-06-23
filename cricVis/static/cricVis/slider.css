@@ -1,7 +1,7 @@
-#timeSliderContainer {
+.tsc {
   position: relative;
 }
-#timeValueBubble {
+.tvb {
   display: block;
   width: 50px;
   height: 35px;
@@ -27,8 +27,20 @@
   left: 50%;
   margin-left: -8px;
 }
+#timeValueBubble2::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 9px solid rgb(236, 182, 5);
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  margin-left: -8px;
+}
 
-#timeSlider {
+.ts {
   width: 500px;
   margin-top: 24px;
   -webkit-appearance: none;
@@ -36,13 +48,13 @@
   background: #d3d3d3;
 }
 
-#timeSlider::-webkit-slider-runnable-track {
+.ts::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   height: 7px;
   border-radius: 24px;
 }
 
-#timeSlider::-webkit-slider-thumb {
+.ts::-webkit-slider-thumb {
   -webkit-appearance: none;
   background: #000;
   height: 18px;

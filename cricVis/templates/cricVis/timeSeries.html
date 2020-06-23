@@ -37,9 +37,13 @@
             </div>
           </nav>
         </div>
-        <div id="timeSliderContainer">
-          <span id="timeValueBubble">0</span>
-          <input id="timeSlider" type="range" value="0" min="0" max="100" step="5">
+        <div id="timeSliderContainer" class="tsc">
+          <span id="timeValueBubble" class="tvb">0</span>
+          <input id="timeSlider" class="ts" type="range" value="0" min="0" max="100" step="5">
+        </div>
+        <div id="timeSliderContainer2" class="tsc">
+          <span id="timeValueBubble2" class="tvb">0</span>
+          <input id="timeSlider2" class="ts" type="range" value="0" min="0" max="100" step="5">
         </div>
       </div>
     </div>
@@ -47,5 +51,6 @@
 </html>
 <script src="{% static 'cricVis/slider.js' %}"></script>
 <script>
-  enableSlider([1,2,3,4]); //testing slider
+  enableSlider([1,2,3,4],"timeSlider","timeValueBubble"); //testing slider
+  enableSlider([1,2,3,4,5,6],"timeSlider2","timeValueBubble2");
 </script>

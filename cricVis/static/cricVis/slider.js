@@ -1,16 +1,16 @@
 function clearDiv(divID){
   $('#' + divID).empty();
 }
-function enableSlider(dateList){
+function enableSlider(dateList,timeSliderID,timeValueBubbleID){
   const rangeMax = (dateList.length - 1) * 5;
-  document.getElementById("timeSlider").max = rangeMax.toString();
-  useSlider(dateList);
+  document.getElementById(timeSliderID).max = rangeMax.toString();
+  useSlider(dateList,timeSliderID,timeValueBubbleID);
 }
-function useSlider(dateList){
-  $('#timeSlider').on('input', function() {
+function useSlider(dateList,timeSliderID,timeValueBubbleID){
+  $(`#${timeSliderID}`).on('input', function() {
     var currentPositionSlider = $(this).val();
     var portion = (currentPositionSlider) / ($(this).attr('max'));
-    $('#timeValueBubble').text(dateList[currentPositionSlider / 5]);
-    $('#timeValueBubble').css('left', portion * $('#timeSlider').width());
+    $(`#${timeValueBubbleID}`).text(dateList[currentPositionSlider / 5]);
+    $(`#${timeValueBubbleID}`).css('left', portion * $(`#${timeSliderID}`).width());
   });
 }
