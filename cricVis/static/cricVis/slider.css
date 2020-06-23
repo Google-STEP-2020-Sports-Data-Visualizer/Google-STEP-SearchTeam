@@ -1,13 +1,6 @@
 #timeSliderContainer {
   position: relative;
 }
-
-#timeSliderContainerParent {
-  display: flex;
-  flex-direction: column;
-  margin: 32px;
-}
-
 #timeValueBubble {
   display: block;
   width: 50px;
