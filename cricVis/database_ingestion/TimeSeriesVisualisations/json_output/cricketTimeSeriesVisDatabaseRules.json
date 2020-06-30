@@ -1,0 +1,10161 @@
+{
+  ".write": true,
+  ".read": true,
+  "BatsmanPerformanceODIMen": {
+    "1971": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1972": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1973": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1974": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1975": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1976": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1977": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1978": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1979": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1980": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1981": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1982": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1983": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1984": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1985": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1986": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1987": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1988": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1989": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1990": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1991": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1992": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1993": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1994": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1995": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1996": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1997": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1998": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1999": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2000": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2001": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2002": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2003": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2004": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2005": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2006": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2007": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2008": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2009": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2010": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2011": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2012": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2013": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2014": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2015": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2016": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2017": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2018": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2019": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2020": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    }
+  },
+  "BatsmanPerformanceODIWomen": {
+    "1973": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1976": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1978": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1979": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1982": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1984": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1985": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1986": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1987": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1988": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1989": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1990": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1991": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1992": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1993": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1994": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1995": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1996": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1997": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1998": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1999": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2000": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2001": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2002": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2003": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2004": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2005": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2006": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2007": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2008": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2009": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2010": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2011": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2012": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2013": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2014": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2015": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2016": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2017": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2018": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2019": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2020": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    }
+  },
+  "BatsmanPerformanceTestMen": {
+    "1877": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1879": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1880": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1881": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1882": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1883": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1884": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1885": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1886": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1887": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1888": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1889": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1890": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1892": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1893": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1894": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1895": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1896": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1897": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1898": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1899": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1901": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1902": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1903": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1904": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1905": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1906": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1907": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1908": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1909": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1910": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1911": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1912": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1913": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1914": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1920": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1921": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1922": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1923": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1924": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1925": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1926": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1927": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1928": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1929": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1930": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1931": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1932": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1933": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1934": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1935": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1936": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1937": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1938": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1939": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1946": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1947": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1948": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1949": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1950": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1951": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1952": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1953": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1954": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1955": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1956": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1957": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1958": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1959": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1960": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1961": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1962": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1963": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1964": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1965": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1966": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1967": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1968": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1969": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1970": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1971": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1972": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1973": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1974": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1975": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1976": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1977": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1978": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1979": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1980": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1981": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1982": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1983": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1984": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1985": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1986": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1987": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1988": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1989": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1990": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1991": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1992": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1993": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1994": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1995": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1996": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1997": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1998": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1999": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2000": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2001": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2002": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2003": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2004": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2005": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2006": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2007": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2008": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2009": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2010": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2011": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2012": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2013": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2014": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2015": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2016": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2017": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2018": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2019": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2020": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    }
+  },
+  "BatsmanPerformanceTestWomen": {
+    "1934": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1935": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1937": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1948": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1949": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1951": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1954": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1957": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1958": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1960": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1961": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1963": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1966": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1968": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1969": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1972": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1975": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1976": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1977": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1979": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1984": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1985": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1986": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1987": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1990": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1991": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "1992": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1995": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1996": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1998": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "1999": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      }
+    },
+    "2000": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2001": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2002": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2003": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2004": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2005": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2006": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2007": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2008": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2009": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2011": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2013": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2014": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2015": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2017": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2019": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    }
+  },
+  "BatsmanPerformanceT20Men": {
+    "2005": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2006": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2007": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2008": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2009": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2010": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2011": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2012": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2013": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2014": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2015": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2016": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2017": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2018": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2019": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2020": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    }
+  },
+  "BatsmanPerformanceT20Women": {
+    "2004": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2005": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2006": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2007": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2008": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2009": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2010": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2011": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2012": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2013": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2014": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2015": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2016": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2017": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2018": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2019": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    },
+    "2020": {
+      "fifties": {
+        ".indexOn": ".value"
+      },
+      "fours": {
+        ".indexOn": ".value"
+      },
+      "hundreds": {
+        ".indexOn": ".value"
+      },
+      "runsScored": {
+        ".indexOn": ".value"
+      },
+      "sixes": {
+        ".indexOn": ".value"
+      },
+      "strikeRate": {
+        ".indexOn": ".value"
+      }
+    }
+  },
+  "BowlerPerformanceODIMen": {
+    "1971": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1972": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1973": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1974": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1975": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1976": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1977": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1978": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1979": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1980": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1981": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1982": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1983": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1984": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1985": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1986": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1987": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1988": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1989": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1990": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1991": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1992": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1993": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1994": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1995": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1996": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1997": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1998": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1999": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2000": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2001": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2002": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2003": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2004": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2005": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2006": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2007": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2008": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2009": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2010": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2011": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2012": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2013": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2014": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2015": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2016": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2017": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2018": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2019": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2020": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    }
+  },
+  "BowlerPerformanceODIWomen": {
+    "1973": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1976": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1978": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1979": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1982": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1984": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1985": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1986": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1987": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1988": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1989": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1990": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1991": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1992": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1993": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1994": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1995": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1996": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1997": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1998": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1999": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2000": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2001": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2002": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2003": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2004": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2005": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2006": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2007": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2008": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2009": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2010": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2011": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2012": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2013": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2014": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2015": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2016": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2017": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2018": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2019": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2020": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    }
+  },
+  "BowlerPerformanceTestMen": {
+    "1877": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1879": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1880": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1881": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1882": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1883": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1884": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1885": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1886": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1887": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1888": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1889": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1890": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1892": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1893": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1894": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1895": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1896": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1897": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1898": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1899": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1901": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1902": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1903": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1904": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1905": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1906": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1907": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1908": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1909": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1910": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1911": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1912": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1913": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1914": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1920": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1921": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1922": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1923": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1924": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1925": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1926": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1927": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1928": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1929": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1930": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1931": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1932": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1933": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1934": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1935": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1936": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1937": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1938": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1939": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1946": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1947": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1948": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1949": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1950": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1951": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1952": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1953": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1954": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1955": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1956": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1957": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1958": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1959": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1960": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1961": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1962": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1963": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1964": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1965": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1966": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1967": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1968": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1969": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1970": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1971": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1972": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1973": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1974": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1975": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1976": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1977": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1978": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1979": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1980": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1981": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1982": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1983": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1984": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1985": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1986": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1987": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1988": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1989": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1990": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1991": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1992": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1993": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1994": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1995": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1996": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1997": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1998": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1999": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2000": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2001": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2002": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2003": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2004": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2005": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2006": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2007": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2008": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2009": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2010": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2011": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2012": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2013": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2014": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2015": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2016": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2017": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2018": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2019": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2020": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    }
+  },
+  "BowlerPerformanceTestWomen": {
+    "1934": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1935": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1937": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1948": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1949": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1951": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1954": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1957": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1958": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1960": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1961": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1963": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1966": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1968": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1969": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1972": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1975": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1976": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1977": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1979": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1984": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1985": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1986": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1987": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1990": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1991": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1992": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1995": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1996": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1998": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "1999": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2000": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2001": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2002": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2003": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2004": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2005": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2006": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2007": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2008": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2009": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2011": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2013": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2014": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2015": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2017": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2019": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    }
+  },
+  "BowlerPerformanceT20Men": {
+    "2005": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2006": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2007": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2008": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2009": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2010": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2011": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2012": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2013": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2014": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2015": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2016": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2017": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2018": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2019": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2020": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    }
+  },
+  "BowlerPerformanceT20Women": {
+    "2004": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2005": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2006": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2007": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2008": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2009": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2010": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2011": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2012": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2013": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2014": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2015": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2016": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2017": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2018": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2019": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    },
+    "2020": {
+      "economyRate": {
+        ".indexOn": ".value"
+      },
+      "maidens": {
+        ".indexOn": ".value"
+      },
+      "runsConceded": {
+        ".indexOn": ".value"
+      },
+      "wickets": {
+        ".indexOn": ".value"
+      }
+    }
+  }
+}
