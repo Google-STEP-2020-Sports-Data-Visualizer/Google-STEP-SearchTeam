@@ -158,14 +158,28 @@ class FinalDataframes:
         # Initialise the dataframe by taking the inner join of
         # the desired columns from df_deliveries and df_matches
         # and rename columns as per the schema naming conventions
-        season_wise = (pd.merge(self.df_deliveries[['matchID',
-                                                    'total_runs',
-                                                    'batting_team']].copy(),
-                                self.df_matches[['matchID',
-                                                 'season']].copy(),
-                                how='inner', on='matchID')\
-                       .rename(columns={"batting_team": "team",
-                                        "total_runs": "runs"}))
+        self.season_wise = (pd.merge(self.df_deliveries[['matchID',
+                                                         'total_runs',
+                                                         'batting_team']].copy(),
+                                     self.df_matches[['matchID',
+                                                      'season']].copy(),
+                                     how='inner', on='matchID')\
+                            .rename(columns={"batting_team": "team",
+                                             "total_runs": "runs"}))
+
+        self.season_wise = self.season_wise.groupby(["season",
+                                                     "team",
+                                                     "matchID"],
+                                                    as_index=False)[["runs"]].sum()
+
+        # Enlists matchID of the final match of each season
+        self.final_matches = self.season_wise.groupby("season")[["matchID"]].max()["matchID"].to_list()
+
+        # Sets the score of a final match of a team as 0 if the
+        # team did not play in that final
+        self.season_wise["finalMatchScoreBatting"] = (self.season_wise["runs"]\
+                                                      .mask(~self.season_wise["matchID"]\
+                                                            .isin(self.final_matches), 0))
 
 
     ############### TeamWise Initial Table
@@ -185,6 +199,15 @@ class FinalDataframes:
                                            "total_runs": "runs",
                                            "toss_winner": "tossWinner",
                                            "winner": "result"}))
+
+        # Replace NaN with "-" wherever result is unavailable
+        self.team_wise = self.team_wise.fillna("-")
+
+        self.team_wise = (self.team_wise.groupby(["season", "matchID", "team", "tossWinner", "result"], as_index=False).agg({"runs": "sum"}))
+
+        # Create a boolean "playedInFinals" column which indicates whether the
+        # entry is that of a final match or not
+        self.team_wise["playedInFinals"] = self.team_wise["matchID"].isin(self.final_matches)
 
 
     ############## VenueWise initial Table
