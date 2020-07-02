@@ -561,6 +561,17 @@
           },
           "how": "inner",
           "on": "match_id"
+        },
+        "groupby": {
+          "by": ["season",
+                "matchID",
+                "team",
+                "tossWinner",
+                "result"],
+          "as_index": false
+        },
+        "agg": {
+          "runs": "sum"
         }
       }
     }
