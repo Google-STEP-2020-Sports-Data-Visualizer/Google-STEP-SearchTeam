@@ -83,7 +83,8 @@
       },
       "renamed_columns": {
         "id": "match_id"
-      }
+      },
+      "find_final_matches": true
     }
   },
 
@@ -562,16 +563,34 @@
           "how": "inner",
           "on": "match_id"
         },
+        "fillna": {
+          "columns": ["toss_winner", "winner"],
+          "value": "-"
+        },
         "groupby": {
-          "by": ["season",
-                "matchID",
-                "team",
-                "tossWinner",
-                "result"],
-          "as_index": false
+          "class": "FinalDataframes",
+          "dataframe": "team_wise",
+          "params": {
+            "by": ["season",
+                  "match_id",
+                  "team",
+                  "toss_winner",
+                  "winner"],
+            "as_index": false
+          }
         },
         "agg": {
           "runs": "sum"
+        },
+        "add_columns_using_boolean_logic": {
+          "match_wins": "df.team, df.winner, '=='",
+          "toss_wins": "df.team, df.toss_winner, '=='",
+          "season_wins": "df.team, df.winner, '==', df.match_id, self.final_matches, 'isin', '&'",
+          "runner_ups": "df.team, df.winner, '!=', df.match_id, self.final_matches, 'isin', '&'"
+        },
+        "drop": {
+          "columns": ["match_id", "season", "toss_winner", "winner"],
+          "axis": 1
         }
       }
     }
