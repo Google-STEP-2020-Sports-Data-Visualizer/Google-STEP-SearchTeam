@@ -21,6 +21,11 @@ class FinalDataframes:
             df = self.execute(df, dfname, fn, df_config["functions"][fn])
             self.dfs[dfname] = df
 
+<<<<<<< HEAD
+=======
+        print(self.dfs[dfname])
+
+>>>>>>> bd12b18dc957d5d8e14358dad32395e1714346ec
 
     def execute(self, df, dfname, fn, fn_config):
         if fn == "copy":
