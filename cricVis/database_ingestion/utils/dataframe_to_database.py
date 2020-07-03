@@ -30,7 +30,5 @@ def dataframe_to_database(df, configs):
     for row in df.itertuples():
         fill_schema_dict(row, **configs)
 
-    print(schema_dict[configs["schema_name"]]["V Kohli"].keys())
-
     # Push dictionary to database
     dict_to_database(schema_dict)
