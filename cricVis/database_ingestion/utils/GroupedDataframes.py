@@ -21,6 +21,7 @@ class GroupedDataframes:
             self.dfs[dfname] = df
 
 
+
     def execute(self, df, dfname, fn, fn_config):
         if fn == "copy":
             if(fn_config["class"] == "FinalDataframes"):
@@ -102,13 +103,15 @@ class GroupedDataframes:
                           how=fn_config["how"], on=fn_config["on"])
 
         elif fn == "groupby":
-            print(fn_config)
             if fn_config["class"] == "FinalDataframes":
                 df_orig = self.final_dfs[fn_config["dataframe"]]
             else:
                 df_orig = self.dfs[fn_config["dataframe"]]
 
             df = df_orig.groupby(**fn_config["params"])
+
+        elif fn == "set_index":
+            df = df.set_index(fn_config)
 
         elif fn == "agg":
             df = df.agg(fn_config)
