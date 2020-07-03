@@ -1,4 +1,5 @@
 import pandas as pd
+import utils.util_fns as util_fns
 
 class InitialDataframes:
     def __init__(self, configs):
@@ -17,5 +18,8 @@ class InitialDataframes:
 
         if "renamed_columns" in df_config.keys():
             df.rename(columns=df_config["renamed_columns"], inplace=True)
+
+        if "find_final_matches" in df_config.keys():
+            self.final_matches = util_fns.find_final_matches(df)
 
         self.dfs[dfname] = df
