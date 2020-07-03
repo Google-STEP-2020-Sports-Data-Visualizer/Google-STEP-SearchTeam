@@ -1,18 +1,26 @@
 import argparse
 import json
+import firebase_admin
+from firebase_admin import credentials
 
 from utils.InitialDataframes import InitialDataframes
 from utils.FinalDataframes import FinalDataframes
-#from utils.GroupedDataframes import GroupedDataframes
-#from utils.to_database import to_database
+from utils.GroupedDataframes import GroupedDataframes
+from utils.dataframe_to_database import dataframe_to_database
 
-def ingest(configs, db_url, cred_path):
+def ingest(configs):
     initial_dataframes = InitialDataframes(configs["InitialDataframes"])
-    print("\nFinished initialising...\n")
+    print("\nFinished parsing datasets...\n")
     final_dataframes = FinalDataframes(initial_dataframes.final_matches, initial_dataframes.dfs, configs["FinalDataframes"])
-    print("\nFinished final dfs...\n")
+    print("\nFinished creating dataframes...\n")
     final_dataframes_grouped = GroupedDataframes(final_dataframes.dfs, configs["GroupedDataframes"])
-    to_database(final_dataframes_grouped)
+    print("\nFinished grouping dataframes...\n")
+
+    db_configs = configs["DataFrameToDatabase"]
+
+    for dfname, df in final_dataframes_grouped.dfs.items():
+        schema_configs = db_configs[dfname]
+        dataframe_to_database(df, schema_configs)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
@@ -22,13 +30,20 @@ if __name__ == '__main__':
                         help="Path to config file from pwd", required=True)
 
     parser.add_argument(
-        '--db_url', '-d', help="URL of Realtime Database", required=True)
+        '--db_url', '-d', help="URL of Realtime Database", default="https://playercomparison-6dde2.firebaseio.com/")
     parser.add_argument(
-        '--cred_path', '-cr', help="Path to secure .json private key from pwd", required=True)
+        '--cred_path', '-cr', help="Path to secure .json private key from pwd", default="firebase-sdk.json")
 
     args = parser.parse_args()
 
     with open(args.config_path) as f:
       configs = json.load(f)
 
-    ingest(configs,  args.db_url, args.cred_path)
+    cred = credentials.Certificate(args.cred_path)
+
+    firebase_admin.initialize_app(cred, {
+        'databaseURL': args.db_url
+    })
+
+
+    ingest(configs)
