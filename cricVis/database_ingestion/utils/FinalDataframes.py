@@ -4,8 +4,10 @@ import numpy as np
 import utils.util_fns as util_fns
 
 class FinalDataframes:
-    def __init__(self, initial_dfs, configs):
+    def __init__(self, final_matches, initial_dfs, configs):
         dfnames_list = list(configs.keys())
+
+        self.final_matches = final_matches
 
         self.initial_dfs = initial_dfs
         self.dfs = {}
@@ -17,8 +19,10 @@ class FinalDataframes:
         df = pd.DataFrame
         for fn in df_config["functions"]:
             df = self.execute(df, dfname, fn, df_config["functions"][fn])
+            self.dfs[dfname] = df
 
-        self.dfs[dfname] = df
+        print(self.dfs[dfname])
+
 
     def execute(self, df, dfname, fn, fn_config):
         if fn == "copy":
@@ -53,13 +57,20 @@ class FinalDataframes:
         elif fn == "dropna":
             df = df.dropna(**fn_config)
 
-        elif fn == "add_column":
+        elif fn == "fillna":
+            df[fn_config["columns"]] = df[fn_config["columns"]].fillna(fn_config["value"])
+
+        elif fn == "add_columns":
             for col in fn_config.keys():
                 df[col] = fn_config[col]
 
+        elif fn == "add_columns_using_boolean_logic":
+            for col in fn_config.keys():
+                df[col] = util_fns.boolean_logic(*eval(fn_config[col]))
+
         elif fn == "validate_keys":
             if "fillna" in fn_config.keys():
-                df[fn_config["fillna"]["columns"]] = df[fn_config["fillna"]["columns"]].fillna(fn_config["fillna"]["value"])
+                self.execute(df, dfname, "fillna", fn_config["fillna"])
 
             for col in fn_config["remove_invalid_chars"]:
                 df[col] = util_fns.remove_invalid_chars(df[col])
@@ -92,5 +103,19 @@ class FinalDataframes:
             df = pd.merge(left[left_cols].copy(),
                           right[right_cols].copy(),
                           how=fn_config["how"], on=fn_config["on"])
+
+        elif fn == "groupby":
+            if fn_config["class"] == "InitialDataframes":
+                df_orig = self.initial_dfs[fn_config["dataframe"]]
+            else:
+                df_orig = self.dfs[fn_config["dataframe"]]
+
+            df = df_orig.groupby(**fn_config["params"])
+
+        elif fn == "agg":
+            df = df.agg(fn_config)
+
+        elif fn == "drop":
+            df = df.drop(**fn_config)
 
         return df
