@@ -6,6 +6,12 @@ from dateutil.parser import parse
 from dateutil.parser._parser import ParserError
 from datetime import datetime
 
+def str_eval(x):
+    try:
+        return eval(x)
+    except (TypeError, ValueError):
+        return x
+
 def find_final_matches(df):
     # Enlists matchID of the final match of each season
     return df.groupby("season")[["match_id"]].max()["match_id"].to_list()
