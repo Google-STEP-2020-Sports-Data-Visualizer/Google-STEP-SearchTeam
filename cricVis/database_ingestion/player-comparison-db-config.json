@@ -597,14 +597,127 @@
   },
 
   "GroupedDataframes": {
-    "batsman_stats_grouped": {
-      "groupby": {
-        "columns": ["name", "type"],
-        "as_index": false
-      }
+    "batsman_stats_grouped_level1": {
+      "filter": {
+        "class": "FinalDataframes",
+        "dataframe": "batsman_stats",
+        "params": {
+          "items": ["name", "birth_date", "team", "batting_style"],
+          "axis": 1
+        }
+      },
+      "set_index": ["name"]
+    },
+    "batsman_stats_grouped_level2": {
+      "filter": {
+        "class": "FinalDataframes",
+        "dataframe": "batsman_stats",
+        "params": {
+          "items": ["name",
+            "type",
+            "runs",
+            "balls_faced",
+            "strike_rate",
+            "hundreds",
+            "fifties",
+            "fours",
+            "sixes"],
+          "axis": 1
+        }
+      },
+      "set_index": ["name", "type"]
+    },
+    "bowler_stats_grouped_level1": {
+      "filter": {
+        "class": "FinalDataframes",
+        "dataframe": "bowler_stats",
+        "params": {
+          "items": ["name", "birth_date", "team", "bowling_style"],
+          "axis": 1
+        }
+      },
+      "set_index": ["name"]
+    },
+    "bowler_stats_grouped_level2": {
+      "filter": {
+        "class": "FinalDataframes",
+        "dataframe": "bowler_stats",
+        "params": {
+          "items": ["name",
+            "type",
+            "runs",
+            "balls",
+            "economy",
+            "wickets"],
+          "axis": 1
+        }
+      },
+      "set_index": ["name", "type"]
     },
     "team_wise_grouped": {
+      "groupby": {
+        "class": "FinalDataframes",
+        "dataframe": "team_wise",
+        "params": {
+          "by": ["team"]
+        }
+      },
+      "agg": {"runs": "mean",
+              "match_wins": "sum",
+              "toss_wins": "sum",
+              "season_wins": "sum",
+              "runner_ups": "sum"},
 
+      "rename": {
+        "columns": {"runs": "average_score"}
+      },
+      "replace": {
+        "to_replace": "np.nan",
+        "value": 0,
+        "inplace": true
+      }
+
+    }
+  },
+
+  "DataFrameToDatabase": {
+    "batsman_stats_grouped_level1": {
+      "schema_name": "BatsmanStats",
+      "fields_list": ["birth_date", "team", "batting_style"],
+      "field_as_key": true
+    },
+    "batsman_stats_grouped_level2": {
+      "schema_name": "BatsmanStats",
+      "fields_list": ["runs",
+                      "balls_faced",
+                      "strike_rate",
+                      "hundreds",
+                      "fifties",
+                      "fours",
+                      "sixes"],
+      "field_as_key": true
+    },
+    "bowler_stats_grouped_level1": {
+      "schema_name": "BowlerStats",
+      "fields_list": ["birth_date", "team", "bowling_style"],
+      "field_as_key": true
+    },
+    "bowler_stats_grouped_level2": {
+      "schema_name": "BowlerStats",
+      "fields_list": ["runs",
+                      "balls",
+                      "economy",
+                      "wickets"],
+      "field_as_key": true
+    },
+    "team_wise_grouped": {
+      "schema_name": "TeamWise",
+      "fields_list": ["average_score",
+                      "match_wins",
+                      "toss_wins",
+                      "season_wins",
+                      "runner_ups"],
+      "field_as_key": true
     }
   }
 
