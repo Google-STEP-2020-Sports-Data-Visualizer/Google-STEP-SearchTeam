@@ -3,12 +3,14 @@ import json
 
 from utils.InitialDataframes import InitialDataframes
 from utils.FinalDataframes import FinalDataframes
-from utils.GroupedDataframes import GroupedDataframes
-from utils.to_database import to_database
+#from utils.GroupedDataframes import GroupedDataframes
+#from utils.to_database import to_database
 
 def ingest(configs, db_url, cred_path):
     initial_dataframes = InitialDataframes(configs["InitialDataframes"])
-    final_dataframes = FinalDataframes(initial_dataframes.dfs, configs["FinalDataframes"])
+    print("\nFinished initialising...\n")
+    final_dataframes = FinalDataframes(initial_dataframes.final_matches, initial_dataframes.dfs, configs["FinalDataframes"])
+    print("\nFinished final dfs...\n")
     final_dataframes_grouped = GroupedDataframes(final_dataframes.dfs, configs["GroupedDataframes"])
     to_database(final_dataframes_grouped)
 
