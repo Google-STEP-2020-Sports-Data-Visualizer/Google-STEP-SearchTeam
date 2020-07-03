@@ -85,7 +85,7 @@ class TimeSlider{
         title: metaDataResponse.title,
       }
     };
-    var chart = new google.visualization.BarChart(document.getElementById(chartDivID));
+    const chart = new google.visualization.BarChart(document.getElementById(chartDivID));
     chart.draw(data, options);
   }
 }
