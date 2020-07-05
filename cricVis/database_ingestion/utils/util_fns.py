@@ -12,6 +12,7 @@ def str_eval(x):
     except (TypeError, ValueError):
         return x
 
+<<<<<<< HEAD
 def is_list(x):
     return x[0] == '['
 
@@ -28,10 +29,13 @@ def filter_rows(x, values_allowed):
         return x if x in values_allowed else np.nan
 
 
+=======
+>>>>>>> refs/remotes/origin/config_based_ingestor
 def find_final_matches(df):
     # Enlists matchID of the final match of each season
     return df.groupby("season")[["match_id"]].max()["match_id"].to_list()
 
+<<<<<<< HEAD
 def replace_chars(x):
     x = str(x)
     for char in ["+", "*"]:
@@ -39,6 +43,8 @@ def replace_chars(x):
 
     return x
 
+=======
+>>>>>>> refs/remotes/origin/config_based_ingestor
 def extract_date(date_str):
     try:
         if(parse(date_str, fuzzy=True, default=datetime(1,1,1)) != parse(date_str, fuzzy=True, default=datetime(2,2,2))):
@@ -52,8 +58,17 @@ def extract_date(date_str):
 
 
 def remove_invalid_chars(df_column):
+<<<<<<< HEAD
     for invalid_char in [".", "$", "[", "]", "#", "/"]:
         df_column = df_column.map(lambda x: x.replace(invalid_char, ""))
+=======
+    df_column = df_column.map(lambda x: x.replace(".", ""))
+    df_column = df_column.map(lambda x: x.replace("$", ""))
+    df_column = df_column.map(lambda x: x.replace("[", ""))
+    df_column = df_column.map(lambda x: x.replace("]", ""))
+    df_column = df_column.map(lambda x: x.replace("#", ""))
+    df_column = df_column.map(lambda x: x.replace("/", ""))
+>>>>>>> refs/remotes/origin/config_based_ingestor
 
     return df_column
 

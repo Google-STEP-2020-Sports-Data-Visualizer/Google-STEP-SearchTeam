@@ -21,7 +21,6 @@ class FinalDataframes:
             df = self.execute(df, dfname, fn, df_config["functions"][fn])
             self.dfs[dfname] = df
 
-
     def execute(self, df, dfname, fn, fn_config):
         if fn == "copy":
             if(fn_config["class"] == "InitialDataframes"):
