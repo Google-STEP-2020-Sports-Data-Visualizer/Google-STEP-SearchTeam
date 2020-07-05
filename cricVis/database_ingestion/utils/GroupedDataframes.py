@@ -58,8 +58,7 @@ class GroupedDataframes:
         elif fn == "fillna":
             df[fn_config["columns"]] = df[fn_config["columns"]].fillna(fn_config["value"])
 
-<<<<<<< HEAD
-=======
+
         elif fn == "add_columns":
             for col in fn_config.keys():
                 df[col] = fn_config[col]
@@ -75,7 +74,6 @@ class GroupedDataframes:
             for col in fn_config["remove_invalid_chars"]:
                 df[col] = util_fns.remove_invalid_chars(df[col])
 
->>>>>>> bd12b18dc957d5d8e14358dad32395e1714346ec
         elif fn == "concat":
             if fn_config["class"] == "FinalDataframes":
                 dfs_subset_list = [self.final_dfs[subset_name] for subset_name in fn_config["dataframes"]]
@@ -84,8 +82,7 @@ class GroupedDataframes:
 
             df = pd.concat(tuple(dfs_subset_list), ignore_index=True)
 
-<<<<<<< HEAD
-=======
+
         elif fn == "merge":
             # Left table for making the join
             if fn_config["left"]["class"] == "FinalDataframes":
@@ -107,7 +104,6 @@ class GroupedDataframes:
                           right[right_cols].copy(),
                           how=fn_config["how"], on=fn_config["on"])
 
->>>>>>> bd12b18dc957d5d8e14358dad32395e1714346ec
         elif fn == "groupby":
             if fn_config["class"] == "FinalDataframes":
                 df_orig = self.final_dfs[fn_config["dataframe"]]
