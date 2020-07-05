@@ -11,5 +11,3 @@ def dict_to_database(db_dict, db_ref_path_length):
         schema_ref.update(db_dict[schema_name])
 
         print("Successfully pushed {schema} to database!".format(schema=schema_name))
-
-    print("Successfully pushed {schema} to database!".format(schema=schema_name))
