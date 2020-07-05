@@ -4,8 +4,7 @@
       "file_type": "csv",
       "params": {
         "filepath_or_buffer": "csv_files/cricket_data.csv",
-        "usecols": ["ID",
-          "NAME",
+        "usecols": ["NAME",
           "Born",
           "Major teams",
           "Batting style",
@@ -95,64 +94,120 @@
           "class": "InitialDataframes",
           "dataframe": "df_players"
         },
+        "fillna": {
+          "value": "-"
+        },
+        "map": {
+          "columns": ["BATTING_Tests_Runs",
+          "BATTING_Tests_BF",
+          "BATTING_Tests_SR",
+          "BATTING_Tests_100",
+          "BATTING_Tests_50",
+          "BATTING_Tests_4s",
+          "BATTING_Tests_6s",
+          "BATTING_ODIs_Runs",
+          "BATTING_ODIs_BF",
+          "BATTING_ODIs_SR",
+          "BATTING_ODIs_100",
+          "BATTING_ODIs_50",
+          "BATTING_ODIs_4s",
+          "BATTING_ODIs_6s",
+          "BATTING_T20Is_Runs",
+          "BATTING_T20Is_BF",
+          "BATTING_T20Is_SR",
+          "BATTING_T20Is_100",
+          "BATTING_T20Is_50",
+          "BATTING_T20Is_4s",
+          "BATTING_T20Is_6s",
+          "BOWLING_Tests_Balls",
+          "BOWLING_Tests_Runs",
+          "BOWLING_Tests_Wkts",
+          "BOWLING_Tests_Econ",
+          "BOWLING_ODIs_Balls",
+          "BOWLING_ODIs_Runs",
+          "BOWLING_ODIs_Wkts",
+          "BOWLING_ODIs_Econ",
+          "BOWLING_T20Is_Balls",
+          "BOWLING_T20Is_Runs",
+          "BOWLING_T20Is_Wkts",
+          "BOWLING_T20Is_Econ"],
+          "lambda": "util_fns.replace_chars(x)"
+        },
         "filter_rows": {
           "column": "Major teams",
-          "isin": ["India",
-            "Australia",
-            "South Africa",
-            "New Zealand",
-            "Sri Lanka",
-            "England",
-            "Pakistan",
-            "West Indies",
-            "Bangladesh",
-            "Zimbawbe",
-            "Afghanistan",
-            "Ireland",
-            "Scotland",
-            "Hong Kong",
-            "Kenya",
-            "Oman",
-            "India Under-19s",
-            "Australia Under-19s",
-            "South Africa Under-19s",
-            "New Zealand Under-19s",
-            "Sri Lanka Under-19s",
-            "England Under-19s",
-            "Pakistan Under-19s",
-            "West Indies Under-19s",
-            "Bangladesh Under-19s",
-            "Zimbawbe Under-19s",
-            "Afghanistan Under-19s",
-            "Ireland Under-19s",
-            "Scotland Under-19s",
-            "Hong Kong Under-19s",
-            "Kenya Under-19s",
-            "Oman Under-19s",
-            "India Women",
-            "Australia Women",
-            "South Africa Women",
-            "New Zealand Women",
-            "Sri Lanka Women",
-            "England Women",
-            "Pakistan Women",
-            "West Indies Women",
-            "Bangladesh Women",
-            "Zimbawbe Women",
-            "Afghanistan Women",
-            "Ireland Women",
-            "Scotland Women",
-            "Hong Kong Women",
-            "Kenya Women",
-            "Oman Women"
-          ]
+          "values_allowed": ["India",
+        "Australia",
+        "South Africa",
+        "New Zealand",
+        "Sri Lanka",
+        "England",
+        "Pakistan",
+        "West Indies",
+        "Bangladesh",
+        "Zimbawbe",
+        "Afghanistan",
+        "Ireland",
+        "Scotland",
+        "Hong Kong",
+        "Kenya",
+        "Oman",
+        "India Women",
+        "Australia Women",
+        "South Africa Women",
+        "New Zealand Women",
+        "Sri Lanka Women",
+        "England Women",
+        "Pakistan Women",
+        "West Indies Women",
+        "Bangladesh Women",
+        "Zimbawbe Women",
+        "Afghanistan Women",
+        "Ireland Women",
+        "Scotland Women",
+        "Hong Kong Women",
+        "Kenya Women",
+        "Oman Women",
+        "India,",
+        "Australia,",
+        "South Africa,",
+        "New Zealand,",
+        "Sri Lanka,",
+        "England,",
+        "Pakistan,",
+        "West Indies,",
+        "Bangladesh,",
+        "Zimbawbe,",
+        "Afghanistan,",
+        "Ireland,",
+        "Scotland,",
+        "Hong Kong,",
+        "Kenya,",
+        "Oman,",
+        "India Women,",
+        "Australia Women,",
+        "South Africa Women,",
+        "New Zealand Women,",
+        "Sri Lanka Women,",
+        "England Women,",
+        "Pakistan Women,",
+        "West Indies Women,",
+        "Bangladesh Women,",
+        "Zimbawbe Women,",
+        "Afghanistan Women,",
+        "Ireland Women,",
+        "Scotland Women,",
+        "Hong Kong Women,",
+        "Kenya Women,",
+        "Oman Women,"]
+        },
+        "dropna": {
+          "subset": ["Major teams"]
         },
         "replace": {
           "to_replace": "-",
           "value": "np.nan"
         },
         "astype": {
-          "ID": "int64",
           "NAME": "object",
           "Born": "object",
           "Major teams": "object",
@@ -193,8 +248,116 @@
           "BOWLING_T20Is_Econ": "float64"
         },
         "apply": {
-          "column": "Born",
+          "columns": ["Born"],
           "lambda": "util_fns.extract_date(x)"
+        }
+      }
+    },
+    "batsman_stats_original": {
+      "functions": {
+        "filter": {
+          "class": "FinalDataframes",
+          "dataframe": "df_players",
+          "params": {
+            "items": ["NAME",
+              "Born",
+              "Major teams",
+              "Batting style",
+              "BATTING_Tests_Runs",
+              "BATTING_Tests_BF",
+              "BATTING_Tests_SR",
+              "BATTING_Tests_100",
+              "BATTING_Tests_50",
+              "BATTING_Tests_4s",
+              "BATTING_Tests_6s",
+              "BATTING_ODIs_Runs",
+              "BATTING_ODIs_BF",
+              "BATTING_ODIs_SR",
+              "BATTING_ODIs_100",
+              "BATTING_ODIs_50",
+              "BATTING_ODIs_4s",
+              "BATTING_ODIs_6s",
+              "BATTING_T20Is_Runs",
+              "BATTING_T20Is_BF",
+              "BATTING_T20Is_SR",
+              "BATTING_T20Is_100",
+              "BATTING_T20Is_50",
+              "BATTING_T20Is_4s",
+              "BATTING_T20Is_6s"
+            ],
+            "axis": 1
+          }
+        },
+        "dropna": {
+          "subset": ["NAME",
+            "BATTING_Tests_Runs",
+            "BATTING_Tests_BF",
+            "BATTING_Tests_SR",
+            "BATTING_Tests_100",
+            "BATTING_Tests_50",
+            "BATTING_Tests_4s",
+            "BATTING_Tests_6s",
+            "BATTING_ODIs_Runs",
+            "BATTING_ODIs_BF",
+            "BATTING_ODIs_SR",
+            "BATTING_ODIs_100",
+            "BATTING_ODIs_50",
+            "BATTING_ODIs_4s",
+            "BATTING_ODIs_6s",
+            "BATTING_T20Is_Runs",
+            "BATTING_T20Is_BF",
+            "BATTING_T20Is_SR",
+            "BATTING_T20Is_100",
+            "BATTING_T20Is_50",
+            "BATTING_T20Is_4s",
+            "BATTING_T20Is_6s"
+          ],
+          "axis": 0
+        }
+      }
+    },
+    "bowler_stats_original": {
+      "functions": {
+        "filter": {
+          "class": "FinalDataframes",
+          "dataframe": "df_players",
+          "params": {
+            "items": ["NAME",
+              "Born",
+              "Major teams",
+              "Bowling style",
+              "BOWLING_Tests_Balls",
+              "BOWLING_Tests_Runs",
+              "BOWLING_Tests_Wkts",
+              "BOWLING_Tests_Econ",
+              "BOWLING_ODIs_Balls",
+              "BOWLING_ODIs_Runs",
+              "BOWLING_ODIs_Wkts",
+              "BOWLING_ODIs_Econ",
+              "BOWLING_T20Is_Balls",
+              "BOWLING_T20Is_Runs",
+              "BOWLING_T20Is_Wkts",
+              "BOWLING_T20Is_Econ"
+            ],
+            "axis": 1
+          }
+        },
+        "dropna": {
+          "subset": ["NAME",
+            "BOWLING_Tests_Balls",
+            "BOWLING_Tests_Runs",
+            "BOWLING_Tests_Wkts",
+            "BOWLING_Tests_Econ",
+            "BOWLING_ODIs_Balls",
+            "BOWLING_ODIs_Runs",
+            "BOWLING_ODIs_Wkts",
+            "BOWLING_ODIs_Econ",
+            "BOWLING_T20Is_Balls",
+            "BOWLING_T20Is_Runs",
+            "BOWLING_T20Is_Wkts",
+            "BOWLING_T20Is_Econ"
+          ],
+          "axis": 0
         }
       }
     },
@@ -202,7 +365,7 @@
       "functions": {
         "filter": {
           "class": "FinalDataframes",
-          "dataframe": "df_players",
+          "dataframe": "batsman_stats_original",
           "params": {
             "items": ["NAME",
               "Born",
@@ -262,7 +425,7 @@
       "functions": {
         "filter": {
           "class": "FinalDataframes",
-          "dataframe": "df_players",
+          "dataframe": "batsman_stats_original",
           "params": {
             "items": ["NAME",
               "Born",
@@ -322,7 +485,7 @@
       "functions": {
         "filter": {
           "class": "FinalDataframes",
-          "dataframe": "df_players",
+          "dataframe": "batsman_stats_original",
           "params": {
             "items": ["NAME",
               "Born",
@@ -382,7 +545,7 @@
       "functions": {
         "filter": {
           "class": "FinalDataframes",
-          "dataframe": "df_players",
+          "dataframe": "bowler_stats_original",
           "params": {
             "items": ["NAME",
               "Born",
@@ -433,7 +596,7 @@
       "functions": {
         "filter": {
           "class": "FinalDataframes",
-          "dataframe": "df_players",
+          "dataframe": "bowler_stats_original",
           "params": {
             "items": ["NAME",
               "Born",
@@ -484,7 +647,7 @@
       "functions": {
         "filter": {
           "class": "FinalDataframes",
-          "dataframe": "df_players",
+          "dataframe": "bowler_stats_original",
           "params": {
             "items": ["NAME",
               "Born",

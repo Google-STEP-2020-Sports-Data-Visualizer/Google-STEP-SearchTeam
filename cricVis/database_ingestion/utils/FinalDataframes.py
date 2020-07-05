@@ -21,11 +21,6 @@ class FinalDataframes:
             df = self.execute(df, dfname, fn, df_config["functions"][fn])
             self.dfs[dfname] = df
 
-<<<<<<< HEAD
-=======
-        print(self.dfs[dfname])
-
->>>>>>> bd12b18dc957d5d8e14358dad32395e1714346ec
 
     def execute(self, df, dfname, fn, fn_config):
         if fn == "copy":
@@ -36,7 +31,7 @@ class FinalDataframes:
             df = df_orig.copy()
 
         elif fn == "filter_rows":
-            df = df.loc[df[fn_config["column"]].isin(fn_config["isin"])]
+            df[fn_config["column"]] = df[fn_config["column"]].apply(lambda x: util_fns.filter_rows(x, fn_config["values_allowed"]))
 
         elif fn == "replace":
             df = df.replace(fn_config["to_replace"], eval(fn_config["value"]))
@@ -44,8 +39,9 @@ class FinalDataframes:
         elif fn == "astype":
             df = df.astype(fn_config)
 
-        elif fn == "apply":
-            df[fn_config["column"]] = df[fn_config["column"]].apply(lambda x: eval(fn_config["lambda"]))
+        elif fn == "apply" or fn == "map":
+            for column in fn_config["columns"]:
+                df[column] = df[column].apply(lambda x: eval(fn_config["lambda"]))
 
         elif fn == "filter":
             if(fn_config["class"] == "InitialDataframes"):
@@ -61,7 +57,11 @@ class FinalDataframes:
             df = df.dropna(**fn_config)
 
         elif fn == "fillna":
-            df[fn_config["columns"]] = df[fn_config["columns"]].fillna(fn_config["value"])
+            if "columns" in list(fn_config.keys()):
+                df[fn_config["columns"]] = df[fn_config["columns"]].fillna(fn_config["value"])
+
+            else:
+                df.fillna(fn_config["value"], inplace=True)
 
         elif fn == "add_columns":
             for col in fn_config.keys():
