@@ -1,6 +1,6 @@
 from firebase_admin import db
 
-def dict_to_database(db_dict, db_ref_path_length):
+def dict_to_database(db_dict):
     db_ref = db.reference("/")
 
     schema_names = list(db_dict.keys())
