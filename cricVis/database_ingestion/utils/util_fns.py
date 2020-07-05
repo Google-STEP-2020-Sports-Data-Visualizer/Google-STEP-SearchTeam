@@ -12,9 +12,32 @@ def str_eval(x):
     except (TypeError, ValueError):
         return x
 
+def is_list(x):
+    return x[0] == '['
+
+def filter_rows(x, values_allowed):
+    if(is_list(x)):
+        set_x = set(eval(x))
+        values_allowed_set = set(values_allowed)
+        required_val = list(set_x & values_allowed_set)
+
+        # Return NaN if the intersection is an empty set
+        return np.nan if not required_val else required_val[0].replace(",", "")
+
+    else:
+        return x if x in values_allowed else np.nan
+
+
 def find_final_matches(df):
     # Enlists matchID of the final match of each season
     return df.groupby("season")[["match_id"]].max()["match_id"].to_list()
+
+def replace_chars(x):
+    x = str(x)
+    for char in ["+", "*"]:
+        x = x.replace(char, "")
+
+    return x
 
 def extract_date(date_str):
     try:
@@ -29,12 +52,8 @@ def extract_date(date_str):
 
 
 def remove_invalid_chars(df_column):
-    df_column = df_column.map(lambda x: x.replace(".", ""))
-    df_column = df_column.map(lambda x: x.replace("$", ""))
-    df_column = df_column.map(lambda x: x.replace("[", ""))
-    df_column = df_column.map(lambda x: x.replace("]", ""))
-    df_column = df_column.map(lambda x: x.replace("#", ""))
-    df_column = df_column.map(lambda x: x.replace("/", ""))
+    for invalid_char in [".", "$", "[", "]", "#", "/"]:
+        df_column = df_column.map(lambda x: x.replace(invalid_char, ""))
 
     return df_column
 

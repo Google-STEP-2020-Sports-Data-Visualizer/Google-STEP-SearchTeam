@@ -11,16 +11,14 @@ from utils.dataframe_to_database import dataframe_to_database
 def ingest(configs):
     initial_dataframes = InitialDataframes(configs["InitialDataframes"])
     print("\nFinished parsing datasets...\n")
+
     final_dataframes = FinalDataframes(initial_dataframes.final_matches, initial_dataframes.dfs, configs["FinalDataframes"])
     print("\nFinished creating dataframes...\n")
+
     final_dataframes_grouped = GroupedDataframes(final_dataframes.dfs, configs["GroupedDataframes"])
     print("\nFinished grouping dataframes...\n")
 
-    db_configs = configs["DataFrameToDatabase"]
-
-    for dfname, df in final_dataframes_grouped.dfs.items():
-        schema_configs = db_configs[dfname]
-        dataframe_to_database(df, schema_configs)
+    dataframe_to_database(final_dataframes_grouped.dfs, configs["DataFrameToDatabase"])
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
