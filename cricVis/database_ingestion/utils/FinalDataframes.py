@@ -5,28 +5,27 @@ import utils.util_fns as util_fns
 
 class FinalDataframes:
     def __init__(self, final_matches, initial_dfs, configs):
-        dfnames_list = list(configs.keys())
+        __dfnames_list = list(configs.keys())
 
         self.final_matches = final_matches
 
         self.initial_dfs = initial_dfs
         self.dfs = {}
 
-        for dfname in dfnames_list:
-            self.create_df(dfname, configs[dfname])
+        for dfname in __dfnames_list:
+            self.__create_df(dfname, configs[dfname])
 
-    def create_df(self, dfname, df_config):
-        df = pd.DataFrame
+    def __create_df(self, dfname, df_config):
+        df = None
+
         for fn in df_config["functions"]:
-            df = self.execute(df, dfname, fn, df_config["functions"][fn])
+            df = self.__execute(df, dfname, fn, df_config["functions"][fn])
             self.dfs[dfname] = df
 
-    def execute(self, df, dfname, fn, fn_config):
+    # TODO: Write a switcher to replace if-elifs
+    def __execute(self, df, dfname, fn, fn_config):
         if fn == "copy":
-            if(fn_config["class"] == "InitialDataframes"):
-                df_orig = self.initial_dfs[fn_config["dataframe"]]
-            else:
-                df_orig = self.dfs[fn_config["dataframe"]]
+            df_orig = self.__assign_based_on_class(fn_config)
             df = df_orig.copy()
 
         elif fn == "filter_rows":
@@ -43,10 +42,7 @@ class FinalDataframes:
                 df[column] = df[column].apply(lambda x: eval(fn_config["lambda"]))
 
         elif fn == "filter":
-            if(fn_config["class"] == "InitialDataframes"):
-                df_orig = self.initial_dfs[fn_config["dataframe"]]
-            else:
-                df_orig = self.dfs[fn_config["dataframe"]]
+            df_orig = self.__assign_based_on_class(fn_config)
             df = df_orig.filter(**fn_config["params"])
 
         elif fn == "rename":
@@ -72,34 +68,22 @@ class FinalDataframes:
 
         elif fn == "validate_keys":
             if "fillna" in fn_config.keys():
-                self.execute(df, dfname, "fillna", fn_config["fillna"])
+                self.__execute(df, dfname, "fillna", fn_config["fillna"])
 
             for col in fn_config["remove_invalid_chars"]:
                 df[col] = util_fns.remove_invalid_chars(df[col])
 
         elif fn == "concat":
-            if fn_config["class"] == "InitialDataframes":
-                dfs_subset_list = [self.initial_dfs[subset_name] for subset_name in fn_config["dataframes"]]
-            else:
-                dfs_subset_list = [self.dfs[subset_name] for subset_name in fn_config["dataframes"]]
-
+            dfs_subset_list = self.__assign_based_on_class(fn_config)
             df = pd.concat(tuple(dfs_subset_list), ignore_index=True)
 
         elif fn == "merge":
             # Left table for making the join
-            if fn_config["left"]["class"] == "InitialDataframes":
-                left = self.initial_dfs[fn_config["left"]["dataframe"]]
-            else:
-                left = self.dfs[fn_config["left"]["dataframe"]]
-
+            left = self.__assign_based_on_class(fn_config["left"])
             left_cols = fn_config["left"]["columns"]
 
             # Right table for making the join
-            if fn_config["right"]["class"] == "InitialDataframes":
-                right = self.initial_dfs[fn_config["right"]["dataframe"]]
-            else:
-                right = self.dfs[fn_config["right"]["dataframe"]]
-
+            right = self.__assign_based_on_class(fn_config["right"])
             right_cols = fn_config["right"]["columns"]
 
             df = pd.merge(left[left_cols].copy(),
@@ -107,11 +91,7 @@ class FinalDataframes:
                           how=fn_config["how"], on=fn_config["on"])
 
         elif fn == "groupby":
-            if fn_config["class"] == "InitialDataframes":
-                df_orig = self.initial_dfs[fn_config["dataframe"]]
-            else:
-                df_orig = self.dfs[fn_config["dataframe"]]
-
+            df_orig = self.__assign_based_on_class(fn_config)
             df = df_orig.groupby(**fn_config["params"])
 
         elif fn == "agg":
@@ -121,3 +101,9 @@ class FinalDataframes:
             df = df.drop(**fn_config)
 
         return df
+
+    def __assign_based_on_class(self, fn_config):
+        if(fn_config["class"] == "FinalDataframes"):
+            df_orig = self.final_dfs[fn_config["dataframe"]]
+        else:
+            df_orig = self.dfs[fn_config["dataframe"]]
