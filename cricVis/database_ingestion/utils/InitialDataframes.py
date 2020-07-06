@@ -16,6 +16,9 @@ class InitialDataframes:
         elif(df_config["file_type"] == "excel"):
             df = pd.read_excel(**df_config["params"])
 
+        elif(df_config["file_type"] == "json"):
+            df = pd.read_json(**df_config["params"])
+
         if "renamed_columns" in df_config.keys():
             df.rename(columns=df_config["renamed_columns"], inplace=True)
 
