@@ -2,6 +2,9 @@ import argparse
 import json
 import firebase_admin
 from firebase_admin import credentials
+import logging
+
+logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 from utils.InitialDataframes import InitialDataframes
 from utils.FinalDataframes import FinalDataframes
@@ -10,13 +13,13 @@ from utils.dataframe_to_database import dataframe_to_database
 
 def ingest(configs):
     initial_dataframes = InitialDataframes(configs["InitialDataframes"])
-    print("\nFinished parsing datasets...\n")
+    logging.info("Finished parsing datasets")
 
     final_dataframes = FinalDataframes(initial_dataframes.final_matches, initial_dataframes.dfs, configs["FinalDataframes"])
-    print("\nFinished creating dataframes...\n")
+    logging.info("Finished creating dataframes")
 
     final_dataframes_grouped = GroupedDataframes(final_dataframes.dfs, configs["GroupedDataframes"])
-    print("\nFinished grouping dataframes...\n")
+    logging.info("Finished grouping dataframes\n")
 
     dataframe_to_database(final_dataframes_grouped.dfs, configs["DataFrameToDatabase"])
 

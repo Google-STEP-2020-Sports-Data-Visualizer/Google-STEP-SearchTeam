@@ -1,4 +1,7 @@
 from firebase_admin import db
+import logging
+
+logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 def dict_to_database(db_dict):
     db_ref = db.reference("/")
@@ -10,4 +13,4 @@ def dict_to_database(db_dict):
         schema_ref.set(db_dict[schema_name])
         schema_ref.update(db_dict[schema_name])
 
-        print("Successfully pushed {schema} to database!".format(schema=schema_name))
+        logging.info("Successfully pushed {schema} to database!".format(schema=schema_name))
