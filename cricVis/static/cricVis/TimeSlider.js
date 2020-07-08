@@ -87,10 +87,9 @@ class TimeSlider{
       height: 600,
       chart: {
         title: metaDataResponse.title,
-      },
-      bars: 'horizontal',
+      }
     };
-    const chart = new google.charts.Bar(document.getElementById(chartDivID));
+    const chart = new google.visualization.BarChart(document.getElementById(chartDivID));
     chart.draw(data, options);
     console.log("here");
     
