@@ -1,213 +1,376 @@
 google.charts.load('current', {'packages':['corechart','bar']});
 function plotCharts(chartsData)
 {
-  const wormdata = new google.visualization.DataTable();
-  wormdata.addColumn('number', 'Overs');
-  wormdata.addColumn('number', chartsData.wormChartData.team1.teamName);
-  wormdata.addColumn({type: 'string', role: 'tooltip'});
-  wormdata.addColumn({type: 'string', role: 'style'});
-  wormdata.addColumn('number', chartsData.wormChartData.team2.teamName);
-  wormdata.addColumn({type: 'string', role: 'tooltip'});
-  wormdata.addColumn({type: 'string', role: 'style'});
-  let tooltip1='',tooltip2='';
-  let point1=null,point2=null;
-  var i;
-  if(chartsData.wormChartData.team1.overs.length>=chartsData.wormChartData.team2.overs.length)
-  {
-      for (i = 0; i < chartsData.wormChartData.team2.overs.length; i++)
-      {
-        tooltip1=createTooltip(i+1,chartsData.wormChartData.team1.teamName,chartsData.wormChartData.team1.overs[i].cumulativeRuns,chartsData.wormChartData.team1.overs[i].playersDismissed);
-        tooltip2=createTooltip(i+1,chartsData.wormChartData.team2.teamName,chartsData.wormChartData.team2.overs[i].cumulativeRuns,chartsData.wormChartData.team2.overs[i].playersDismissed);
-        point1=null;
-        point2=null;
-        if (chartsData.wormChartData.team1.overs[i].playersDismissed.length>0)
-        {
-          point1='point { size: 4; }';
-        }
-        if (chartsData.wormChartData.team2.overs[i].playersDismissed.length>0)
-        {
-          point2='point { size: 4; }';
-        }
-        wormdata.addRow([i+1,chartsData.wormChartData.team1.overs[i].cumulativeRuns,tooltip1,point1,chartsData.wormChartData.team2.overs[i].cumulativeRuns,tooltip2,point2]);
-      }
-      for (i = chartsData.wormChartData.team2.overs.length; i < chartsData.wormChartData.team1.overs.length; i++)
-      {
-        tooltip1=createTooltip(i+1,chartsData.wormChartData.team1.teamName,chartsData.wormChartData.team1.overs[i].cumulativeRuns,chartsData.wormChartData.team1.overs[i].playersDismissed);
-        point1=null;
-        if (chartsData.wormChartData.team1.overs[i].playersDismissed.length>0)
-        {
-          point1='point { size: 4; }';
-        }
-        wormdata.addRow([i+1,chartsData.wormChartData.team1.overs[i].cumulativeRuns,tooltip1,point1,null,null,null]);
-      }
-  }
-  else
-  {
-      for (i = 0; i < chartsData.wormChartData.team1.overs.length; i++)
-      {
-        tooltip1=createTooltip(i+1,chartsData.wormChartData.team1.teamName,chartsData.wormChartData.team1.overs[i].cumulativeRuns,chartsData.wormChartData.team1.overs[i].playersDismissed);
-        tooltip2=createTooltip(i+1,chartsData.wormChartData.team2.teamName,chartsData.wormChartData.team2.overs[i].cumulativeRuns,chartsData.wormChartData.team2.overs[i].playersDismissed);
-        point1=null;
-        point2=null;
-        if (chartsData.wormChartData.team1.overs[i].playersDismissed.length>0)
-        {
-          point1='point { size: 4; }';
-        }
-        if (chartsData.wormChartData.team2.overs[i].playersDismissed.length>0)
-        {
-          point2='point { size: 4; }';
-        }
-        wormdata.addRow([i+1,chartsData.wormChartData.team1.overs[i].cumulativeRuns,tooltip1,point1,chartsData.wormChartData.team2.overs[i].cumulativeRuns,tooltip2,point2]);
-      }
-      for (i = chartsData.wormChartData.team1.overs.length; i < chartsData.wormChartData.team2.overs.length; i++)
-      {
-        tooltip2=createTooltip(i+1,chartsData.wormChartData.team2.teamName,chartsData.wormChartData.team2.overs[i].cumulativeRuns,chartsData.wormChartData.team2.overs[i].playersDismissed);
-        point2=null;
-        if (chartsData.wormChartData.team2.overs[i].playersDismissed.length>0)
-        {
-          point2='point { size: 4; }';
-        }
-          wormdata.addRow([i+1,null,null,null,chartsData.wormChartData.team2.overs[i].cumulativeRuns,tooltip2,point2]);
-      }
-  }
-  const wormoptions =
-  {
-      title: 'Worm Chart',
-      width: 1200,
-      height: 500,
-      pointSize: 0.000001,
-  };
-  const wormchart = new google.visualization.LineChart(document.getElementById('WormChartContainer'));
-  wormchart.draw(wormdata, wormoptions);
-
-  const runratedata = new google.visualization.DataTable();
-  runratedata.addColumn('number', 'Overs');
-  runratedata.addColumn('number', chartsData.runRateChartData.team1.teamName);
-  runratedata.addColumn({type: 'string', role: 'tooltip'});
-  runratedata.addColumn({type: 'string', role: 'style'});
-  runratedata.addColumn('number', chartsData.runRateChartData.team2.teamName);
-  runratedata.addColumn({type: 'string', role: 'tooltip'});
-  runratedata.addColumn({type: 'string', role: 'style'});
-  if(chartsData.runRateChartData.team1.overs.length>=chartsData.runRateChartData.team2.overs.length)
-  {
-      for (i = 0; i < chartsData.runRateChartData.team2.overs.length; i++)
-      {
-        tooltip1=createTooltip(i+1,chartsData.runRateChartData.team1.teamName,chartsData.runRateChartData.team1.overs[i].runRate.toFixed(2),chartsData.runRateChartData.team1.overs[i].playersDismissed);
-        tooltip2=createTooltip(i+1,chartsData.runRateChartData.team2.teamName,chartsData.runRateChartData.team2.overs[i].runRate.toFixed(2),chartsData.runRateChartData.team2.overs[i].playersDismissed);
-        point1=null;
-        point2=null;
-        if (chartsData.runRateChartData.team1.overs[i].playersDismissed.length>0)
-        {
-          point1='point { size: 4; }';
-        }
-        if (chartsData.runRateChartData.team2.overs[i].playersDismissed.length>0)
-        {
-          point2='point { size: 4; }';
-        }
-          runratedata.addRow([ i+1, chartsData.runRateChartData.team1.overs[i].runRate, tooltip1, point1, chartsData.runRateChartData.team2.overs[i].runRate, tooltip2, point2 ]);
-      }
-      for (i = chartsData.runRateChartData.team2.overs.length; i < chartsData.runRateChartData.team1.overs.length; i++)
-      {
-        tooltip1=createTooltip(i+1,chartsData.runRateChartData.team1.teamName,chartsData.runRateChartData.team1.overs[i].runRate.toFixed(2),chartsData.runRateChartData.team1.overs[i].playersDismissed);
-        point1=null;
-        if (chartsData.runRateChartData.team1.overs[i].playersDismissed.length>0)
-        {
-          point1='point { size: 4; }';
-        }
-          runratedata.addRow([ i+1, chartsData.runRateChartData.team1.overs[i].runRate, tooltip1, point1, null, null, null]);
-      }
-  }
-  else
-  {
-      for (i = 0; i < chartsData.runRateChartData.team1.overs.length; i++)
-      {
-        tooltip1=createTooltip(i+1,chartsData.runRateChartData.team1.teamName,chartsData.runRateChartData.team1.overs[i].runRate.toFixed(2),chartsData.runRateChartData.team1.overs[i].playersDismissed);
-        tooltip2=createTooltip(i+1,chartsData.runRateChartData.team2.teamName,chartsData.runRateChartData.team2.overs[i].runRate.toFixed(2),chartsData.runRateChartData.team2.overs[i].playersDismissed);
-        point1=null;
-        point2=null;
-        if (chartsData.runRateChartData.team1.overs[i].playersDismissed.length>0)
-        {
-          point1='point { size: 4; }';
-        }
-        if (chartsData.runRateChartData.team2.overs[i].playersDismissed.length>0)
-        {
-          point2='point { size: 4; }';
-        }
-          runratedata.addRow([ i+1, chartsData.runRateChartData.team1.overs[i].runRate, tooltip1, point1, chartsData.runRateChartData.team2.overs[i].runRate, tooltip2, point2]);
-      }
-      for (i = chartsData.runRateChartData.team1.overs.length; i < chartsData.runRateChartData.team2.overs.length; i++)
-      {
-        tooltip2=createTooltip(i+1,chartsData.runRateChartData.team2.teamName,chartsData.runRateChartData.team2.overs[i].runRate.toFixed(2),chartsData.runRateChartData.team2.overs[i].playersDismissed);
-        point2=null;
-        if (chartsData.runRateChartData.team2.overs[i].playersDismissed.length>0)
-        {
-          point2='point { size: 4; }';
-        }
-          runratedata.addRow([i+1, null, null, null, chartsData.runRateChartData.team2.overs[i].runRate, tooltip2, point2]);
-      }
-  }
-
-
-  const runrateoptions =
-  {
-      title: 'Run Rate Graph',
-      width: 1200,
-      height: 500,
-      pointSize: 0.000001,
-  };
-  const runratechart = new google.visualization.LineChart(document.getElementById('RunRateChartContainer'));
-  runratechart.draw(runratedata, runrateoptions);
-
-
-  const manhattandata = new google.visualization.DataTable();
-  manhattandata.addColumn('number', 'Overs');
-  manhattandata.addColumn('number', chartsData.manhattanChartData.team1.teamName);
-  manhattandata.addColumn('number', chartsData.manhattanChartData.team2.teamName);
-  if(chartsData.manhattanChartData.team1.overs.length>=chartsData.manhattanChartData.team2.overs.length)
-  {
-      for (i = 0; i < chartsData.manhattanChartData.team2.overs.length; i++)
-      {
-          manhattandata.addRow([i+1,chartsData.manhattanChartData.team1.overs[i].runs,chartsData.manhattanChartData.team2.overs[i].runs]);
-      }
-      for (i = chartsData.manhattanChartData.team2.overs.length; i < chartsData.manhattanChartData.team1.overs.length; i++)
-      {
-          manhattandata.addRow([i+1,chartsData.manhattanChartData.team1.overs[i].runs,null]);
-      }
-  }
-  else
-  {
-      for (i = 0; i < chartsData.manhattanChartData.team1.overs.length; i++)
-      {
-          manhattandata.addRow([i+1,chartsData.manhattanChartData.team1.overs[i].runs,chartsData.manhattanChartData.team2.overs[i].runs]);
-      }
-      for (i = chartsData.manhattanChartData.team1.overs.length; i < chartsData.manhattanChartData.team2.overs.length; i++)
-      {
-          manhattandata.addRow([i+1,null,chartsData.manhattanChartData.team2.overs[i].runs]);
-      }
-  }
-  const manhattanoptions =
-  {
-      title: 'Manhattan Graph',
-      width: 1200,
-      height: 500
-  };
-  const manhattanchart = new google.charts.Bar(document.getElementById('ManhattanChartContainer'));
-  manhattanchart.draw(manhattandata, google.charts.Bar.convertOptions(manhattanoptions));
+	createWormChart(chartsData.wormChartData,'WormChartContainer');
+	createRunRateChart(chartsData.runRateChartData,'RunRateChartContainer');
+	createManhattanChart(chartsData.manhattanChartData,'ManhattanChartContainer');
 }
 
+function createWormChart(chartData,containerID) {
+	const team1WormChartName = chartData.team1.teamName;
+	const team2WormChartName = chartData.team2.teamName;
+	let team1CumulativeRunsList = [];
+	let team2CumulativeRunsList = [];
+	let team1WormChartTooltipList = [];
+	let team2WormChartTooltipList = [];
+	let team1WormChartPointList = [];
+	let team2WormChartPointList = [];
 
-function createTooltip(overNumber, teamName, overValue, playersDismissed)
+	chartData.team1.overs.forEach((element, index) => {
+		team1CumulativeRunsList.push(element.cumulativeRuns);
+		team1WormChartTooltipList.push(createTooltip(index+1, team1WormChartName,
+		 element.cumulativeRuns, element.playersDismissed));
+		if (element.playersDismissed.length) {
+			team1WormChartPointList.push(index+1)
+		};
+	});
+	chartData.team2.overs.forEach((element, index) => {
+		team2CumulativeRunsList.push(element.cumulativeRuns);
+		team2WormChartTooltipList.push(createTooltip(index+1, team2WormChartName,
+		 element.cumulativeRuns, element.playersDismissed));
+		if (element.playersDismissed.length) {
+			team2WormChartPointList.push(index+1)
+		};
+	});
+
+    createLineChart([team1WormChartName,team2WormChartName],
+    	[team1CumulativeRunsList,team2CumulativeRunsList],
+    	[team1WormChartTooltipList,team2WormChartTooltipList],
+    	[team1WormChartPointList,team2WormChartPointList],
+    	'Overs','Worm Chart',containerID);
+}
+
+function createRunRateChart(chartData,containerID) {
+	const team1RunRateChartName = chartData.team1.teamName;
+	const team2RunRateChartName = chartData.team2.teamName;
+	let team1RunRateList = [];
+	let team2RunRateList = [];
+	let team1RunRateChartTooltipList = [];
+	let team2RunRateChartTooltipList = [];
+	let team1RunRateChartPointList = [];
+	let team2RunRateChartPointList = [];
+
+	chartData.team1.overs.forEach((element, index) => {
+		team1RunRateList.push(element.runRate);
+		team1RunRateChartTooltipList.push(createTooltip(index+1, team1RunRateChartName,
+		 element.runRate.toFixed(2), element.playersDismissed));
+		if (element.playersDismissed.length) {
+			team1RunRateChartPointList.push(index+1)
+		};
+	});
+	chartData.team2.overs.forEach((element, index) => {
+		team2RunRateList.push(element.runRate);
+		team2RunRateChartTooltipList.push(createTooltip(index+1, team2RunRateChartName,
+		 element.runRate.toFixed(2), element.playersDismissed));
+		if (element.playersDismissed.length) {
+			team2RunRateChartPointList.push(index+1)
+		};
+	});
+
+    createLineChart([team1RunRateChartName,team2RunRateChartName],
+    	[team1RunRateList,team2RunRateList],
+    	[team1RunRateChartTooltipList,team2RunRateChartTooltipList],
+    	[team1RunRateChartPointList,team2RunRateChartPointList],
+    	'Overs','Run Rate Chart',containerID);
+}
+
+function createManhattanChart(chartData,containerID) {
+	const team1ManhattanChartName = chartData.team1.teamName;
+    const team2ManhattanChartName = chartData.team2.teamName;
+    let team1RunsList = [];
+    let team2RunsList = [];
+    let team1ManhattanChartTooltipList = [];
+    let team2ManhattanChartTooltipList = [];
+    chartData.team1.overs.forEach((element, index) => {
+      team1RunsList.push(element.runs);
+      team1ManhattanChartTooltipList.push(createTooltipManhattan(index+1, team1ManhattanChartName,
+       element.runs, element.playersDismissed,element.breakdownRuns));
+    });
+    chartData.team2.overs.forEach((element, index) => {
+      team2RunsList.push(element.runs);
+      team2ManhattanChartTooltipList.push(createTooltipManhattan(index+1, team2ManhattanChartName,
+       element.runs, element.playersDismissed,element.breakdownRuns));
+    });
+
+    createColumnChart([team1ManhattanChartName,team2ManhattanChartName],
+    	[team1RunsList,team2RunsList],
+    	[team1ManhattanChartTooltipList,team2ManhattanChartTooltipList],
+    	'Overs','Manhattan Chart',containerID);
+}
+
+ /**
+ * @desc creats a list of boolean values with 'true' at indices in parameter list and others as false
+ * @param {number[]} list - List of indices (1 based) whose value needs to be set to true
+ * @param {number} finalListLength - length of list to be returned
+ */
+function createTruthValueList(list,finalListLength)
 {
-  let tooltip=overNumber+'\n'+teamName+': '+overValue;
-  if (playersDismissed.length>0)
-  {
-  tooltip = tooltip.concat('\nPlayers Dismissed:');
-  playersDismissed.forEach((player) =>  {
-    tooltip = tooltip.concat('\n'+ player.playerDismissed+' (Dismissal-type: '+player.type+', Bowler: '+player.bowler+', Fielder: '+player.fielder +')');
-      });
-  }
-  return tooltip;
+	let truthValueList = new Array(finalListLength).fill(false);
+	let ignoredValues = [];
+	list.forEach((element, index) => {
+	if ((element-1)<finalListLength) {
+		truthValueList[element-1]=true;
+	}
+	else ignoredValues.push(element);
+	});
+	if (ignoredValues.length>0) {
+		console.log(`Defaulting to values greater than length of list\nIgnored indices: ${ignoredValues}`);
+	}
+	return truthValueList;
 }
+
+function createTooltip(overNumber, teamName, value, playersDismissed)
+{
+	let tooltip= `${overNumber}\n${teamName}: ${value}`;
+	if (playersDismissed.length>0)
+  {
+		tooltip = tooltip.concat(`\nPlayers Dismissed:`);
+		playersDismissed.forEach((player) =>  {
+			tooltip = tooltip.concat(`\n${player.playerDismissed} ( Dismissal-type: ${player.type}, Bowler: ${player.bowler}, Fielder: ${player.fielder} )`);
+		});
+	}
+	return tooltip;
+}
+
+function createTooltipManhattan(overNumber, teamName, value, playersDismissed, breakdown)
+{
+	let tooltip= `${overNumber}\n${teamName}: ${value} ${createTooltipBreakdown(value,breakdown)}`;
+	if (playersDismissed.length>0)
+	{
+		tooltip = tooltip.concat(`\nPlayers Dismissed:`);
+		playersDismissed.forEach((player) =>  {
+			tooltip = tooltip.concat(`\n${player.playerDismissed} ( Dismissal-type: ${player.type}, Bowler: ${player.bowler}, Fielder: ${player.fielder} )`);
+		});
+	}
+	return tooltip;
+}
+
+function createTooltipBreakdown(totalRuns, breakdown)
+{
+  if (totalRuns>0) {
+  	let tooltip = `(`;
+  	if (breakdown.batsman_runs>0)
+  		tooltip = tooltip.concat(` Batsman Runs: ${breakdown.batsman_runs.toString()}`);
+  	if (breakdown.bye_runs>0)
+  		tooltip = tooltip.concat(` Bye Runs: ${breakdown.bye_runs.toString()}`);
+  	if (breakdown.extra_runs>0)
+  		tooltip = tooltip.concat(` Extra Runs: ${breakdown.extra_runs.toString()}`);
+  	if (breakdown.legbye_runs>0)
+  		tooltip = tooltip.concat(` Legbye Runs: ${breakdown.legbye_runs.toString()}`);
+  	if (breakdown.noball_runs>0)
+  		tooltip = tooltip.concat(` No Ball Runs: ${breakdown.noball_runs.toString()}`);
+  	if (breakdown.penalty_runs>0)
+  		tooltip = tooltip.concat(` Penalty Runs: ${breakdown.penalty_runs.toString()}`);
+  	if (breakdown.wide_runs>0)
+  		tooltip = tooltip.concat(` Wide Runs: ${breakdown.wide_runs.toString()}`);
+  	tooltip = tooltip.concat(` )`);
+  	return tooltip;
+  }
+  else return '';
+}
+
+ /**
+ * @desc creats a line chart with multiple lines corresponding to each list of values
+ * @param {string[]} lineNameList - The list of names corresponponding to each line of linechart
+ * @param {number[][]} yLists - List of lists of numbers to be plotted, each child list corresponding to separate lines on line chart
+ * @param {string[][]} tooltipLists - List of list of tooltips corresponding to each number to be plotted
+ * @param {number[][]} pointValueLists - List of list of numbers at which points would appear in the line chart per list corresponding to a list of values
+ */
+function createLineChart(lineNameList,yLists,tooltipLists,pointValueLists,xAxisLabel,chartTitle,containerID)
+{
+	try {
+	    if(!isEqualLength([lineNameList,yLists,tooltipLists,pointValueLists])) throw "Error in correspondance of Lists";
+	    if(!isListOfListOfNumbers(yLists)) throw "Non-numeric data passed for plotting";
+	    if(!isListOfListOfStrings(tooltipLists)) throw "Non-string data passed for tooltip";
+	    if(!isListOfListOfNumbers(pointValueLists)) throw "Non-numeric data passed for points";
+	    if(!isEqualLengthPerIndex([yLists,tooltipLists])) throw "Error in correspondance of Lists";
+	    if(document.getElementById(containerID)==null) throw "containerID \"" + containerID + "\" not found";
+	}
+	catch(err) {
+		console.log("Error: "+err);
+		return;
+	}
+	const chart = new google.visualization.DataTable();
+	chart.addColumn('number', xAxisLabel);
+	yLists.forEach((element, index) => {
+		chart.addColumn('number', lineNameList[index]);
+		chart.addColumn({type: 'string', role: 'tooltip'});
+		chart.addColumn({type: 'string', role: 'style'});
+	});
+	const maxLengthIndex = yLists.map(a => a.length).indexOf(Math.max.apply(Math, yLists.map(a => a.length)));
+	const maxLength = yLists[maxLengthIndex].length;
+	let pointTruthValueLists = [];
+	pointValueLists.forEach((element, index) => {
+		pointTruthValueLists.push(createTruthValueList(element,yLists[index].length));
+	});
+	let rowElement;
+	yLists[maxLengthIndex].forEach((element, index) => {
+		rowElement = [];
+		rowElement.push(index+1);
+		yLists.forEach((elementInner, indexInner) => {
+			if (index<yLists[indexInner].length) {
+				rowElement.push(elementInner[index]);
+				rowElement.push(tooltipLists[indexInner][index]);
+				rowElement.push((pointTruthValueLists[indexInner][index])? 'point { size: 4; }':null);  
+			}
+			else rowElement.push(null,null,null);
+		});
+		chart.addRow(rowElement);
+	});
+	const options =
+	{
+		title: chartTitle,
+		width: 1200,
+		height: 500,
+		pointSize: 0.000001,
+	};
+	const lineChart = new google.visualization.LineChart(document.getElementById(containerID));
+	lineChart.draw(chart, options);
+}
+
+ /**
+ * @desc creats a column chart with multiple series of columns corresponding to each list of values
+ * @param {string[]} lineNameList - The list of names corresponponding to each line of column chart
+ * @param {number[][]} yLists - List of lists of numbers to be plotted, each child list corresponding to separate lines on column chart
+ * @param {string[][]} tooltipLists - List of list of tooltips corresponding to each number to be plotted
+ */
+function createColumnChart(lineNameList,yLists,tooltipLists,xAxisLabel,chartTitle,containerID)
+{
+	try {
+	    if(!isEqualLength([lineNameList,yLists,tooltipLists])) throw "Error in correspondance of Lists";
+	    if(!isListOfListOfNumbers(yLists)) throw "Non-numeric data passed for plotting";
+	    if(!isListOfListOfStrings(tooltipLists)) throw "Non-string data passed for tooltip";
+	    if(!isEqualLengthPerIndex([yLists,tooltipLists])) throw "Error in correspondance of Lists";
+	    if(document.getElementById(containerID)==null) throw "containerID \"" + containerID + "\" not found";
+	}
+	catch(err) {
+		console.log("Error: "+err);
+		return;
+	}
+	const chart = new google.visualization.DataTable();
+	chart.addColumn('number', xAxisLabel);
+	yLists.forEach((element, index) => {
+		chart.addColumn('number', lineNameList[index]);
+		chart.addColumn({type: 'string', role: 'tooltip'});
+	});
+	const maxLengthIndex = yLists.map(function(a){return a.length;}).indexOf(Math.max.apply(Math, yLists.map(function(a){return a.length;})));
+	const maxLength = yLists[maxLengthIndex].length;
+	let rowElement;
+	yLists[maxLengthIndex].forEach((element, index) => {
+		rowElement = [];
+		rowElement.push(index+1);
+		yLists.forEach((elementInner, indexInner) => {
+			if (index<yLists[indexInner].length) {
+				rowElement.push(elementInner[index]);
+				rowElement.push(tooltipLists[indexInner][index]);
+			}
+			else rowElement.push(null,null);
+		});
+		chart.addRow(rowElement);
+	});
+	const options =
+	{
+	title: chartTitle,
+	width: 1200,
+	height: 500,
+	};
+	const lineChart = new google.visualization.ColumnChart(document.getElementById(containerID));
+	lineChart.draw(chart, options);
+}
+
+ /**
+ * @desc checks per index length correspondance of children lists
+ * @return bool - success or failure, returns success in case of empty list
+ */
+function isEqualLengthPerIndex(lists) {
+	let flag = true;
+	if (!isEqualLength(lists))
+		return false;
+	if (lists.length == 0)
+		return true;
+	lists.forEach((list, index) => {
+		list.forEach((innerList, innerIndex) => {
+			if(innerList.length!=lists[0][innerIndex].length)
+				flag = false;
+		});
+	});
+	return flag;
+}
+
+ /**
+ * @desc checks if every child list is of equal length
+ * @return bool - success or failure, returns success in case of empty list
+ */
+function isEqualLength(lists) {
+	let flag = true;
+	flag = isListOfLists(lists);
+	if (flag==false)
+		return false;
+	lists.forEach((list, index) => {
+		if(list.length!=lists[0].length)
+			flag = false;
+	});
+	return flag;
+}
+
+function isListOfLists(lists) {
+	let flag = true;	
+	if (!Array.isArray(lists))
+		return false;
+	lists.forEach((element, index) => {
+		if (!Array.isArray(element))
+			flag = false;
+	});
+	return flag;
+}
+
+function isListOfListOfNumbers(list) {
+	let flag = true;
+	if (!Array.isArray(list))
+		return false;
+	list.forEach((element, index) => {
+		if(!isListOfNumbers(element))
+			flag = false;
+	});
+	return flag;
+}
+
+function isListOfNumbers(list) {
+	let flag = true;
+	if (!Array.isArray(list))
+		return false;
+	list.forEach((element, index) => {
+		if(isNaN(element))
+			flag = false;
+	});
+	return flag;
+}
+
+function isListOfListOfStrings(list) {
+	let flag = true;
+	if (!Array.isArray(list))
+		return false;
+	list.forEach((element, index) => {
+		if(!(isListOfStrings(element)))
+			flag = false;
+	});
+	return flag;
+}
+
+function isListOfStrings(list) {
+	let flag = true;
+	if (!Array.isArray(list))
+	{
+		console.log("")
+		return false;
+	}
+	list.forEach((element, index) => {
+		if(!(typeof element === 'string'))
+			flag = false;
+	});
+	return flag;
+}
+
 function createHTMLElement(elementType,className=null){
   let element = document.createElement(elementType);
   if (className) element.classList.add(className);
