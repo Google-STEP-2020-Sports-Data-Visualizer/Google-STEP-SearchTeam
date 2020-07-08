@@ -1,10 +1,11 @@
+from cricVis.comparisonDatabase import *
 from cricVis.models import *
 
 def getAutofillData():
     autofillData = {}
-    autofillData["BatsmanStats"] = getKeyValues("BatsmanStats")
-    autofillData["BowlerStats"] = getKeyValues("BowlerStats")
-    autofillData["TeamWise"] = getKeyValues("TeamWise")
+    autofillData["BatsmanStats"] = getKeyValues("BatsmanStats", refComparison)
+    autofillData["BowlerStats"] = getKeyValues("BowlerStats", refComparison)
+    autofillData["TeamWise"] = getKeyValues("TeamWise", ref)
     tableNameHeadingMap = {"BatsmanStats": "Batsman", "BowlerStats": "Bowler", "TeamWise": "Team"}
     return autofillData, tableNameHeadingMap
 
@@ -19,7 +20,7 @@ def getComprisonData(tableName, entityID1, entityID2):
     return comparisonData
 
 def getPlayerData(tableName, playerName):
-    playerData = ref.child(tableName).child(playerName).get()
+    playerData = refComparison.child(tableName).child(playerName).get()
     playerDataResponse = {}
     playerDataResponse["cardData"] = getPlayerCardData(playerData, getPlayerType(tableName), playerName)
     playerDataResponse["chartDataT20"] =  getChartData(playerData["T20"])
@@ -43,9 +44,7 @@ def getPlayerCardData(playerData, playerType, playerName):
     return playerCardData
 
 def getChartData(matchTypeData):
-    chartData = {}
-    for data in matchTypeData:
-        chartData[getHeadingNames(data)] = matchTypeData[data]
+    chartData = { getHeadingNames(data): matchTypeData[data] for data in matchTypeData}
     return chartData
 
 def getHeadingNames(columnName):
@@ -54,15 +53,15 @@ def getHeadingNames(columnName):
     for name in columnNameList:
         headingName += '%s ' % (name.capitalize())
     return headingName.strip()
-    
+
 def getPlayerType(tableName):
     if tableName == "BatsmanStats":
         return "batting_style"
-    elif tableName == "BowlingStats":
+    elif tableName == "BowlerStats":
         return "bowling_style"
 
-def getKeyValues(tableName):
-    tableKeys = ref.child(tableName).get().keys()
+def getKeyValues(tableName, reference):
+    tableKeys = reference.child(tableName).get().keys()
     keyValues = []
     for key in tableKeys:
         keyValues.append(key)

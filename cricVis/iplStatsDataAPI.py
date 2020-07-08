@@ -49,7 +49,7 @@ def getSeasonsData():
 def getVenuesData():
     venuesData = db.reference('/VenueWise').get()
     allVenuesData = {}
-    allVenuesData["gamesPlayedCity"], allVenuesData["gamesPlayedStadium"]  = getGamesPlayedVenueWise(venuesData)
+    allVenuesData["gamesPlayedStadium"]  = getGamesPlayedVenueWise(venuesData)
     return allVenuesData
 
 """ get the total number of matches won by a team: { teamName: numberOfMatchesWon } """
@@ -113,11 +113,8 @@ def getScoreTeamPerSeason(seasonsData,scoreType):
 
 def getGamesPlayedVenueWise(venuesData):
     stadiumMatches = {}
-    cityMatches = {}
     for city in venuesData:
         cityData = venuesData[city]
-        cityMatches[city] = 0
         for stadium in cityData:
             stadiumMatches[stadium] = cityData[stadium]["numberOfMatches"]
-            cityMatches[city] += cityData[stadium]["numberOfMatches"]
-    return cityMatches, stadiumMatches
+    return stadiumMatches

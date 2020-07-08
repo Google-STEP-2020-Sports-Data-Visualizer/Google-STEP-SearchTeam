@@ -157,3 +157,7 @@ h2,h3,h4{
 .seasonContainer{
     text-align: center;
 }
+.carouselChartDiv{
+    height: 630px;
+    width: 860px;
+}

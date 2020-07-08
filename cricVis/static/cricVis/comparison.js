@@ -77,12 +77,14 @@ function createComparisonUITeams(team1Data, team2Data){
   createCardForItem("firstEntityHeader", "firstEntityBody", team1Data["cardData"]);
   createCardForItem("secondEntityHeader", "secondEntityBody", team2Data["cardData"]);
   createComparisonHeadings("TeamHeadingContainer", team1Data["cardData"]["Team Name"], team2Data["cardData"]["Team Name"]);
-  createStatsTable("TeamComparisonStats", team1Data["chartDataT20"], team2Data["chartDataT20"]);
+  document.getElementById("comparisonPlayerContainer").style.visibility = "visible";
+  document.getElementById("cardDataContainer").style.visibility = "visible";
+  createStatsTable("TeamComparisonStats", team1Data["chartData"], team2Data["chartData"]);
 }
 
 function createCardForItem(cardHeaderID, cardBodyID, cardData){
   Object.keys(cardData).forEach((key) => {
-    if (key === "Player Name"){
+    if (key === "Player Name" | key === "Team Name"){
       console.log(key);
       document.getElementById(cardHeaderID).innerText = cardData[key];
     }

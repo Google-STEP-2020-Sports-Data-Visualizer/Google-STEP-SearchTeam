@@ -1,5 +1,5 @@
 class TimeSlider{
-  constructor(carouselID, chartDivID, sliderIDNumber, chartData){
+  constructor(carouselID, chartDivID, sliderIDNumber, chartData, carouselDiv){
     this.carouselID = carouselID;
     this.chartDivID = chartDivID;
     this.sliderIDNumber = sliderIDNumber;
@@ -7,13 +7,11 @@ class TimeSlider{
     this.dateList = this.createDateList(this.chartData["chartDataResponse"]);
     this.sliderID = `timeSlider${this.sliderIDNumber}`;
     this.sliderBubbleID = `timeSliderValueBubble${this.sliderIDNumber}`;
+    this.carouselDiv = carouselDiv;
     this.createTimeSlider();
   }
   createDateList(chartDataResponse){
-    let dateList = [];
-    Object.keys(chartDataResponse).forEach(function(date){
-      dateList.push(date);
-    });
+    let dateList = Array.from(Object.keys(chartDataResponse));
     dateList.sort();
     return dateList;
   }
@@ -66,6 +64,10 @@ getSortOrderDescending(prop){
     }
  }
   createChart(chartDivID, metaDataResponse, chartPlotData) {
+  // drawChart(chart, options){
+  //   chart.draw(data, options);
+  // }
+
     $(`#${chartDivID}`).empty();
     let chartValues = [];
     Object.keys(chartPlotData).forEach((value) => {
@@ -91,5 +93,13 @@ getSortOrderDescending(prop){
     };
     const chart = new google.charts.Bar(document.getElementById(containerID));
     chart.draw(data, options);
+    console.log("here");
+    
+    console.log("hello");
+    // if (this.carouselDiv.id !== "carouselDiv0"){
+    //   console.log("entered");
+    //   console.log(this.carouselDiv.classList);
+    //   this.carouselDiv.classList.remove("active");
+    // }
   }
 }

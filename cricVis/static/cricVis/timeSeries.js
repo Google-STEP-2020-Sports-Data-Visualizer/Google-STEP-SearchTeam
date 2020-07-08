@@ -1,5 +1,5 @@
 // get the selected values from a checkbox group
-
+var VisualizationResponsesReceived;
 function getSelectedCheckboxValues(checkboxGroupName){
   let selectedValues = [];
   $(`input:checkbox[name=${checkboxGroupName}]:checked`).each(function(){
@@ -85,6 +85,21 @@ $('.genderInput').on('input', function(){
 $('.carousel').carousel({
   interval: false,
 });
+
+function getSliderNumber(divID){
+  const divIDList = divID.split("_");
+  return parseInt(divIDList[1]);
+}
+
+function createSlider(chartSliderDiv, sliderNumber, VisualizationResponses){
+  if (isEmpty(VisualizationResponses[sliderNumber]["chartDataResponse"])){
+    chartSliderDiv.appendChild(createErrorNotification());
+  }
+  else{
+    new TimeSlider(chartSliderDiv.id, `chartDiv_${sliderNumber}`, sliderNumber, VisualizationResponses[sliderNumber]);
+  }
+}
+
 // send an AJAX GET to get a set of responses corresponding to the set of requests
 
 $('#fetchTimeSeriesDataButton').click(function(){
@@ -104,7 +119,8 @@ $('#fetchTimeSeriesDataButton').click(function(){
       visualizationRequest: visalizationRequests
     },
     success: function(visalizationResponses){
-      addCarousel(JSON.parse(visalizationResponses));
+      VisualizationResponsesReceived = JSON.parse(visalizationResponses);
+      addCarousel(VisualizationResponsesReceived);
     },
     error: function(error){
       console.log(error);
@@ -118,24 +134,37 @@ function addCarousel(VisualizationResponses) {
   for (var i = 0; i < VisualizationResponses.length; i++) {
     let carouselItem = document.createElement("div");
     carouselItem.className = "carousel-item";
-    carouselItem.id = "carouselDiv"+i.toString();
+    carouselItem.id = "carouselDiv_"+i.toString();
     if (i==0) {
       carouselItem.className += " active"
     }
     carouselItem.className += " carouselDiv";
     let chartSliderDiv = document.createElement("div");
-    chartSliderDiv.id = "chartSliderDiv"+i.toString();
+    chartSliderDiv.id = "chartSliderDiv_"+i.toString();
     chartSliderDiv.className = "carouselDiv";
     carouselInnerDiv.appendChild(carouselItem);
     let chartDiv = document.createElement("div");
-    chartDiv.id = "chartDiv"+i.toString();
+    chartDiv.id = "chartDiv_"+i.toString();
     carouselItem.appendChild(chartSliderDiv);
     chartSliderDiv.appendChild(chartDiv);
-    if (isEmpty(VisualizationResponses[i]["chartDataResponse"])){
-      chartSliderDiv.appendChild(createErrorNotification());
-    }
-    else{
-      const slider = new TimeSlider(chartSliderDiv.id, chartDiv.id, i, VisualizationResponses[i]);
+    if (i==0){
+      createSlider(chartSliderDiv, i, VisualizationResponses);
     }
  }
 }
+$('.carousel').on('slide.bs.carousel', function onSlide (ev) {
+  const carouselDivPrevious = document.getElementsByClassName("active")[0];
+  const sliderNumber = (getSliderNumber(carouselDivPrevious.id) + 1) % VisualizationResponsesReceived.length;
+  const chartSliderDiv = document.getElementById(`carouselDiv_${sliderNumber}`).children[0];
+  const chartSliderDivChildren = chartSliderDiv.children;
+  let flag = true;
+  for (let childElementIndex = 0; childElementIndex < chartSliderDivChildren.length; childElementIndex++){
+    if (chartSliderDivChildren[childElementIndex].id === `timeSliderContainer${sliderNumber}`) {
+      flag = false;
+    }
+  }
+  if (flag){
+    createSlider(chartSliderDiv, sliderNumber, VisualizationResponsesReceived);
+  }
+
+});
