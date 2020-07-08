@@ -3,7 +3,17 @@ import logging
 
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
 
+
 def dict_to_database(db_dict):
+    """
+    Ingests data from dictionary into the database.
+
+    Parameters
+    ----------
+
+    db_dict: dict
+        Dictionary containing all the schemas to be added to/updated in the database.
+    """
     db_ref = db.reference("/")
 
     schema_names = list(db_dict.keys())

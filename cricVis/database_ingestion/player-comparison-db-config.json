@@ -97,108 +97,110 @@
         "fillna": {
           "value": "-"
         },
-        "map": {
+        "remove_invalid_chars": {
           "columns": ["BATTING_Tests_Runs",
-          "BATTING_Tests_BF",
-          "BATTING_Tests_SR",
-          "BATTING_Tests_100",
-          "BATTING_Tests_50",
-          "BATTING_Tests_4s",
-          "BATTING_Tests_6s",
-          "BATTING_ODIs_Runs",
-          "BATTING_ODIs_BF",
-          "BATTING_ODIs_SR",
-          "BATTING_ODIs_100",
-          "BATTING_ODIs_50",
-          "BATTING_ODIs_4s",
-          "BATTING_ODIs_6s",
-          "BATTING_T20Is_Runs",
-          "BATTING_T20Is_BF",
-          "BATTING_T20Is_SR",
-          "BATTING_T20Is_100",
-          "BATTING_T20Is_50",
-          "BATTING_T20Is_4s",
-          "BATTING_T20Is_6s",
-          "BOWLING_Tests_Balls",
-          "BOWLING_Tests_Runs",
-          "BOWLING_Tests_Wkts",
-          "BOWLING_Tests_Econ",
-          "BOWLING_ODIs_Balls",
-          "BOWLING_ODIs_Runs",
-          "BOWLING_ODIs_Wkts",
-          "BOWLING_ODIs_Econ",
-          "BOWLING_T20Is_Balls",
-          "BOWLING_T20Is_Runs",
-          "BOWLING_T20Is_Wkts",
-          "BOWLING_T20Is_Econ"],
-          "lambda": "util_fns.replace_chars(x)"
+            "BATTING_Tests_BF",
+            "BATTING_Tests_SR",
+            "BATTING_Tests_100",
+            "BATTING_Tests_50",
+            "BATTING_Tests_4s",
+            "BATTING_Tests_6s",
+            "BATTING_ODIs_Runs",
+            "BATTING_ODIs_BF",
+            "BATTING_ODIs_SR",
+            "BATTING_ODIs_100",
+            "BATTING_ODIs_50",
+            "BATTING_ODIs_4s",
+            "BATTING_ODIs_6s",
+            "BATTING_T20Is_Runs",
+            "BATTING_T20Is_BF",
+            "BATTING_T20Is_SR",
+            "BATTING_T20Is_100",
+            "BATTING_T20Is_50",
+            "BATTING_T20Is_4s",
+            "BATTING_T20Is_6s",
+            "BOWLING_Tests_Balls",
+            "BOWLING_Tests_Runs",
+            "BOWLING_Tests_Wkts",
+            "BOWLING_Tests_Econ",
+            "BOWLING_ODIs_Balls",
+            "BOWLING_ODIs_Runs",
+            "BOWLING_ODIs_Wkts",
+            "BOWLING_ODIs_Econ",
+            "BOWLING_T20Is_Balls",
+            "BOWLING_T20Is_Runs",
+            "BOWLING_T20Is_Wkts",
+            "BOWLING_T20Is_Econ"
+          ],
+          "invalid_chars": ["+", "*"]
         },
         "filter_rows": {
           "column": "Major teams",
           "values_allowed": ["India",
-        "Australia",
-        "South Africa",
-        "New Zealand",
-        "Sri Lanka",
-        "England",
-        "Pakistan",
-        "West Indies",
-        "Bangladesh",
-        "Zimbawbe",
-        "Afghanistan",
-        "Ireland",
-        "Scotland",
-        "Hong Kong",
-        "Kenya",
-        "Oman",
-        "India Women",
-        "Australia Women",
-        "South Africa Women",
-        "New Zealand Women",
-        "Sri Lanka Women",
-        "England Women",
-        "Pakistan Women",
-        "West Indies Women",
-        "Bangladesh Women",
-        "Zimbawbe Women",
-        "Afghanistan Women",
-        "Ireland Women",
-        "Scotland Women",
-        "Hong Kong Women",
-        "Kenya Women",
-        "Oman Women",
-        "India,",
-        "Australia,",
-        "South Africa,",
-        "New Zealand,",
-        "Sri Lanka,",
-        "England,",
-        "Pakistan,",
-        "West Indies,",
-        "Bangladesh,",
-        "Zimbawbe,",
-        "Afghanistan,",
-        "Ireland,",
-        "Scotland,",
-        "Hong Kong,",
-        "Kenya,",
-        "Oman,",
-        "India Women,",
-        "Australia Women,",
-        "South Africa Women,",
-        "New Zealand Women,",
-        "Sri Lanka Women,",
-        "England Women,",
-        "Pakistan Women,",
-        "West Indies Women,",
-        "Bangladesh Women,",
-        "Zimbawbe Women,",
-        "Afghanistan Women,",
-        "Ireland Women,",
-        "Scotland Women,",
-        "Hong Kong Women,",
-        "Kenya Women,",
-        "Oman Women,"]
+            "Australia",
+            "South Africa",
+            "New Zealand",
+            "Sri Lanka",
+            "England",
+            "Pakistan",
+            "West Indies",
+            "Bangladesh",
+            "Zimbawbe",
+            "Afghanistan",
+            "Ireland",
+            "Scotland",
+            "Hong Kong",
+            "Kenya",
+            "Oman",
+            "India Women",
+            "Australia Women",
+            "South Africa Women",
+            "New Zealand Women",
+            "Sri Lanka Women",
+            "England Women",
+            "Pakistan Women",
+            "West Indies Women",
+            "Bangladesh Women",
+            "Zimbawbe Women",
+            "Afghanistan Women",
+            "Ireland Women",
+            "Scotland Women",
+            "Hong Kong Women",
+            "Kenya Women",
+            "Oman Women",
+            "India,",
+            "Australia,",
+            "South Africa,",
+            "New Zealand,",
+            "Sri Lanka,",
+            "England,",
+            "Pakistan,",
+            "West Indies,",
+            "Bangladesh,",
+            "Zimbawbe,",
+            "Afghanistan,",
+            "Ireland,",
+            "Scotland,",
+            "Hong Kong,",
+            "Kenya,",
+            "Oman,",
+            "India Women,",
+            "Australia Women,",
+            "South Africa Women,",
+            "New Zealand Women,",
+            "Sri Lanka Women,",
+            "England Women,",
+            "Pakistan Women,",
+            "West Indies Women,",
+            "Bangladesh Women,",
+            "Zimbawbe Women,",
+            "Afghanistan Women,",
+            "Ireland Women,",
+            "Scotland Women,",
+            "Hong Kong Women,",
+            "Kenya Women,",
+            "Oman Women,"
+          ]
         },
         "dropna": {
           "subset": ["Major teams"]
@@ -412,12 +414,12 @@
         "add_columns": {
           "type": "Test"
         },
-        "validate_keys": {
-          "fillna": {
-            "columns": ["team", "batting_style"],
-            "value": "-"
-          },
-          "remove_invalid_chars": ["name", "team", "batting_style"]
+        "fillna": {
+          "columns": ["team", "batting_style"],
+          "value": "-"
+        },
+        "remove_invalid_chars": {
+          "columns": ["name", "team", "batting_style"]
         }
       }
     },
@@ -472,12 +474,12 @@
         "add_columns": {
           "type": "ODI"
         },
-        "validate_keys": {
-          "fillna": {
-            "columns": ["team", "batting_style"],
-            "value": "-"
-          },
-          "remove_invalid_chars": ["name", "team", "batting_style"]
+        "fillna": {
+          "columns": ["team", "batting_style"],
+          "value": "-"
+        },
+        "remove_invalid_chars": {
+          "columns": ["name", "team", "batting_style"]
         }
       }
     },
@@ -532,12 +534,12 @@
         "add_columns": {
           "type": "T20"
         },
-        "validate_keys": {
-          "fillna": {
-            "columns": ["team", "batting_style"],
-            "value": "-"
-          },
-          "remove_invalid_chars": ["name", "team", "batting_style"]
+        "fillna": {
+          "columns": ["team", "batting_style"],
+          "value": "-"
+        },
+        "remove_invalid_chars": {
+          "columns": ["name", "team", "batting_style"]
         }
       }
     },
@@ -583,12 +585,12 @@
         "add_columns": {
           "type": "ODI"
         },
-        "validate_keys": {
-          "fillna": {
-            "columns": ["team", "bowling_style"],
-            "value": "-"
-          },
-          "remove_invalid_chars": ["name", "team", "bowling_style"]
+        "fillna": {
+          "columns": ["team", "bowling_style"],
+          "value": "-"
+        },
+        "remove_invalid_chars": {
+          "columns": ["name", "team", "bowling_style"]
         }
       }
     },
@@ -634,12 +636,12 @@
         "add_columns": {
           "type": "T20"
         },
-        "validate_keys": {
-          "fillna": {
-            "columns": ["team", "bowling_style"],
-            "value": "-"
-          },
-          "remove_invalid_chars": ["name", "team", "bowling_style"]
+        "fillna": {
+          "columns": ["team", "bowling_style"],
+          "value": "-"
+        },
+        "remove_invalid_chars": {
+          "columns": ["name", "team", "bowling_style"]
         }
       }
     },
@@ -685,12 +687,12 @@
         "add_columns": {
           "type": "Test"
         },
-        "validate_keys": {
-          "fillna": {
-            "columns": ["team", "bowling_style"],
-            "value": "-"
-          },
-          "remove_invalid_chars": ["name", "team", "bowling_style"]
+        "fillna": {
+          "columns": ["team", "bowling_style"],
+          "value": "-"
+        },
+        "remove_invalid_chars": {
+          "columns": ["name", "team", "bowling_style"]
         }
       }
     },
@@ -735,10 +737,11 @@
           "dataframe": "team_wise",
           "params": {
             "by": ["season",
-                  "match_id",
-                  "team",
-                  "toss_winner",
-                  "winner"],
+              "match_id",
+              "team",
+              "toss_winner",
+              "winner"
+            ],
             "as_index": false
           }
         },
@@ -784,7 +787,8 @@
             "hundreds",
             "fifties",
             "fours",
-            "sixes"],
+            "sixes"
+          ],
           "axis": 1
         }
       },
@@ -811,7 +815,8 @@
             "runs",
             "balls",
             "economy",
-            "wickets"],
+            "wickets"
+          ],
           "axis": 1
         }
       },
@@ -825,14 +830,18 @@
           "by": ["team"]
         }
       },
-      "agg": {"runs": "mean",
-              "match_wins": "sum",
-              "toss_wins": "sum",
-              "season_wins": "sum",
-              "runner_ups": "sum"},
+      "agg": {
+        "runs": "mean",
+        "match_wins": "sum",
+        "toss_wins": "sum",
+        "season_wins": "sum",
+        "runner_ups": "sum"
+      },
 
       "rename": {
-        "columns": {"runs": "average_score"}
+        "columns": {
+          "runs": "average_score"
+        }
       },
       "replace": {
         "to_replace": "np.nan",
@@ -852,12 +861,13 @@
     "batsman_stats_grouped_level2": {
       "schema_name": "BatsmanStats",
       "fields_list": ["runs",
-                      "balls_faced",
-                      "strike_rate",
-                      "hundreds",
-                      "fifties",
-                      "fours",
-                      "sixes"],
+        "balls_faced",
+        "strike_rate",
+        "hundreds",
+        "fifties",
+        "fours",
+        "sixes"
+      ],
       "field_as_key": true
     },
     "bowler_stats_grouped_level1": {
@@ -868,18 +878,20 @@
     "bowler_stats_grouped_level2": {
       "schema_name": "BowlerStats",
       "fields_list": ["runs",
-                      "balls",
-                      "economy",
-                      "wickets"],
+        "balls",
+        "economy",
+        "wickets"
+      ],
       "field_as_key": true
     },
     "team_wise_grouped": {
       "schema_name": "TeamWise",
       "fields_list": ["average_score",
-                      "match_wins",
-                      "toss_wins",
-                      "season_wins",
-                      "runner_ups"],
+        "match_wins",
+        "toss_wins",
+        "season_wins",
+        "runner_ups"
+      ],
       "field_as_key": true
     }
   }

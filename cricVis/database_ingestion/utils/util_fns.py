@@ -6,16 +6,36 @@ from dateutil.parser import parse
 from dateutil.parser._parser import ParserError
 from datetime import datetime
 
-def str_eval(x):
-    try:
-        return eval(x)
-    except (TypeError, ValueError):
-        return x
 
 def is_list(x):
-    return x[0] == '['
+    """Returns True if x is a string of a list."""
+
+    x = x.strip()
+    return x[0] == '[' and x[-1] == ']'
+
 
 def filter_rows(x, values_allowed):
+    """
+    Filters out rows based on whether a particular column has the desired values.
+
+    Parameters
+    ----------
+
+    x: str
+        Value of column in a particular row
+
+    values_allowed: list
+        List of values based on which the filtering is done
+
+    Returns
+    -------
+
+    desired value
+        if it is present in x
+    np.nan
+        otherwise
+    """
+
     if(is_list(x)):
         set_x = set(eval(x))
         values_allowed_set = set(values_allowed)
@@ -29,41 +49,125 @@ def filter_rows(x, values_allowed):
 
 
 def find_final_matches(df):
-    # Enlists matchID of the final match of each season
+    """Returns a lists of match IDs of the final match of each year of a sports league/tournament."""
+
     return df.groupby("season")[["match_id"]].max()["match_id"].to_list()
 
-def replace_chars(x):
-    x = str(x)
-    for char in ["+", "*"]:
-        x = x.replace(char, "")
-
-    return x
 
 def extract_date(date_str):
+    """
+    Extract date from the given string.
+
+    Parameters
+    ----------
+
+    date_str: str
+        A string possibly containing a date within it.
+
+    Raises
+    ------
+
+    ValueError
+        If the string contains an incomplete date (for e.g. only the year).
+
+    ParserError:
+        If the string does not contain any date.
+
+    Returns
+    -------
+
+    date in the format "dd-mm-yyy"
+        if the string contains a complete date
+    "unavailable"
+        otherwise
+
+    Example
+    -------
+
+    date_str = "July 8, 2001, Birmingham, Warwickshire" would return "08-07-2001"
+    """
+
     try:
-        if(parse(date_str, fuzzy=True, default=datetime(1,1,1)) != parse(date_str, fuzzy=True, default=datetime(2,2,2))):
+        if(parse(date_str,
+                 fuzzy=True,
+                 default=datetime(1, 1, 1))
+            != parse(date_str,
+                     fuzzy=True,
+                     default=datetime(2, 2, 2))):
             raise ValueError
 
         else:
-            return '{dd}-{mm}-{yyyy}'.format(dd=parse(date_str, fuzzy=True).day, mm=parse(date_str, fuzzy=True).month, yyyy=parse(date_str, fuzzy=True).year)
+            return '{dd}-{mm}-{yyyy}'.format(dd=parse(date_str, fuzzy=True).day,
+                                             mm=parse(date_str, fuzzy=True).month,
+                                             yyyy=parse(date_str, fuzzy=True).year)
 
     except (ValueError, ParserError):
         return "unavailable"
 
 
-def remove_invalid_chars(df_column):
-    for invalid_char in [".", "$", "[", "]", "#", "/"]:
-        df_column = df_column.map(lambda x: x.replace(invalid_char, ""))
+def remove_invalid_chars(df, columns, invalid_chars=[".", "$", "[", "]", "#", "/"]):
+    """
+    Removes all characters mentioned in invalid_chars from the dataframe columns.
 
-    return df_column
+    Parameters
+    ----------
+
+    df: Pandas.DataFrame
+        The dataframe to be modified
+
+    columns: list
+        List of columns from which the invalid characters need to be removed.
+
+    invalid_chars: list
+        List of invalid characters.
+
+    Returns
+    -------
+
+    df: Pandas.DataFrame
+        Modified dataframe.
+    """
+    for col in columns:
+        for invalid_char in invalid_chars:
+            df[col] = df[col].map(lambda x: str(x).replace(invalid_char, ""))
+
+    return df
 
 # Takes a postfix expression to create a new column after
 # conditionally combining the columns passed as arguments
+
+
 def boolean_logic(*args, on_true=1, on_false=0):
+    """
+    Creates new dataframe column by operating on existing column(s).
+
+    Parameters
+    ----------
+
+    args: list
+        Ordered list of operands and operators constituting a postifix expression.
+
+    on_true: int or str
+        Value to be assigned if the result of an operation is true.
+
+    on_true: int or str
+        Value to be assigned if the result of an operation is false.
+
+    Returns
+    -------
+
+    Pandas.Series object
+        Result of evaluating the postfix expression.
+    """
+
     def is_operator(x):
+        """Returns True if the character x is in this operators list."""
+
         return x in ["&", "|", "==", "!=", "isin"]
 
     def operate(operand1, operand2, op):
+        """Returns result of applying operation op to operand1 and operand2."""
+
         if op == "==":
             return np.where(operand1 == operand2, on_true, on_false)
 
