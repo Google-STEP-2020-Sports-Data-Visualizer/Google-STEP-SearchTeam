@@ -54,7 +54,7 @@ class TimeSlider{
       classObject.createChart(classObject.chartDivID, classObject.chartData["metaDataResponse"], classObject.chartData["chartDataResponse"][year]);
     });
   }
-  getSortOrderDescending(prop){
+getSortOrderDescending(prop){
     return function(a,b){
       if( a[prop] < b[prop]){
         return 1;
@@ -65,28 +65,31 @@ class TimeSlider{
       return 0;
     }
  }
-  createChart(chartDivID, metaDataResponse, yearResponse) {
+  createChart(chartDivID, metaDataResponse, chartPlotData) {
     $(`#${chartDivID}`).empty();
     let chartValues = [];
-    Object.keys(yearResponse).forEach((value) => {
-      chartValues.push({"xValue":value, "yValue":yearResponse[value]});
+    Object.keys(chartPlotData).forEach((value) => {
+      chartValues.push({"xValue":value, "yValue":chartPlotData[value]});
     });
     chartValues.sort(this.getSortOrderDescending("yValue"));
+    this.drawBarChart(chartValues,metaDataResponse.xAxisLabel,metaDataResponse.yAxisLabel,
+      metaDataResponse.title,chartDivID)
+  }
+  drawBarChart(chartData,xAxisLabel,yAxisLabel,chartTitle,containerID) {
     const data = new google.visualization.DataTable();
-    data.addColumn('string', metaDataResponse.xAxisLabel);
-    data.addColumn('number', metaDataResponse.yAxisLabel);
-    chartValues.forEach((value) => {
-      data.addRow([value.xValue, value.yValue]);
+    data.addColumn('string', yAxisLabel);
+    data.addColumn('number', xAxisLabel);
+    chartData.forEach((value) => {
+        data.addRow([value.xValue, value.yValue]);
     });
-
     const options = {
       height: 600,
       chart: {
-        title: metaDataResponse.title,
+        title: chartTitle,
       },
       bars: 'horizontal',
     };
-    const chart = new google.charts.Bar(document.getElementById(chartDivID));
+    const chart = new google.charts.Bar(document.getElementById(containerID));
     chart.draw(data, options);
   }
 }
