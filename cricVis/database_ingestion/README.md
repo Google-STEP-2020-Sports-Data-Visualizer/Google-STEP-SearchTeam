@@ -1,3 +1,3 @@
-# STEP_project
+# Config-based database ingestion
 
-I'll write a detailed README tomorrow :P
+Source of dataset: https://www.kaggle.com/raghav333/espn-cricket-players-data
